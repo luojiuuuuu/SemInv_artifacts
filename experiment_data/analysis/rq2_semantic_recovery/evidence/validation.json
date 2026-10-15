@@ -1,0 +1,1607 @@
+{
+  "summary": {
+    "deployed_contracts": 21,
+    "probe_count": 126,
+    "probe_status_counts": {
+      "returned": 83,
+      "reverted": 37,
+      "selector unavailable": 6
+    },
+    "static_reports_supported_by_concrete_probes": 37,
+    "inconclusive_or_disagreeing_probes": 0,
+    "reports_not_directly_probed": 128,
+    "closed_world_surplus_supported_by_probes": 9,
+    "sidecar_update_facts": 616,
+    "nested_mapping_updates": 109,
+    "unique_assignment_sites": 419,
+    "approve_update_facts": 31,
+    "erc20_approve_update_facts": 26,
+    "probe_runtime_seconds": 4.8242734,
+    "source_comparison": [
+      {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/721_candidate_2.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/721_candidate_3.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/721_candidate_4.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/721_candidate_5.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/aoa.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/axpire.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/battoken.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/bnb.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/CMBToken.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/dai.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/egypt.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/EZOToken.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/huobi.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/husky.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/idex.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/iostoken.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/jntr.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/KIMEX.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/KuCoin.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/LUTOKEN.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/mkr.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/mxm.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/omg.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/organicco.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/pandai.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/PKG.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/silkroad.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/wit.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/xeuro.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/xn35.sol",
+        "same_current_source_bytes": true
+      },
+      {
+        "sample_id": "symgpt-public/zrx.sol",
+        "same_current_source_bytes": true
+      }
+    ],
+    "interpretation": "Concrete support is evidence for these inputs, not exhaustive path validation. SHOULD/effect diagnostics are not all mandatory ERC violations. No score is changed by this join."
+  },
+  "supported": [
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "standard": "ERC721",
+        "violation_type": "throw",
+        "function": "balanceOf(address)",
+        "rule_id": "zero_owner",
+        "normative": "MUST",
+        "reason": "total getter has no invalid-input rejection",
+        "evidence": {
+          "function_ids": [
+            163
+          ],
+          "src": "3217:171:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "rule": "zero_owner",
+        "signature": "balanceOf(address)",
+        "args": [
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "standard": "ERC721",
+        "violation_type": "throw",
+        "function": "ownerOf(uint256)",
+        "rule_id": "invalid_token",
+        "normative": "MUST",
+        "reason": "total getter has no invalid-input rejection",
+        "evidence": {
+          "function_ids": [
+            176,
+            453
+          ],
+          "src": "3394:156:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "rule": "invalid_token",
+        "signature": "ownerOf(uint256)",
+        "args": [
+          57896044618658097711785492504343953926634992332820282019728792003956564819968
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "standard": "ERC721",
+        "violation_type": "throw",
+        "function": "getApproved(uint256)",
+        "rule_id": "invalid_token",
+        "normative": "MUST",
+        "reason": "total getter has no invalid-input rejection",
+        "evidence": {
+          "function_ids": [
+            412,
+            479
+          ],
+          "src": "5496:167:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "rule": "invalid_token",
+        "signature": "getApproved(uint256)",
+        "args": [
+          57896044618658097711785492504343953926634992332820282019728792003956564819968
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/721_candidate_3.sol",
+        "standard": "ERC721",
+        "violation_type": "throw",
+        "function": "getApproved(uint256)",
+        "rule_id": "invalid_token",
+        "normative": "MUST",
+        "reason": "total getter has no invalid-input rejection",
+        "evidence": {
+          "function_ids": [
+            2333
+          ],
+          "src": "38121:120:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/721_candidate_3.sol",
+        "rule": "invalid_token",
+        "signature": "getApproved(uint256)",
+        "args": [
+          57896044618658097711785492504343953926634992332820282019728792003956564819968
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2193:699:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2624:262:0",
+          "role_storage_ids": [
+            251
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2898:774:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "3283:383:0",
+          "role_storage_ids": [
+            257
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/CMBToken.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "2638:332:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/CMBToken.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/CMBToken.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "2976:531:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/CMBToken.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/EZOToken.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "9560:3588:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/EZOToken.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "982:364:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "1078:262:0",
+          "role_storage_ids": [
+            246
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "1352:534:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "1497:383:0",
+          "role_storage_ids": [
+            252
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/huobi.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "4353:453:0",
+          "role_storage_ids": [
+            80
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/huobi.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/huobi.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2300:325:0",
+          "role_storage_ids": [
+            271
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/huobi.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/iostoken.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "5032:453:0",
+          "role_storage_ids": [
+            269
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/iostoken.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/iostoken.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2873:325:0",
+          "role_storage_ids": [
+            263
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/iostoken.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/jntr.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "4336:719:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/jntr.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2067:364:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2163:262:0",
+          "role_storage_ids": [
+            251
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2437:540:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2588:383:0",
+          "role_storage_ids": [
+            257
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "4114:427:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "4199:314:0",
+          "role_storage_ids": [
+            84
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "5347:664:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "5472:511:0",
+          "role_storage_ids": [
+            90
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "assign",
+        "function": "approve(address,uint256)",
+        "rule_id": "allowance_overwrite",
+        "normative": "MUST",
+        "reason": "allowance role updated additively by approve amount",
+        "evidence": [
+          {
+            "function": "approve(address,uint256)",
+            "declaring_function_id": 662,
+            "target_id": 90,
+            "target": "_allowances",
+            "op": "add",
+            "index_depth": 2,
+            "src": "6097:94:0",
+            "lhs_ref": "('index', ('index', ('id', 90), ('member', ('id', -15), 'sender')), ('id', 628))",
+            "delta_ref": "('id', 630)",
+            "node_id": 650
+          }
+        ],
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "allowance_overwrite",
+        "signature": "allowance(address,address)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000012"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/PKG.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "1015:105:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/PKG.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/PKG.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "1126:298:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/PKG.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/wit.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "2631:47:0",
+          "role_storage_ids": [
+            408
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/wit.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/wit.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "3157:56:0",
+          "role_storage_ids": [
+            415
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/wit.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/xn35.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "2373:333:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/xn35.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/xn35.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "revert"
+          ],
+          "src": "2712:532:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/xn35.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "reverted",
+        "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/zrx.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "unauthorized",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "3747:453:0",
+          "role_storage_ids": [
+            264
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/zrx.sol",
+        "rule": "unauthorized",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          1
+        ],
+        "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/zrx.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "insufficient_balance",
+        "normative": "SHOULD",
+        "reason": "explicit insufficient-resource branch returns false instead of reverting",
+        "evidence": {
+          "branch_src": "1693:325:0",
+          "role_storage_ids": [
+            258
+          ]
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/zrx.sol",
+        "rule": "insufficient_balance",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+          1
+        ],
+        "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    }
+  ],
+  "inconclusive": [],
+  "supported_surplus": [
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "standard": "ERC721",
+        "violation_type": "throw",
+        "function": "getApproved(uint256)",
+        "rule_id": "invalid_token",
+        "normative": "MUST",
+        "reason": "total getter has no invalid-input rejection",
+        "evidence": {
+          "function_ids": [
+            412,
+            479
+          ],
+          "src": "5496:167:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/721_candidate_1.sol",
+        "rule": "invalid_token",
+        "signature": "getApproved(uint256)",
+        "args": [
+          57896044618658097711785492504343953926634992332820282019728792003956564819968
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2193:699:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2898:774:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/bitcoinsvgold.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "982:364:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "1352:534:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/gencoin.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2067:364:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "2437:540:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transfer(address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "4114:427:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "zero_transfer",
+        "signature": "transfer(address,uint256)",
+        "args": [
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    },
+    {
+      "prediction": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "standard": "ERC20",
+        "violation_type": "throw",
+        "function": "transferFrom(address,address,uint256)",
+        "rule_id": "zero_transfer",
+        "normative": "MUST",
+        "reason": "all supported zero-amount paths reject or return false",
+        "evidence": {
+          "outcomes": [
+            "false"
+          ],
+          "src": "5347:664:0"
+        },
+        "source": "cached compiler AST sidecar"
+      },
+      "probe": {
+        "sample_id": "symgpt-public/organicco.sol",
+        "rule": "zero_transfer",
+        "signature": "transferFrom(address,address,uint256)",
+        "args": [
+          "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+          "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+          0
+        ],
+        "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+        "status": "returned",
+        "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+        "receipt_status": 1,
+        "logs": []
+      }
+    }
+  ]
+}

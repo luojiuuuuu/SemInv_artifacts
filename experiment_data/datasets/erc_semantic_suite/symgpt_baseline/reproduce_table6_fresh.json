@@ -1,0 +1,370 @@
+[
+  {
+    "table": "Table 6 / SymGPT",
+    "match_fields": [
+      "file basename",
+      "function/event",
+      "type"
+    ],
+    "rule_text_compared": false,
+    "fresh_reports": 159,
+    "evaluated_files": 40,
+    "expected_labels": {
+      "tp": 157,
+      "fp": 1,
+      "fn": 2
+    },
+    "reproduced_labels": {
+      "tp": 139,
+      "fp": 1,
+      "fn": 2
+    },
+    "covered_expected_detections": 140,
+    "surplus_or_unmapped_reports": 19,
+    "all_expected_detections_covered": false,
+    "fn_groups_consistent": true,
+    "mismatched_groups": [
+      {
+        "key": [
+          "721_candidate_3.sol",
+          "throw",
+          "getapproved"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "721_candidate_4.sol",
+          "emit",
+          "transfer"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "aoa.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "axpire.sol",
+          "emit",
+          "createtokens"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "axpire.sol",
+          "interface",
+          "transfer"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "battoken.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "bnb.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "dai.sol",
+          "emit",
+          "burn"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "dai.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "dai.sol",
+          "emit",
+          "mint"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "husky.sol",
+          "emit",
+          "excludeaccount"
+        ],
+        "expected_detected": 0,
+        "expected_fn": 0,
+        "fresh": 1,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "husky.sol",
+          "emit",
+          "includeaccount"
+        ],
+        "expected_detected": 0,
+        "expected_fn": 0,
+        "fresh": 1,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "idex.sol",
+          "emit",
+          "approveandcall"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "idex.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "kimex.sol",
+          "emit",
+          "allocatereservedtokens"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "kimex.sol",
+          "emit",
+          "allocatesalestokens"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "kimex.sol",
+          "emit",
+          "allocatetokensforfounder"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "kimex.sol",
+          "emit",
+          "allocatetokensforteam"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "kucoin.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "lutoken.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "mkr.sol",
+          "emit",
+          "burn"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "mkr.sol",
+          "emit",
+          "constructor"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "mkr.sol",
+          "emit",
+          "mint"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "mxm.sol",
+          "emit",
+          "approveandcall"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "mxm.sol",
+          "throw",
+          "transfer"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "mxm.sol",
+          "throw",
+          "transferfrom"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "omg.sol",
+          "emit",
+          "minttimelocked"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 2,
+        "status": "surplus"
+      },
+      {
+        "key": [
+          "organicco.sol",
+          "assign",
+          "approve"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "silkroad.sol",
+          "emit",
+          "approveandcall"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "xeuro.sol",
+          "emit",
+          "burntokens"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      },
+      {
+        "key": [
+          "xeuro.sol",
+          "emit",
+          "minttokens"
+        ],
+        "expected_detected": 1,
+        "expected_fn": 0,
+        "fresh": 0,
+        "status": "missing"
+      }
+    ]
+  }
+]

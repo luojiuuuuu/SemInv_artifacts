@@ -1,0 +1,29 @@
+{
+    "sol_file": "benchmark/baseline/huobi.sol",
+    "contract": {
+        "HBToken": [
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the message caller's account balance does not have enough tokens to spend",
+                "contract": "HBToken",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 6,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "HBToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

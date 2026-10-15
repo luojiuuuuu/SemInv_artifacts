@@ -1,0 +1,60 @@
+{
+  "datasets": {
+    "smartbugs_curated": {
+      "files": 143,
+      "labeled_contracts": 139,
+      "vulnerability_categories": 8
+    },
+    "erc_semantic_suite": {
+      "erc20_contracts": 30,
+      "erc721_contracts": 5,
+      "structural_validation_contracts": 35,
+      "paired_compiled_contracts": 34,
+      "public_violation_labels": 152
+    },
+    "defihacklabs": {
+      "period": "2026-01 through 2026-06",
+      "incidents": 65,
+      "completed_pocs": 48
+    }
+  },
+  "runtime": {
+    "rq1_rq3_rq4_budget_seconds": 600,
+    "rq3_rq4_replay_enabled": false,
+    "rq3_rq4_minimization_enabled": false,
+    "rq6_replays_per_sequence": 3,
+    "rq6_fixed_seed": true,
+    "rq6_fresh_deployment_each_replay": true,
+    "rq6_data_dependency_expansion_enabled": false,
+    "rq6_constraint_solving_enabled": false,
+    "paired_bootstrap_resamples": 2000,
+    "paired_bootstrap_cluster": "contract",
+    "hardware": "Intel Core i7-12700, 128 GB RAM",
+    "language": "Python",
+    "llm": "DeepSeek-V3"
+  },
+  "baselines": {
+    "rq1": ["ConFuzzius", "Mythril", "Slither", "SmartCheck", "sFuzz", "SMARTIAN", "ItyFuzz", "DepFuzz"],
+    "rq2": ["SymGPT"],
+    "rq3": ["DepFuzz", "ConFuzzius", "SMARTIAN", "sFuzz", "ItyFuzz"]
+  },
+  "search_parameters": {
+    "generations": 10,
+    "crossover_probability": 0.9,
+    "splitting_probability": 0.9,
+    "ordinary_mutation_probability": 0.1,
+    "guided_mutation_probability": 0.1,
+    "instruction_stagnation_generations": 1,
+    "branch_stagnation_generations": 2,
+    "invariant_annotation_stagnation_generations": 8,
+    "invariant_annotation_branch_age_generations": 3,
+    "risk_weights": [8, 5, 3, 2],
+    "priority_weights": [2, 1, 0.25, 0.5, 5],
+    "solver_timeout_ms": 100,
+    "solver_branches": 3,
+    "solver_cooldown_generations": 2,
+    "runtime_hint_queue_size": 32,
+    "solver_seed_queue_size": 16,
+    "max_injections_per_generation_per_queue": 2
+  }
+}

@@ -1,0 +1,95 @@
+{
+    "sol_file": "benchmark/baseline/mkr.sol",
+    "contract": {
+        "DSToken": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function name() public view returns (string)",
+                "contract": "DSToken",
+                "fn_interface": null,
+                "rid": 0,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function symbol() public view returns (string)",
+                "contract": "DSToken",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function decimals() public view returns (uint8)",
+                "contract": "DSToken",
+                "fn_interface": null,
+                "rid": 2,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "DSToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "DSToken",
+                "fn_interface": "mint(uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "DSToken",
+                "fn_interface": "burn(uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "DSToken",
+                "fn_interface": "mint(address,uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "DSToken",
+                "fn_interface": "burn(address,uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

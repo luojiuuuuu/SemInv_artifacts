@@ -1,0 +1,174 @@
+SemInv ERC adapter v3: implementation and experiment record
+Date: 2026-10-13
+
+1. Outcome and scope
+
+The opt-in cached-artifact adapter now matches 142 of 152 positive obligations
+in the existing Table-6 oracle on the same 34 ABI-evaluable ERC20/ERC721 files.
+Its complete diagnostic profile has closed-world precision 0.860606, recall
+0.934211 and F1 0.895899. Fresh SymGPT, using the same obligation matcher,
+has TP 132, closed-world FP 16, FN 20 and F1 0.880000.
+
+This is a development-cohort, benchmark-oracle result, not a held-out result,
+not statistical evidence of superiority, and not original SemInv end-to-end
+performance. The complete diagnostic profile includes SHOULD recommendations
+and generalized token-effect/event diagnostics, not just mandatory ERC rules.
+The previous v2 result remains reproducible and was not overwritten.
+
+2. Comparison (identical 34-file scope and 152-positive denominator)
+
+Configuration                         TP  FP*  FN  Precision  Recall    F1
+Previous v2 adapter                   45    1 107  0.978261  0.296053  0.454545
+v3 required + optional-present        68   16  84  0.809524  0.447368  0.576271
+v3 above + SHOULD                    111   16  41  0.874016  0.730263  0.795699
+v3 complete diagnostic profile       142   23  10  0.860606  0.934211  0.895899
+Fresh SymGPT                         132   16  20  0.891892  0.868421  0.880000
+
+FP* means unmatched by the existing closed-world Table-6 oracle. It is not an
+independent adjudication that each report is false. Both methods use the same
+matcher, capacities, raw overload-report handling and file scope. Required-only
+profiles still use the full 152-label denominator; their recall is intentionally
+not a metric restricted to mandatory rules. Relative to v2, complete-profile
+TP increases by 97 and F1 by 0.441354. Relative to fresh SymGPT, it has 10 more
+matched TP, 7 more unmatched reports and 10 fewer FN. The F1 difference is
+0.015899; precision is lower. No significance claim is made.
+
+3. What changed
+
+All new implementation is outside the existing fuzzer/core modules. No original
+SemInv pipeline file, dataset source, cached recovery or older result directory
+was edited in this round. The adapter runs only when explicitly invoked. Thus
+the new functionality is available as a separate analysis configuration; it
+has not silently replaced original SemInv's detector.
+
+The missing approve facts were traced to parse_storage_lvalue in
+fuzzer/func_test/invariant_utils.py: it recognizes IndexAccess only when its
+immediate base is an Identifier, and therefore misses nested mappings such as
+allowance[owner][spender]. The new sidecar retains the full index chain and
+compiler referencedDeclaration IDs, without changing the legacy fact schema.
+
+The sidecar recovers 616 entry-context update facts from 419 distinct assignment
+sites; 109 entry-context facts address nested mappings. It recovers 26 ERC20
+approve update facts (31 approve-signature facts including ERC721), whereas
+the previous ERC20 adapter found zero. Counts with different context/site units
+must not be mixed in a fact-recovery denominator.
+
+Further additions:
+- Storage roles are linked through balanceOf/allowance/totalSupply getters and
+  declaration IDs rather than allowance-like variable names.
+- Most-derived implementation selection and declaration-based internal/super
+  call traversal avoid treating arbitrary same-name base bodies as executions.
+- Optional name/symbol/decimals are checked only when present.
+- Zero-value checks use restricted control-flow evaluation, early-return
+  handling, helper argument propagation and arithmetic identities such as
+  balance + 0 > balance. Unknown calls, loops or parameter mutation abstain.
+- Explicit failure branches and immutable local aliases support separate
+  SHOULD diagnostics for balance/authorization failures returning false.
+- Token-state effects are joined with event reachability, including constructor
+  allocation and approval wrappers. Non-core effect reports remain diagnostics.
+- ERC721 total getters are checked for absent invalid-input rejection.
+
+No detector reads labels or SymGPT reports while predicting. Nevertheless,
+these contracts and labels have been inspected during development; calling
+this evaluation label-blind or held-out would be inaccurate.
+
+4. Matching and oracle limitations
+
+The new scorer matches specific obligation families, not just function and
+defect type. For example, zero-transfer rejection cannot consume an
+insufficient-balance label. Transfer event-interface reports are distinct from
+transfer function-interface reports. No truth rows are unmapped. All older v2
+45 TP survive this obligation-level rescoring; fresh SymGPT remains at F1 .88.
+
+The complete diagnostic profile produces 165 reports. The 23 closed-world
+surpluses comprise 14 zero-transfer reports, one getApproved invalid-token
+report, one supportsInterface interface report, and seven event diagnostics
+(including overload reports). Nine surplus reports have direct local EVM
+support. Scores have not been improved by adding these to the oracle or by
+silently removing unmatched reports.
+
+The ten uncovered labels are: unauthorized transferFrom for dai, mkr and
+pandai; insufficient-balance and return-value labels for EZOToken; totalSupply
+return for egypt; Transfer indexing for axpire; and three ERC721 extra Approval
+emission labels. These are not uniformly implementation gaps. In the current
+axpire source, both Transfer addresses are indexed; the legacy label therefore
+disagrees with the current input. ERC721 Transfer already indicates approval
+reset, so the three extra Approval labels require specification adjudication.
+The original oracle is retained unchanged for the reported comparison.
+
+Current SemInv input source bytes equal current SymGPT baseline source bytes
+for all 35 files. husky still has no cached compiler result; both methods are
+scored on the remaining 34. Source equality does not independently prove that
+historical paper labels correspond to these current source revisions.
+
+5. Validation and cost
+
+23 tests passed: seven existing adapter tests, twelve new adapter/scorer checks
+and four ABI catalog tests. New checks cover optional metadata, nested indices,
+arithmetic identities, unreachable guards, unknown branches, false returns,
+parameter mutation, obligation matching, overload capacities, an overwrite
+mutation control, inherited events and storage-renaming invariance.
+
+Local Anvil execution deployed 21 unmodified cached creation-bytecode contracts
+with zero-argument constructors and performed 126 finite probes: 83 returned,
+37 reverted and six had unavailable selectors. Thirteen contracts requiring
+constructor arguments were skipped, and one lacks compiler artifacts. No
+storage injection was used. The probes directly support 37 static reports;
+none of those paired probes was inconclusive or disagreed. The other 128
+reports were not directly probed; this is not a claim that every report was
+execution-validated. Nine oracle-surplus reports have concrete support.
+
+For organicco, consecutive approve amounts 7 and 11 result in allowance 18,
+not 11. This confirms the nested-mapping additive-update finding. ERC721
+candidate 1 returns zero for invalid owner/getApproved queries, candidate 3
+returns normally from invalid getApproved, and candidate 2 rejects the tested
+invalid queries, providing both positive and negative concrete controls.
+
+Measured cached-adapter prediction time: approximately 0.89 seconds.
+Measured local-EVM probe batch: 4.82 seconds. These exclude original compilation
+and recovery and are not an end-to-end speed comparison against SymGPT.
+Full SemInv detection, fuzzing, replay and minimization were not executed.
+
+6. Interpretation for the research claim
+
+On this development cohort, the complete adapter diagnostic configuration
+reaches SymGPT-level F1 under the existing benchmark oracle. It supports the
+mechanism claim that improving fact/interface consumption and adding missing
+nested-storage/call-context facts can substantially improve obligation recall.
+It does not show that the old invariant set alone already had this capability:
+new cached-AST sidecar extraction and ERC-specific rules contribute materially.
+
+Do not substitute .895899 for the original full-system SemInv result or claim
+that it proves all inferred invariants correct. Before using parity as a main
+paper generalization claim, freeze this adapter and evaluate a separate cohort,
+and adjudicate the oracle differences symmetrically for both tools. Preserve
+the MUST/optional-present, SHOULD and effect-diagnostic profiles in the artifact.
+
+Specification sources:
+https://eips.ethereum.org/EIPS/eip-20
+https://eips.ethereum.org/EIPS/eip-721
+
+7. Reproduction and artifacts
+
+Working directory: <seminv-workspace>
+Python: experiments/rq3_symgpt_comparison/.venv-seminv39/Scripts/python.exe
+Run these Python scripts in order:
+  experiments/rq3_symgpt_comparison/run_erc_facts_adapter_v3.py
+  experiments/rq3_symgpt_comparison/score_erc_obligations.py
+  experiments/rq3_symgpt_comparison/verify_erc_adapter_evm.py
+  experiments/rq3_symgpt_comparison/summarize_erc_adapter_validation.py
+
+Tests use .venv-seminv39-sys/Scripts/python.exe -m pytest with:
+  tests/test_rq3_facts_adapter.py
+  tests/test_rq3_facts_adapter_v3.py
+  tests/test_uir_abi_interface_catalog.py
+
+Output directory: <seminv-workspace>/outputs/rq3_facts_adapter_20261013_v3
+  predictions.json / predictions.csv: all findings, scope and provenance
+  sidecar_update_facts.json: entry-context facts and source spans
+  main_comparison.csv / obligation_comparison.csv: matching summary
+  scoring.json / obligation_scoring.json: matches, surplus and uncovered labels
+  local_evm_probes.json: deployments, inputs, return data and transaction logs
+  validation.json: paired static/concrete evidence and source comparison
+
+This record is an implementation/experiment handoff, not manuscript-ready prose.

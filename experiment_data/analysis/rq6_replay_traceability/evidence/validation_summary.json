@@ -1,0 +1,200 @@
+{
+  "schema": "rq1-t-independent-validation-summary.v1",
+  "historical_search_untouched": true,
+  "T_inputs": {
+    "predictions": {
+      "path": "<seminv-workspace>\\outputs\\seminv_T_unified_failure_policy_20261012\\round_1200s\\predictions.csv"
+    },
+    "event_audit": {
+      "path": "<seminv-workspace>\\outputs\\seminv_T_final_20261011\\round_1200s\\event_audit.csv"
+    },
+    "T_report": {
+      "path": "<previous-artifact-root>\\revision\\RQ1_T_final_comparison_analysis_20261011.md"
+    },
+    "fuzzer_main": {
+      "path": "<seminv-workspace>\\fuzzer\\main.py"
+    },
+    "finding_schema": {
+      "path": "<seminv-workspace>\\fuzzer\\reporting\\finding_schema.py"
+    }
+  },
+  "retained_events": 880,
+  "dynamic_events": 735,
+  "source_pattern_events": 145,
+  "processed_status_counts": {
+    "same_pc_type_observed": 514,
+    "same_pc_type_not_observed": 219,
+    "not_applicable_no_sequence": 145,
+    "timeout": 2
+  },
+  "processed_status_by_category": {
+    "access_control": {
+      "same_pc_type_observed": 62,
+      "same_pc_type_not_observed": 24,
+      "not_applicable_no_sequence": 9
+    },
+    "arithmetic": {
+      "same_pc_type_observed": 48,
+      "same_pc_type_not_observed": 27,
+      "not_applicable_no_sequence": 1
+    },
+    "bad_randomness": {
+      "same_pc_type_not_observed": 8,
+      "not_applicable_no_sequence": 26,
+      "same_pc_type_observed": 17
+    },
+    "denial_of_service": {
+      "not_applicable_no_sequence": 9,
+      "same_pc_type_observed": 27,
+      "same_pc_type_not_observed": 7
+    },
+    "front_running": {
+      "same_pc_type_not_observed": 3,
+      "same_pc_type_observed": 8,
+      "not_applicable_no_sequence": 4
+    },
+    "reentrancy": {
+      "same_pc_type_not_observed": 112,
+      "same_pc_type_observed": 98,
+      "not_applicable_no_sequence": 9
+    },
+    "time_manipulation": {
+      "same_pc_type_observed": 7,
+      "not_applicable_no_sequence": 5,
+      "same_pc_type_not_observed": 5
+    },
+    "unchecked_low_level_calls": {
+      "same_pc_type_observed": 247,
+      "same_pc_type_not_observed": 33,
+      "not_applicable_no_sequence": 82,
+      "timeout": 2
+    }
+  },
+  "original_first_status_counts": {
+    "not_run": 121,
+    "same_pc_type_not_observed": 192,
+    "same_pc_type_observed": 420,
+    "not_applicable_no_sequence": 145,
+    "timeout": 2
+  },
+  "original_first_status_by_category": {
+    "access_control": {
+      "not_run": 37,
+      "same_pc_type_not_observed": 15,
+      "same_pc_type_observed": 34,
+      "not_applicable_no_sequence": 9
+    },
+    "arithmetic": {
+      "same_pc_type_observed": 47,
+      "same_pc_type_not_observed": 24,
+      "not_applicable_no_sequence": 1,
+      "not_run": 4
+    },
+    "bad_randomness": {
+      "same_pc_type_not_observed": 8,
+      "not_applicable_no_sequence": 26,
+      "same_pc_type_observed": 17
+    },
+    "denial_of_service": {
+      "not_applicable_no_sequence": 9,
+      "same_pc_type_observed": 28,
+      "same_pc_type_not_observed": 6
+    },
+    "front_running": {
+      "same_pc_type_not_observed": 3,
+      "same_pc_type_observed": 8,
+      "not_applicable_no_sequence": 4
+    },
+    "reentrancy": {
+      "same_pc_type_not_observed": 101,
+      "same_pc_type_observed": 94,
+      "not_run": 15,
+      "not_applicable_no_sequence": 9
+    },
+    "time_manipulation": {
+      "same_pc_type_observed": 7,
+      "not_applicable_no_sequence": 5,
+      "same_pc_type_not_observed": 5
+    },
+    "unchecked_low_level_calls": {
+      "not_run": 65,
+      "not_applicable_no_sequence": 82,
+      "same_pc_type_observed": 185,
+      "same_pc_type_not_observed": 30,
+      "timeout": 2
+    }
+  },
+  "processed_diagnostic_3_of_3": 514,
+  "original_diagnostic_3_of_3": 32,
+  "processed_diagnostic_3_of_3_by_category": {
+    "access_control": 62,
+    "arithmetic": 48,
+    "bad_randomness": 17,
+    "denial_of_service": 27,
+    "front_running": 8,
+    "reentrancy": 98,
+    "time_manipulation": 7,
+    "unchecked_low_level_calls": 247
+  },
+  "original_diagnostic_3_of_3_by_category": {
+    "access_control": 6,
+    "arithmetic": 2,
+    "bad_randomness": 1,
+    "denial_of_service": 1,
+    "front_running": 1,
+    "reentrancy": 10,
+    "time_manipulation": 1,
+    "unchecked_low_level_calls": 10
+  },
+  "repeat_attempt_status_counts": {
+    "processed": {
+      "same_pc_type_observed": 1028
+    },
+    "shortened_original": {
+      "same_pc_type_observed": 64
+    }
+  },
+  "shortened_records": 64,
+  "shortened_raw_artifact_status": {
+    "raw_file_missing": 12,
+    "exact_id_time_length": 52
+  },
+  "minimization_records_with_deletion_trials": 12,
+  "deletion_trial_status_counts": {
+    "same_pc_type_observed": 7,
+    "same_pc_type_not_observed": 28
+  },
+  "records_all_deletions_not_observed": 6,
+  "records_all_deletions_observed": 0,
+  "records_mixed_deletion_results": 6,
+  "explanation_sample_size": 100,
+  "explanation_category_counts": {
+    "access_control": 13,
+    "arithmetic": 13,
+    "bad_randomness": 13,
+    "denial_of_service": 13,
+    "front_running": 12,
+    "reentrancy": 12,
+    "time_manipulation": 12,
+    "unchecked_low_level_calls": 12
+  },
+  "explanation_api_status": "connection_and_auth_confirmed_2026-10-13_no_proxy",
+  "explanation_api_probe": {
+    "bypass": "process-level NO_PROXY=api.deepseek.com",
+    "completion_requests": 2,
+    "requested_model": "deepseek-chat",
+    "served_model": "deepseek-flash",
+    "completion_tokens_total": 20,
+    "available_model_ids": [
+      "deepseek-flash",
+      "deepseek-v4-pro"
+    ]
+  },
+  "generated_llm_texts": 0,
+  "human_reviews_completed": 0,
+  "strict_replay_success_count": null,
+  "strict_replay_success_rate": null,
+  "validated_minimization_success_count": null,
+  "explanation_correctness_rate": null,
+  "interpretation": "Same-PC/type re-observation is diagnostic; no same-security-consequence oracle has yet passed."
+}

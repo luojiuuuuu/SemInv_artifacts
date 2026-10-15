@@ -1,0 +1,13 @@
+component,measure,value,note
+functional_seeds,contracts_loaded,92,of 139 contracts
+functional_seeds,sequences_loaded,478,total functional sequences
+functional_seeds,contracts_first_hit_from_seed,35,combined candidate hit
+functional_seeds,reentrancy_first_hits,22,subset of first hits
+functional_seeds,arithmetic_first_hits,7,subset of first hits
+property_tests,access_control_sources,3,
+property_tests,distinct_tests,10,
+property_tests,executions,20,
+risk_guidance,risk_snapshots,35944,
+risk_guidance,multieligible_snapshots,912,
+risk_guidance,default_changed_preferred,25,
+

@@ -1,0 +1,40 @@
+{
+    "sol_file": "benchmark/baseline/LUTOKEN.sol",
+    "contract": {
+        "LutToken": [
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "LutToken",
+                "fn_interface": "upgrade(uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "LutToken",
+                "fn_interface": "constructor(string,string,uint8,uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "LutToken",
+                "fn_interface": "constructor(string,string,uint8,uint256) returns()",
+                "rid": 21,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

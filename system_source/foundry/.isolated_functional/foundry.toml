@@ -1,0 +1,7 @@
+[profile.default]
+solc = "0.4.25"
+auto_detect_solc = false
+evm_version = "byzantium"
+src = "src"
+test = "test"
+libs = ["lib"]

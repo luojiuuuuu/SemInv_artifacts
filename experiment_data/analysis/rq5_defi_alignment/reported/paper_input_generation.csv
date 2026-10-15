@@ -1,0 +1,9 @@
+measure,value
+functional_sequences,5
+solver_pocs,48
+solver_calls,283
+solver_attempts,675
+solver_satisfiable,660
+candidate_seeds,444
+injected_seeds,190
+

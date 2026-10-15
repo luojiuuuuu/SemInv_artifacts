@@ -1,0 +1,188 @@
+{
+  "schema_version": 1,
+  "method": "Read-only recovery from frozen SemInv event archives, results.json fuzz individuals, local PoC Solidity sources, and stored Foundry replay logs. No test, fuzz, replay, compilation, RPC, or network command was run.",
+  "inputs": {
+    "case_audit": "<seminv-workspace>\\outputs\\rq4_alignment_reaudit\\20261012\\case_audit.csv",
+    "event_audit": "<seminv-workspace>\\outputs\\rq4_alignment_reaudit\\20261012\\event_audit.csv",
+    "poc_manifest": "<seminv-workspace>\\outputs\\rq4_ityfuzz_defihacklabs\\20260929_141555\\rq4_defihacklabs_manifest.csv"
+  },
+  "scope": {
+    "attempted_cases": 65,
+    "zero_exit_cases": 48,
+    "nonzero_exit_cases": 17,
+    "archived_event_rows": 334,
+    "invariant_event_rows_all_attempts": 333,
+    "invariant_event_rows_zero_exit": 295,
+    "zero_exit_legacy_labels_for_provenance_only": {
+      "部分相关": 27,
+      "未覆盖": 2,
+      "强相关": 19
+    }
+  },
+  "archived_end_to_end_runtime": {
+    "zero_exit_cases": {
+      "n": 48,
+      "mean_sec": 1274.66,
+      "median_sec": 968.04,
+      "min_sec": 50.7,
+      "max_sec": 9485.33
+    },
+    "nonzero_exit_cases": {
+      "n": 17,
+      "mean_sec": 677.0,
+      "median_sec": 48.01,
+      "min_sec": 7.24,
+      "max_sec": 3645.92
+    },
+    "interpretation": "Total end-to-end analysis duration from the case ledger; event discovery time is separately recovered from raw error.time."
+  },
+  "archive_reconciliation": {
+    "case_count_or_invariant_count_mismatches": [],
+    "event_rows_missing_from_recovered_event_archive": [],
+    "recovered_event_rows_absent_from_event_audit": [],
+    "event_key_multiset_matches_event_audit": true
+  },
+  "source_version_reconciliation": {
+    "scope_note": "This verifies the current local Solidity file against the September replay manifest, not against a source snapshot embedded in the original SemInv run directory."
+  },
+  "paired_34_case_subset": {
+    "cases": 34,
+    "invariant_events": 210,
+    "events_linked_to_raw_individual": 200,
+    "selected_contract_pc_and_type_link_rate_percent": 95.24,
+    "events_with_multitx_candidate": 142,
+    "multitx_candidate_rate_percent": 67.62,
+    "events_with_poc_linked_dynamic_invariant_witness": 101,
+    "events_with_nonroot_function_in_direct_static_callgraph": 13,
+    "nonroot_static_callgraph_overlap_rate_percent": 6.19,
+    "events_matching_only_test_root": 42,
+    "test_root_only_overlap_rate_percent": 20.0,
+    "events_with_callback_name_candidate": 35,
+    "callback_name_candidate_rate_percent": 16.67
+  },
+  "zero_exit_path_recovery": {
+    "invariant_events_linked_by_selected_contract_normalized_pc_and_detector_type": 281,
+    "invariant_events_unlinked_by_selected_contract_normalized_pc_and_detector_type": 14,
+    "selected_contract_pc_and_type_link_rate_percent": 95.25,
+    "linked_event_max_raw_individual_tx_count_distribution": {
+      "5": 179,
+      "unmapped": 14,
+      "1": 61,
+      "2": 28,
+      "3": 11,
+      "4": 2
+    },
+    "linked_event_executed_prefix_tx_count_distribution": {
+      "5": 177,
+      "1": 83,
+      "2": 12,
+      "3": 7,
+      "4": 2
+    },
+    "events_with_at_least_two_transactions_executed_through_trigger": 198,
+    "multi_transaction_prefix_rate_over_all_zero_exit_events_percent": 67.12,
+    "cases_with_any_multi_transaction_executed_prefix": 42,
+    "cases_all_invariant_events_pc_linked": 36,
+    "cases_with_some_linked_and_some_unlinked_events": 9,
+    "cases_with_events_but_no_pc_link": 1,
+    "cases_with_events_but_no_pc_link_sources": [
+      "src/test/2026-06/JB_exp.sol"
+    ],
+    "cases_with_no_archived_invariant_event": 2,
+    "stored_event_trajectory_step_distribution": {
+      "1": 277,
+      "missing": 14,
+      "3": 1,
+      "2": 3
+    },
+    "event_function_sequence_length_distribution": {
+      "1": 277,
+      "0": 14,
+      "3": 1,
+      "2": 3
+    }
+  },
+  "poc_linked_dynamic_invariant_witness": {
+    "case_denominator": 48,
+    "cases_with_at_least_one_linked_witness": 39,
+    "case_coverage_percent": 81.25,
+    "event_denominator": 295,
+    "linked_events": 131,
+    "event_coverage_percent": 44.41,
+    "pc_type_linked_event_denominator": 281,
+    "linked_events_with_two_or_more_executed_prefix_transactions": 80,
+    "executed_prefix_tx_count_distribution": {
+      "5": 63,
+      "1": 51,
+      "2": 10,
+      "3": 5,
+      "4": 2
+    },
+    "linked_events_triggering_test_root_function_including_roots": 52,
+    "linked_events_triggering_callback_like_function": 45,
+    "time_to_first_witness_per_case_sec": {
+      "n": 39,
+      "mean_sec": 212.41,
+      "median_sec": 61.54,
+      "min_sec": 1.09,
+      "max_sec": 2240.42
+    },
+    "time_to_witness_per_event_sec": {
+      "n": 131,
+      "mean_sec": 326.64,
+      "median_sec": 164.51,
+      "min_sec": 1.09,
+      "max_sec": 2240.42
+    },
+    "time_origin": "Raw results.json error.time, measured from SemInv execution_begin immediately before engine.run; case statistic takes the earliest qualifying witness in each case.",
+    "matching_rule": "Same selected contract, normalized PC, and normalized detector type; trigger_tx_index must select an individual transaction whose selector uniquely decodes to a function declared in the local PoC Solidity source; that function name must occur in the archived event function_sequence. Test roots, helpers, and callbacks are included.",
+    "path_granularity": "Top-level transaction prefix through trigger_tx_index; this is the SemInv fuzz input dynamically executed to the event, not internal EVM call-edge coverage."
+  },
+  "source_level_path_recovery": {
+    "events_with_function_sequence_node_in_direct_static_callgraph": 66,
+    "events_matching_only_test_root_function": 52,
+    "test_root_only_event_rate_percent": 17.63,
+    "events_with_nonroot_function_node_in_direct_callgraph": 14,
+    "events_with_attack_like_nonroot_function_node": 13,
+    "events_with_callback_name_candidate": 51,
+    "callback_name_candidate_event_rate_percent": 17.29,
+    "setup_or_fork_init_location_events": 27,
+    "events_with_infrastructure_function": 89,
+    "setup_or_fork_init_event_rate_percent": 9.15,
+    "infrastructure_function_event_rate_percent": 30.17,
+    "nonroot_static_callgraph_event_rate_percent": 4.75,
+    "attack_like_nonroot_event_rate_percent": 4.41,
+    "top_level_fuzz_selector_count": 1053,
+    "top_level_fuzz_selectors_decoded_from_current_source": 399,
+    "selector_decode_rate_percent": 37.89,
+    "poc_attack_flow_steps_manifest_field_distribution": {
+      "0": 42,
+      "5": 1,
+      "3": 3,
+      "6": 1,
+      "8": 1
+    },
+    "interpretation": "Supplementary source-derived overlap only. The primary witness metric above does not exclude test roots and does not depend on static callgraph reachability."
+  },
+  "reference_path_availability": {
+    "current_foundry_replay_pass_cases": 44,
+    "zero_exit_semiv_cases_in_current_44_replay_pass_set": 34,
+    "saved_replay_logs": 44,
+    "saved_replay_logs_exist": 44,
+    "saved_replay_logs_use_quiet_flag": 44,
+    "saved_replay_logs_with_trace_marker": 0,
+    "foundry_replay_command_records_are_quiet": "Per-case forge.log artifacts use `forge test ... -q`; the saved logs do not include runtime call trees.",
+    "dynamic_poc_call_tree_recovered_from_existing_archive": false
+  },
+  "all_attempts_event_archive": {
+    "raw_event_rows": 334,
+    "invariant_event_rows": 333,
+    "nonzero_exit_event_rows": 39
+  },
+  "limitations": [
+    "The recovered sequence is the SemInv fuzz individual's dynamically executed top-level transaction prefix through the recorded invariant trigger. It is not the original DeFiHackLabs PoC transaction sequence and does not encode internal EVM call edges.",
+    "The primary linkage establishes an observed SemInv invariant witness at a uniquely decoded PoC-declared entrypoint; it is not, by itself, a profit-oracle reproduction result.",
+    "Stored SemInv reproduction validation refers to replay of the SemInv finding under its own validation pipeline; it does not establish that the original DeFiHackLabs profit/state oracle was reproduced.",
+    "Legacy Strong/Partial/Uncovered fields are retained only for provenance and are not used to compute the objective path metrics."
+  ]
+}

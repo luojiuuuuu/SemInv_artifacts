@@ -1,0 +1,144 @@
+tool,case_id,status,exit_code,wall_s,validated,analysis_status,analysis_validated,recovered_terminal_fragment,parseable_snapshots,last_elapsed_s,latest_at_or_before_600_s,matched_frames,instruction_covered,branch_covered,reason
+ItyFuzz,sb001,validation_failed,124,785.9017629623413,False,recovered_terminal_fragment,True,True,250,780.281563287,598.515014382,1,,,Expecting value: line 1 column 2014 (char 2013)
+ItyFuzz,sb002,validation_failed,124,785.8570792675018,False,recovered_terminal_fragment,True,True,305,780.285339273,598.7160032,1,,,"Expecting ',' delimiter: line 1 column 1703 (char 1702)"
+ItyFuzz,sb003,validation_failed,124,785.9136717319489,False,recovered_terminal_fragment,True,True,438,780.7555078,598.478340151,1,,,"Expecting ',' delimiter: line 1 column 1247 (char 1246)"
+ItyFuzz,sb004,validation_failed,124,786.0289173126221,False,recovered_terminal_fragment,True,True,439,780.803272382,597.96904305,1,,,Expecting value: line 1 column 1251 (char 1250)
+ItyFuzz,sb005,watchdog_timeout,124,785.8839869499207,True,valid_observations,True,False,502,782.257886287,598.955144075,1,118,12,
+ItyFuzz,sb006,validation_failed,124,785.861202955246,False,recovered_terminal_fragment,True,True,453,780.454221804,599.729453953,1,,,"Expecting ',' delimiter: line 1 column 1783 (char 1782)"
+ItyFuzz,sb007,validation_failed,124,785.9364895820618,False,recovered_terminal_fragment,True,True,270,780.480957045,597.546146561,1,,,Expecting value: line 1 column 1702 (char 1701)
+ItyFuzz,sb008,validation_failed,124,785.9276571273804,False,recovered_terminal_fragment,True,True,539,782.344089985,597.894552795,1,,,Expecting value: line 1 column 999 (char 998)
+ItyFuzz,sb009,compile_unavailable,,,,no_observations,False,False,0,,,0,,,"SolcError(""parity_wallet_bug_1.sol:18:1: : Source file requires different compiler version (current compiler is 0.4.11+commit.68ef5810.mod.Windows.msvc - note that nightly builds are considered to be strictly less than the released version\npragma solidity 0.4.9; /* originally ^0.4.9, but doesn't compile with ^0.4.11 */\n^--------------------^\n\nparity_wallet_bug_1.sol:417:14: : Unbalanced stack at the end of a block: 1 surplus item(s).\n    assembly {\n             ^\nSpanning multiple lines.\n"")"
+ItyFuzz,sb010,validation_failed,124,785.7341244220734,False,recovered_terminal_fragment,True,True,159,776.92513297,598.611832565,1,,,"Expecting ',' delimiter: line 1 column 11781 (char 11780)"
+ItyFuzz,sb011,completed,0,728.7751767635345,True,valid_observations,True,False,601,726.078733849,599.755786691,1,34,4,
+ItyFuzz,sb012,validation_failed,124,785.7388532161713,False,recovered_terminal_fragment,True,True,278,780.149532907,599.329771345,1,,,Expecting value: line 1 column 1342 (char 1341)
+ItyFuzz,sb013,validation_failed,124,785.8172855377197,False,recovered_terminal_fragment,True,True,470,781.520409526,599.716205504,1,,,"Expecting ',' delimiter: line 1 column 161 (char 160)"
+ItyFuzz,sb014,completed,0,736.6447417736053,True,valid_observations,True,False,601,734.355457336,598.925777805,1,36,4,
+ItyFuzz,sb015,validation_failed,124,785.8648006916046,False,recovered_terminal_fragment,True,True,554,782.475556334,598.688059312,1,,,Unterminated string starting at: line 1 column 413 (char 412)
+ItyFuzz,sb016,validation_failed,124,785.830858707428,False,recovered_terminal_fragment,True,True,511,782.197155794,599.819497542,1,,,Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+ItyFuzz,sb017,validation_failed,124,785.7743337154388,False,recovered_terminal_fragment,True,True,535,781.338808894,598.798368607,1,,,Unterminated string starting at: line 1 column 290 (char 289)
+ItyFuzz,sb018,validation_failed,124,785.8132877349854,False,recovered_terminal_fragment,True,True,528,780.006885947,599.79350869,1,,,"Expecting ',' delimiter: line 1 column 1550 (char 1549)"
+ItyFuzz,sb019,validation_failed,124,785.7146561145782,False,recovered_terminal_fragment,True,True,120,771.161871351,591.543126989,1,,,"Expecting ',' delimiter: line 1 column 6062 (char 6061)"
+ItyFuzz,sb020,validation_failed,124,785.7157802581787,False,recovered_terminal_fragment,True,True,358,781.558529767,598.901187724,1,,,Expecting value: line 1 column 1178 (char 1177)
+ItyFuzz,sb021,watchdog_timeout,124,783.631078004837,True,valid_observations,True,False,601,782.253445597,598.684281806,1,64,4,
+ItyFuzz,sb022,completed,0,615.7397739887238,True,valid_observations,True,False,601,614.32930783,597.444571823,1,52,5,
+ItyFuzz,sb023,completed,0,618.783774137497,True,valid_observations,True,False,601,617.760939914,594.000164066,1,45,5,
+ItyFuzz,sb024,validation_failed,124,785.7754232883453,False,recovered_terminal_fragment,True,True,529,765.20758668,589.527595555,1,,,Expecting value: line 1 column 829 (char 828)
+ItyFuzz,sb025,validation_failed,124,785.7967488765717,False,recovered_terminal_fragment,True,True,465,781.504264423,596.596405376,1,,,"Expecting ',' delimiter: line 1 column 940 (char 939)"
+ItyFuzz,sb026,validation_failed,124,786.1780836582184,False,recovered_terminal_fragment,True,True,593,779.991819461,599.474963639,1,,,Expecting value: line 1 column 872 (char 871)
+ItyFuzz,sb027,validation_failed,124,785.8818581104279,False,recovered_terminal_fragment,True,True,543,780.783217315,599.229491355,1,,,"Expecting ',' delimiter: line 1 column 1140 (char 1139)"
+ItyFuzz,sb028,validation_failed,124,785.781653881073,False,recovered_terminal_fragment,True,True,453,780.418813689,598.487846279,1,,,"Expecting ',' delimiter: line 1 column 1169 (char 1168)"
+ItyFuzz,sb029,validation_failed,124,785.8769202232361,False,recovered_terminal_fragment,True,True,544,782.071073359,599.392658939,1,,,"Expecting ',' delimiter: line 1 column 965 (char 964)"
+ItyFuzz,sb030,validation_failed,124,785.8476638793945,False,recovered_terminal_fragment,True,True,576,780.294636852,599.396076802,1,,,"Expecting ',' delimiter: line 1 column 1258 (char 1257)"
+ItyFuzz,sb031,validation_failed,124,785.8176324367523,False,recovered_terminal_fragment,True,True,264,779.013133104,598.857430265,1,,,Unterminated string starting at: line 1 column 2068 (char 2067)
+ItyFuzz,sb032,validation_failed,124,785.8310654163361,False,recovered_terminal_fragment,True,True,306,778.328505274,598.26917269,1,,,"Expecting ',' delimiter: line 1 column 1654 (char 1653)"
+ItyFuzz,sb033,validation_failed,0,606.9194266796112,False,target_unmatched,False,False,601,604.576968544,599.162225866,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb034,validation_failed,124,785.868903875351,False,recovered_terminal_fragment,True,True,36,745.31609385,591.833111089,1,,,"Expecting ',' delimiter: line 1 column 17141 (char 17140)"
+ItyFuzz,sb035,completed,0,723.5736978054047,True,valid_observations,True,False,601,720.11472349,599.294443915,1,27,3,
+ItyFuzz,sb036,validation_failed,0,601.8861801624298,False,target_unmatched,False,False,601,600.209030843,599.584221296,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb037,validation_failed,124,785.8155944347382,False,recovered_terminal_fragment,True,True,297,780.115477336,598.586071977,1,,,Expecting value: line 1 column 2304 (char 2303)
+ItyFuzz,sb038,validation_failed,124,785.8129985332489,False,recovered_terminal_fragment,True,True,306,780.975643634,599.185954562,1,,,Expecting value: line 1 column 331 (char 330)
+ItyFuzz,sb039,validation_failed,0,602.6686964035034,False,target_unmatched,False,False,601,600.000103634,599.000205655,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb040,validation_failed,0,2.2219595909118652,False,target_unmatched,False,False,1,3.83e-07,3.83e-07,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb041,validation_failed,124,785.831246137619,False,recovered_terminal_fragment,True,True,119,768.924871765,594.396897913,1,,,"Expecting ',' delimiter: line 1 column 22167 (char 22166)"
+ItyFuzz,sb042,validation_failed,124,785.7916216850281,False,recovered_terminal_fragment,True,True,476,781.725087825,598.708651703,1,,,Expecting value: line 1 column 1077 (char 1076)
+ItyFuzz,sb043,validation_failed,124,785.7995862960815,False,recovered_terminal_fragment,True,True,282,781.192679956,599.311697812,1,,,Expecting property name enclosed in double quotes: line 1 column 146 (char 145)
+ItyFuzz,sb044,validation_failed,124,785.8166449069977,False,recovered_terminal_fragment,True,True,299,779.654045167,597.728870814,1,,,"Expecting ',' delimiter: line 1 column 1920 (char 1919)"
+ItyFuzz,sb045,validation_failed,124,785.8330037593842,False,recovered_terminal_fragment,True,True,241,777.898753406,597.070772731,1,,,Expecting value: line 1 column 1793 (char 1792)
+ItyFuzz,sb046,validation_failed,124,786.0014181137085,False,recovered_terminal_fragment,True,True,469,780.810597726,599.79034106,1,,,Expecting property name enclosed in double quotes: line 1 column 120 (char 119)
+ItyFuzz,sb047,validation_failed,124,785.8974931240082,False,recovered_terminal_fragment,True,True,295,780.03698362,598.025075812,1,,,Unterminated string starting at: line 1 column 399 (char 398)
+ItyFuzz,sb048,watchdog_timeout,124,785.9817214012146,True,valid_observations,True,False,463,781.276722767,598.889147688,1,56,4,
+ItyFuzz,sb049,validation_failed,124,785.9665050506592,False,recovered_terminal_fragment,True,True,247,778.634967942,597.611480947,1,,,Expecting value: line 1 column 1804 (char 1803)
+ItyFuzz,sb050,validation_failed,124,785.8384704589844,False,recovered_terminal_fragment,True,True,304,776.813132022,599.867652643,1,,,Expecting value: line 1 column 2381 (char 2380)
+ItyFuzz,sb051,validation_failed,124,785.8368101119995,False,recovered_terminal_fragment,True,True,406,780.515392085,599.027551285,1,,,Expecting value: line 1 column 2262 (char 2261)
+ItyFuzz,sb052,validation_failed,124,785.7337810993195,False,recovered_terminal_fragment,True,True,193,778.49126863,598.932583576,1,,,"Expecting ',' delimiter: line 1 column 2488 (char 2487)"
+ItyFuzz,sb053,validation_failed,124,785.7705760002136,False,recovered_terminal_fragment,True,True,286,779.598921605,599.324959973,1,,,"Expecting ',' delimiter: line 1 column 1747 (char 1746)"
+ItyFuzz,sb054,validation_failed,124,785.774245262146,False,recovered_terminal_fragment,True,True,317,778.045255995,598.568790488,1,,,Expecting value: line 1 column 2655 (char 2654)
+ItyFuzz,sb055,validation_failed,124,785.8019487857819,False,recovered_terminal_fragment,True,True,268,778.320100269,596.87685526,1,,,Expecting value: line 1 column 2783 (char 2782)
+ItyFuzz,sb056,validation_failed,124,785.8766176700592,False,recovered_terminal_fragment,True,True,434,780.247238368,599.651892501,1,,,Expecting value: line 1 column 132 (char 131)
+ItyFuzz,sb057,validation_failed,124,785.7794210910797,False,recovered_terminal_fragment,True,True,270,778.789472507,598.922710108,1,,,"Expecting ',' delimiter: line 1 column 3275 (char 3274)"
+ItyFuzz,sb058,validation_failed,124,785.8309979438782,False,recovered_terminal_fragment,True,True,466,779.372022345,599.825983754,1,,,Expecting value: line 1 column 2828 (char 2827)
+ItyFuzz,sb059,validation_failed,124,785.7620968818665,False,recovered_terminal_fragment,True,True,250,777.664774766,595.868330375,1,,,Expecting value: line 1 column 2946 (char 2945)
+ItyFuzz,sb060,validation_failed,124,785.9184808731079,False,recovered_terminal_fragment,True,True,469,779.492437728,599.80976333,1,,,"Expecting ',' delimiter: line 1 column 2597 (char 2596)"
+ItyFuzz,sb061,validation_failed,124,785.7527663707733,False,recovered_terminal_fragment,True,True,523,781.668839412,599.987760927,1,,,Unterminated string starting at: line 1 column 153 (char 152)
+ItyFuzz,sb062,tool_failed,101,1.5356841087341309,False,no_observations,False,False,0,,,0,,,
+ItyFuzz,sb063,validation_failed,124,785.9969718456268,False,recovered_terminal_fragment,True,True,227,776.723755868,599.463285969,1,,,"Expecting ',' delimiter: line 1 column 2603 (char 2602)"
+ItyFuzz,sb064,validation_failed,124,786.8731954097748,False,recovered_terminal_fragment,True,True,381,777.834104916,598.244805653,1,,,Expecting value: line 1 column 2166 (char 2165)
+ItyFuzz,sb065,validation_failed,124,785.874668598175,False,recovered_terminal_fragment,True,True,413,779.278790689,599.250757329,1,,,"Expecting ',' delimiter: line 1 column 2285 (char 2284)"
+ItyFuzz,sb066,validation_failed,124,785.8373765945435,False,recovered_terminal_fragment,True,True,400,779.845836181,599.469620189,1,,,"Expecting ',' delimiter: line 1 column 2298 (char 2297)"
+ItyFuzz,sb067,validation_failed,124,785.8551766872406,False,recovered_terminal_fragment,True,True,425,780.836646468,598.360259167,1,,,"Expecting ',' delimiter: line 1 column 2768 (char 2767)"
+ItyFuzz,sb068,validation_failed,124,785.6928677558899,False,recovered_terminal_fragment,True,True,269,779.783759993,597.519746879,1,,,Expecting value: line 1 column 2751 (char 2750)
+ItyFuzz,sb069,validation_failed,124,786.8066842556,False,recovered_terminal_fragment,True,True,403,781.6644412,598.027690346,1,,,Expecting value: line 1 column 45 (char 44)
+ItyFuzz,sb070,validation_failed,124,785.6859858036041,False,recovered_terminal_fragment,True,True,416,780.586377031,598.493027177,1,,,Expecting value: line 1 column 2053 (char 2052)
+ItyFuzz,sb071,validation_failed,124,785.8370785713196,False,recovered_terminal_fragment,True,True,215,767.33634012,599.340392781,1,,,"Expecting ',' delimiter: line 1 column 2024 (char 2023)"
+ItyFuzz,sb072,validation_failed,124,786.0323054790497,False,recovered_terminal_fragment,True,True,417,779.964526657,599.995023369,1,,,"Expecting ',' delimiter: line 1 column 2950 (char 2949)"
+ItyFuzz,sb073,validation_failed,124,785.7922570705414,False,recovered_terminal_fragment,True,True,420,781.182814532,598.574856677,1,,,Expecting value: line 1 column 132 (char 131)
+ItyFuzz,sb074,validation_failed,124,785.8335256576538,False,recovered_terminal_fragment,True,True,234,779.343691708,599.650089972,1,,,"Expecting ',' delimiter: line 1 column 2375 (char 2374)"
+ItyFuzz,sb075,validation_failed,124,785.9341349601746,False,recovered_terminal_fragment,True,True,442,782.2045243,599.550101566,1,,,Expecting value: line 1 column 11 (char 10)
+ItyFuzz,sb076,validation_failed,124,785.8637354373932,False,recovered_terminal_fragment,True,True,451,780.592072589,599.653212286,1,,,"Expecting ',' delimiter: line 1 column 186 (char 185)"
+ItyFuzz,sb077,validation_failed,124,785.766375541687,False,recovered_terminal_fragment,True,True,313,780.710703032,599.340249369,1,,,Unterminated string starting at: line 1 column 120 (char 119)
+ItyFuzz,sb078,validation_failed,124,785.7262718677521,False,recovered_terminal_fragment,True,True,316,780.075646748,599.316789678,1,,,"Expecting ',' delimiter: line 1 column 1503 (char 1502)"
+ItyFuzz,sb079,validation_failed,124,785.8302185535431,False,recovered_terminal_fragment,True,True,322,779.686068865,599.900503808,1,,,"Expecting ',' delimiter: line 1 column 1565 (char 1564)"
+ItyFuzz,sb080,validation_failed,124,785.7643868923187,False,recovered_terminal_fragment,True,True,396,780.722890571,599.466935176,1,,,"Expecting ',' delimiter: line 1 column 1452 (char 1451)"
+ItyFuzz,sb081,validation_failed,124,785.7511088848114,False,recovered_terminal_fragment,True,True,435,781.93349993,598.52313647,1,,,"Expecting ',' delimiter: line 1 column 1165 (char 1164)"
+ItyFuzz,sb082,validation_failed,124,785.7713112831116,False,recovered_terminal_fragment,True,True,341,781.460913683,598.220569566,1,,,Unterminated string starting at: line 1 column 352 (char 351)
+ItyFuzz,sb083,validation_failed,124,785.7332525253296,False,recovered_terminal_fragment,True,True,485,780.719818758,599.056913027,1,,,"Expecting ',' delimiter: line 1 column 1223 (char 1222)"
+ItyFuzz,sb084,validation_failed,124,785.7657585144043,False,recovered_terminal_fragment,True,True,502,781.194102872,598.838683887,1,,,Expecting value: line 1 column 1511 (char 1510)
+ItyFuzz,sb085,validation_failed,124,785.7815685272217,False,recovered_terminal_fragment,True,True,382,779.465134885,599.408067319,1,,,Expecting value: line 1 column 4642 (char 4641)
+ItyFuzz,sb086,validation_failed,124,785.7434682846069,False,recovered_terminal_fragment,True,True,294,778.978718088,599.520021854,1,,,Expecting value: line 1 column 1668 (char 1667)
+ItyFuzz,sb087,validation_failed,124,785.7542700767517,False,recovered_terminal_fragment,True,True,528,779.361517106,598.958510437,1,,,"Expecting ',' delimiter: line 1 column 289 (char 288)"
+ItyFuzz,sb088,validation_failed,0,603.5043821334839,False,target_unmatched,False,False,601,600.000207937,599.000161839,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb089,validation_failed,124,785.848132610321,False,recovered_terminal_fragment,True,True,356,779.375033649,599.440810377,1,,,"Expecting ',' delimiter: line 1 column 1400 (char 1399)"
+ItyFuzz,sb090,validation_failed,124,786.0370147228241,False,recovered_terminal_fragment,True,True,592,782.119645393,599.891924489,1,,,Unterminated string starting at: line 1 column 2 (char 1)
+ItyFuzz,sb091,validation_failed,0,2.435131072998047,False,target_unmatched,False,False,1,4.32e-07,4.32e-07,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb092,validation_failed,0,607.8505673408508,False,target_unmatched,False,False,601,604.524302579,599.462478523,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb093,validation_failed,124,785.8070628643036,False,recovered_terminal_fragment,True,True,504,781.183148754,599.392109014,1,,,"Expecting ',' delimiter: line 1 column 833 (char 832)"
+ItyFuzz,sb094,validation_failed,124,785.8556320667267,False,recovered_terminal_fragment,True,True,311,775.867630466,599.210973825,1,,,"Expecting ',' delimiter: line 1 column 371 (char 370)"
+ItyFuzz,sb095,validation_failed,124,785.8737292289734,False,recovered_terminal_fragment,True,True,226,779.324836216,598.567132997,1,,,Expecting ':' delimiter: line 1 column 152 (char 151)
+ItyFuzz,sb096,validation_failed,124,785.798398733139,False,recovered_terminal_fragment,True,True,508,777.902339902,598.16720039,1,,,Expecting value: line 1 column 2725 (char 2724)
+ItyFuzz,sb097,validation_failed,124,785.7342157363892,False,recovered_terminal_fragment,True,True,506,781.147092746,599.078968038,1,,,Expecting value: line 1 column 244 (char 243)
+ItyFuzz,sb098,validation_failed,124,785.7504243850708,False,recovered_terminal_fragment,True,True,473,780.745862968,598.719847208,1,,,Expecting value: line 1 column 1847 (char 1846)
+ItyFuzz,sb099,validation_failed,124,785.7757632732391,False,recovered_terminal_fragment,True,True,240,779.535905567,597.150018081,1,,,Expecting ':' delimiter: line 1 column 183 (char 182)
+ItyFuzz,sb100,validation_failed,124,785.8790118694305,False,recovered_terminal_fragment,True,True,183,776.085156418,596.390097051,1,,,"Expecting ',' delimiter: line 1 column 2241 (char 2240)"
+ItyFuzz,sb101,validation_failed,124,785.8211076259613,False,recovered_terminal_fragment,True,True,244,778.034313001,599.441654667,1,,,"Expecting ',' delimiter: line 1 column 1923 (char 1922)"
+ItyFuzz,sb102,validation_failed,124,785.767555475235,False,recovered_terminal_fragment,True,True,333,781.061896613,599.95770494,1,,,Expecting value: line 1 column 1819 (char 1818)
+ItyFuzz,sb103,validation_failed,124,785.7774438858032,False,recovered_terminal_fragment,True,True,252,778.05817435,596.129352495,1,,,Expecting value: line 1 column 2131 (char 2130)
+ItyFuzz,sb104,validation_failed,124,786.6123585700989,False,recovered_terminal_fragment,True,True,401,779.807797739,599.848116303,1,,,Expecting value: line 1 column 2237 (char 2236)
+ItyFuzz,sb105,validation_failed,124,785.7939183712006,False,recovered_terminal_fragment,True,True,419,780.365160765,598.712905567,1,,,Expecting value: line 1 column 418 (char 417)
+ItyFuzz,sb106,validation_failed,124,785.8936493396759,False,recovered_terminal_fragment,True,True,362,778.575157295,599.267789431,1,,,Expecting property name enclosed in double quotes: line 1 column 2111 (char 2110)
+ItyFuzz,sb107,validation_failed,124,785.8492588996887,False,recovered_terminal_fragment,True,True,339,779.474448479,597.890127684,1,,,Expecting value: line 1 column 2773 (char 2772)
+ItyFuzz,sb108,validation_failed,124,785.7853469848633,False,recovered_terminal_fragment,True,True,342,777.01424718,599.01195541,1,,,Expecting value: line 1 column 24185 (char 24184)
+ItyFuzz,sb109,validation_failed,124,785.7658097743988,False,recovered_terminal_fragment,True,True,239,779.220414774,599.048854626,1,,,"Expecting ',' delimiter: line 1 column 1987 (char 1986)"
+ItyFuzz,sb110,validation_failed,124,786.3974688053131,False,recovered_terminal_fragment,True,True,528,782.608158578,598.75415629,1,,,Unterminated string starting at: line 1 column 45 (char 44)
+ItyFuzz,sb111,validation_failed,124,785.8585228919983,False,recovered_terminal_fragment,True,True,484,778.140500711,581.605219059,1,,,Expecting property name enclosed in double quotes: line 1 column 358 (char 357)
+ItyFuzz,sb112,validation_failed,0,606.6448879241943,False,target_unmatched,False,False,601,603.769350339,599.859357195,0,,,Observer never matched the compiled target runtime
+ItyFuzz,sb113,validation_failed,124,785.7565758228302,False,recovered_terminal_fragment,True,True,236,779.201067277,598.069138125,1,,,Expecting value: line 1 column 1988 (char 1987)
+ItyFuzz,sb114,validation_failed,124,785.7927265167236,False,recovered_terminal_fragment,True,True,101,772.848622697,598.987415764,1,,,Expecting value: line 1 column 6596 (char 6595)
+ItyFuzz,sb115,validation_failed,124,785.8254914283752,False,recovered_terminal_fragment,True,True,167,776.566048206,595.173340546,1,,,Expecting property name enclosed in double quotes: line 1 column 404 (char 403)
+ItyFuzz,sb116,validation_failed,124,785.7997894287109,False,recovered_terminal_fragment,True,True,470,781.321902182,599.806391648,1,,,Expecting property name enclosed in double quotes: line 1 column 291 (char 290)
+ItyFuzz,sb117,validation_failed,124,785.8394260406494,False,recovered_terminal_fragment,True,True,97,772.852268564,593.839636355,1,,,"Expecting ',' delimiter: line 1 column 15001 (char 15000)"
+ItyFuzz,sb118,validation_failed,124,785.7670090198517,False,recovered_terminal_fragment,True,True,330,778.366020576,599.094164156,1,,,"Expecting ',' delimiter: line 1 column 2681 (char 2680)"
+ItyFuzz,sb119,validation_failed,124,785.7176523208618,False,recovered_terminal_fragment,True,True,218,777.895702745,599.851750583,1,,,"Expecting ',' delimiter: line 1 column 1980 (char 1979)"
+ItyFuzz,sb120,validation_failed,124,785.8448216915131,False,recovered_terminal_fragment,True,True,155,777.065151563,599.857492414,1,,,"Expecting ',' delimiter: line 1 column 1770 (char 1769)"
+ItyFuzz,sb121,tool_failed,101,1.5272743701934814,False,no_observations,False,False,0,,,0,,,
+ItyFuzz,sb122,validation_failed,124,785.8133723735809,False,recovered_terminal_fragment,True,True,486,781.601072595,598.869987305,1,,,Unterminated string starting at: line 1 column 230 (char 229)
+ItyFuzz,sb123,validation_failed,124,785.8464057445526,False,recovered_terminal_fragment,True,True,497,779.784327447,599.89459565,1,,,"Expecting ',' delimiter: line 1 column 1611 (char 1610)"
+ItyFuzz,sb124,completed,0,602.8804528713226,True,valid_observations,True,False,601,600.198899933,599.000387515,1,487,50,
+ItyFuzz,sb125,completed,0,602.0358724594116,True,valid_observations,True,False,601,600.000263835,599.000195534,1,104,6,
+ItyFuzz,sb126,completed,0,634.8502733707428,True,valid_observations,True,False,601,633.334397875,599.967251433,1,355,27,
+ItyFuzz,sb127,completed,0,602.2754244804382,True,valid_observations,True,False,601,600.148031281,599.000113961,1,355,27,
+ItyFuzz,sb128,completed,0,601.2826392650604,True,valid_observations,True,False,601,600.000397337,599.25081245,1,243,15,
+ItyFuzz,sb129,completed,0,601.57794880867,True,valid_observations,True,False,601,600.228436796,599.00049491,1,283,9,
+ItyFuzz,sb130,completed,0,601.0532333850861,True,valid_observations,True,False,601,600.000175531,599.000164154,1,243,15,
+ItyFuzz,sb131,completed,0,663.9709820747375,True,valid_observations,True,False,601,661.694251678,599.919096951,1,1375,72,
+ItyFuzz,sb132,validation_failed,124,785.6385037899017,False,recovered_terminal_fragment,True,True,461,780.894814958,597.110984979,1,,,"Expecting ',' delimiter: line 1 column 2043 (char 2042)"
+ItyFuzz,sb133,validation_failed,124,785.7790629863739,False,recovered_terminal_fragment,True,True,335,776.394708516,598.315328585,1,,,"Expecting ',' delimiter: line 1 column 2681 (char 2680)"
+ItyFuzz,sb134,completed,0,647.2755298614502,True,valid_observations,True,False,601,646.003300474,599.926041946,1,297,8,
+ItyFuzz,sb135,completed,0,602.0170769691467,True,valid_observations,True,False,601,600.000203877,599.000154171,1,350,26,
+ItyFuzz,sb136,completed,0,600.810863494873,True,valid_observations,True,False,601,600.000152713,599.00040369,1,131,6,
+ItyFuzz,sb137,completed,0,600.7750909328461,True,valid_observations,True,False,601,600.000208205,599.000273097,1,90,5,
+ItyFuzz,sb138,validation_failed,124,785.6549253463745,False,recovered_terminal_fragment,True,True,515,778.364044491,598.443638218,1,,,Expecting value: line 1 column 2519 (char 2518)
+ItyFuzz,sb139,validation_failed,124,785.6903004646301,False,recovered_terminal_fragment,True,True,423,778.388537717,597.988595012,1,,,Expecting value: line 1 column 4735 (char 4734)
+ItyFuzz,sb140,validation_failed,124,785.6451256275177,False,recovered_terminal_fragment,True,True,411,783.418835957,599.750714515,1,,,Expecting value: line 1 column 8994 (char 8993)
+ItyFuzz,sb141,completed,0,601.9775602817535,True,valid_observations,True,False,601,600.000126139,599.000154796,1,147,12,
+ItyFuzz,sb142,completed,0,663.6724214553833,True,valid_observations,True,False,601,662.719608615,565.117877498,1,81,4,
+ItyFuzz,sb143,completed,0,609.4808497428894,True,valid_observations,True,False,601,608.698742047,599.991899282,1,110,10,

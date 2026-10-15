@@ -1,0 +1,4 @@
+dataset,standard,tool,contracts,mapping_rows,gt_violations,tp,fp,fn,precision,recall,f1,scope_status
+SymGPT Table 6 artifact,ERC1155,SymGPT,5,6,5,5,0,0,1.000000,1.000000,1.000000,unfiltered_author_artifact_anchor
+SymGPT Table 6 artifact,ERC20,SymGPT,30,154,139,137,1,2,0.992754,0.985612,0.989170,unfiltered_author_artifact_anchor
+SymGPT Table 6 artifact,ERC721,SymGPT,5,16,15,15,0,0,1.000000,1.000000,1.000000,unfiltered_author_artifact_anchor

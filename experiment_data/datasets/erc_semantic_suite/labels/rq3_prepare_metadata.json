@@ -1,0 +1,45 @@
+{
+  "mapping_path": "<baseline-root>\\symgpt-main\\evaluation\\table6_mapping.csv",
+  "workbook_path": "<baseline-root>\\symgpt-main\\SymGPT OOPSLA2026.xlsx",
+  "table6_columns": {
+    "symgpt_tp": 11,
+    "symgpt_fp": 12,
+    "symgpt_fn": 13
+  },
+  "generated_files": {
+    "raw_symgpt_table6_rows.csv": 176,
+    "raw_symgpt_rule_corpus.csv": 64,
+    "symgpt_table6_artifact_summary.csv": 3,
+    "rq3_common_scope_seed.csv": 68,
+    "rq3_same_table_result_template.csv": 8,
+    "standard_contract_mutation_candidates.csv": 17
+  },
+  "table6_mapping_rows": 176,
+  "table6_rows_by_standard": {
+    "ERC20": 154,
+    "ERC721": 16,
+    "ERC1155": 6
+  },
+  "table6_contracts_by_standard": {
+    "ERC1155": 5,
+    "ERC20": 30,
+    "ERC721": 5
+  },
+  "erc20_erc721_unfiltered_gt_violations": 154,
+  "erc20_erc721_unfiltered_tp": 152,
+  "erc20_erc721_unfiltered_fp": 1,
+  "erc20_erc721_unfiltered_fn": 2,
+  "rule_counts_by_standard_kind_has_sym": {
+    "ERC20|assign|True": 1,
+    "ERC20|emit|True": 8,
+    "ERC20|return|True": 2,
+    "ERC20|semantic_return|False": 9,
+    "ERC20|throw|True": 4,
+    "ERC721|assign|True": 1,
+    "ERC721|call|True": 2,
+    "ERC721|emit|True": 15,
+    "ERC721|semantic_return|False": 4,
+    "ERC721|throw|True": 18
+  },
+  "common_scope_seed_status": "annotation seed only; not a frozen common-executable denominator"
+}

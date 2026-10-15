@@ -1,0 +1,5 @@
+﻿baseline,scope,metric,N,seminv_mean,baseline_mean
+ConFuzzius,same_file_target_native_context_only,code,99,85.74363636363641,86.91181818181825
+ConFuzzius,same_file_target_native_context_only,branch,99,87.30171717171714,84.63868686868689
+ItyFuzz,same_file_target_native_context_only,code,116,84.77431034482763,67.43873044331792
+ItyFuzz,same_file_target_native_context_only,branch,116,86.82,58.90840274301053

@@ -1,0 +1,16 @@
+{
+  "input": "<seminv-workspace>\\outputs\\rq1_T_300plus600_20261013",
+  "unit": "source file with all category decisions",
+  "paired": true,
+  "stratified": false,
+  "interval": "pointwise percentile 95%, linear quantile",
+  "resamples": 10000,
+  "seed": 20261013,
+  "numpy": "1.22.3",
+  "fixed_predictions_only": true,
+  "models_fuzzer_seed_variance": false,
+  "corrected_for_rule_selection": false,
+  "multiplicity_adjusted": false,
+  "fuzz_executed": false,
+  "scorer_predictions_changed": false
+}

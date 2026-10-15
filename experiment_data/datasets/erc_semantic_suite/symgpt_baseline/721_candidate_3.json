@@ -1,0 +1,29 @@
+{
+    "sol_file": "benchmark/baseline/721_candidate_3.sol",
+    "contract": {
+        "LicenseCore": [
+            {
+                "erc": "ERC721",
+                "type": "interface",
+                "rule": "event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);",
+                "contract": "LicenseCore",
+                "fn_interface": null,
+                "rid": 0,
+                "tags": [
+                    "event"
+                ]
+            },
+            {
+                "erc": "ERC721",
+                "type": "interface",
+                "rule": "event Approval(address indexed _owner, address indexed _approved, uint256 indexed _tokenId);",
+                "contract": "LicenseCore",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "event"
+                ]
+            }
+        ]
+    }
+}

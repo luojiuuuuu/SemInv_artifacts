@@ -1,0 +1,188 @@
+﻿case_id,category,status,usable,wall_s,started_epoch,ended_epoch,seeds_count,static_wall_s,uir_nonempty,error
+sb001,access_control,completed,True,23.294,1791815579.5760145,1791815602.8705034,3,0.317,True,
+sb002,access_control,completed,True,24.266,1791815579.5691304,1791815603.8352404,5,0.318,True,
+sb003,access_control,completed,True,20.392,1791815604.4852026,1791815624.8774211,0,0.33,True,
+sb004,access_control,completed,True,20.509,1791815604.8489957,1791815625.3577404,0,0.339,True,
+sb005,access_control,completed,True,23.06,1791815625.8578312,1791815648.9180996,0,0.405,True,
+sb006,access_control,completed,True,23.449,1791815626.2649198,1791815649.7139394,8,0.413,True,
+sb007,access_control,completed,True,28.033,1791815649.4767036,1791815677.5101306,8,0.343,True,
+sb008,access_control,completed,True,20.785,1791815650.301867,1791815671.0866754,2,0.404,True,
+sb009,access_control,preparation_incomplete,False,20.792,1791815671.611384,1791815692.40329,0,,False,"forge test (json) 失败且判定为 ERROR（未进入正常测试流程）。完整诊断见 compile_error.txt
+
+Error: Encountered invalid solc version in src\parity_wallet_bug_1.sol: No solc version exists that matches the version requirement: =0.4.9
+Encountered invalid solc version in src\parity_wallet_bug_1.sol: No solc version exists that matches the version requirement: =0.4.9"
+sb010,access_control,completed,True,27.9,1791815677.9790936,1791815705.8787544,14,2.113,True,
+sb011,access_control,completed,True,23.632,1791815692.5267026,1791815716.1590269,1,0.339,True,
+sb012,access_control,completed,True,19.74,1791815708.1190453,1791815727.8586051,0,0.362,True,
+sb013,access_control,completed,True,37.138,1791815716.6229885,1791815753.761276,10,2.124,True,
+sb014,access_control,completed,True,16.962,1791815728.3469195,1791815745.3093786,0,0.39,True,
+sb015,access_control,completed,True,16.26,1791815745.8390226,1791815762.0985355,6,0.317,True,
+sb016,access_control,completed,True,26.102,1791815755.9983363,1791815782.100067,2,0.384,True,
+sb017,access_control,completed,True,26.747,1791815762.8369224,1791815789.5835328,2,0.308,True,
+sb018,access_control,completed,True,29.384,1791815782.6361718,1791815812.0196726,2,0.347,True,
+sb019,arithmetic,completed,True,42.788,1791815789.9941976,1791815832.781887,5,2.187,True,
+sb020,arithmetic,completed,True,29.781,1791815812.4996717,1791815842.2807794,0,0.314,True,
+sb021,arithmetic,completed,True,18.259,1791815835.097164,1791815853.3561835,6,0.358,True,
+sb022,arithmetic,completed,True,17.279,1791815842.7156234,1791815859.9945002,5,0.332,True,
+sb023,arithmetic,completed,True,17.594,1791815853.8306081,1791815871.4248347,5,0.326,True,
+sb024,arithmetic,completed,True,15.823,1791815860.452014,1791815876.2748597,6,0.342,True,
+sb025,arithmetic,completed,True,17.0,1791815871.861633,1791815888.8618093,6,0.34,True,
+sb026,arithmetic,completed,True,17.086,1791815876.7797546,1791815893.8661492,6,0.333,True,
+sb027,arithmetic,completed,True,17.553,1791815889.3682892,1791815906.9215364,4,0.316,True,
+sb028,arithmetic,completed,True,17.37,1791815894.3143785,1791815911.6848574,7,0.364,True,
+sb029,arithmetic,completed,True,18.15,1791815907.3669991,1791815925.5170488,5,0.365,True,
+sb030,arithmetic,completed,True,20.537,1791815912.356036,1791815932.8931916,14,0.34,True,
+sb031,arithmetic,completed,True,27.007,1791815926.018929,1791815953.0255127,5,0.344,True,
+sb032,arithmetic,completed,True,19.243,1791815933.3817441,1791815952.6249652,9,0.32,True,
+sb033,arithmetic,completed,True,19.97,1791815953.1564853,1791815973.1264248,0,0.349,True,
+sb034,bad_randomness,completed,True,41.496,1791815953.5040245,1791815995.000449,4,2.34,True,
+sb035,bad_randomness,completed,True,34.288,1791815973.6390886,1791816007.9275417,0,2.407,True,
+sb036,bad_randomness,completed,True,19.962,1791815997.474246,1791816017.4366367,1,2.193,True,
+sb037,bad_randomness,completed,True,32.878,1791816010.5138578,1791816043.3917713,0,2.311,True,
+sb038,bad_randomness,completed,True,27.184,1791816032.5750232,1791816059.7590168,10,2.209,True,
+sb039,bad_randomness,completed,True,24.29,1791816045.8337288,1791816070.123636,1,2.367,True,
+sb040,bad_randomness,untestable,False,,,,,,,
+sb041,bad_randomness,completed,True,55.059,1791816062.1005988,1791816117.1599965,21,2.57,True,
+sb042,denial_of_service,completed,True,24.73,1791816072.6250048,1791816097.3553462,0,2.222,True,
+sb043,denial_of_service,completed,True,24.523,1791816099.713954,1791816124.2364714,0,0.359,True,
+sb044,denial_of_service,completed,True,24.385,1791816119.8673396,1791816144.2526994,7,0.378,True,
+sb045,denial_of_service,completed,True,19.58,1791816124.7146487,1791816144.2947352,0,0.377,True,
+sb046,denial_of_service,completed,True,29.981,1791816144.8960404,1791816174.877214,4,2.263,True,
+sb047,denial_of_service,completed,True,23.926,1791816144.8935313,1791816168.8197095,1,2.187,True,
+sb048,front_running,completed,True,29.831,1791816171.1459446,1791816200.9767203,10,2.294,True,
+sb049,front_running,completed,True,19.876,1791816177.2581115,1791816197.1338868,0,0.313,True,
+sb050,front_running,completed,True,27.761,1791816197.5596204,1791816225.320554,1,0.301,True,
+sb051,front_running,completed,True,22.791,1791816203.391534,1791816226.1825001,3,2.282,True,
+sb052,other,completed,True,35.138,1791816225.7402086,1791816260.8786397,3,2.2,True,
+sb053,other,completed,True,17.619,1791816228.6028864,1791816246.2214131,3,0.35,True,
+sb054,other,completed,True,26.471,1791816246.7251277,1791816273.1961467,3,2.163,True,
+sb055,reentrancy,completed,True,25.529,1791816263.1988728,1791816288.7279356,8,0.362,True,
+sb056,reentrancy,completed,True,24.0,1791816275.4772236,1791816299.477611,4,0.318,True,
+sb057,reentrancy,completed,True,27.898,1791816289.2264483,1791816317.124935,6,0.329,True,
+sb058,reentrancy,completed,True,24.18,1791816299.9010499,1791816324.080645,8,0.369,True,
+sb059,reentrancy,completed,True,30.924,1791816317.5718048,1791816348.4962475,6,0.328,True,
+sb060,reentrancy,completed,True,38.547,1791816324.5992143,1791816363.1458123,4,2.137,True,
+sb061,reentrancy,completed,True,33.242,1791816348.9424324,1791816382.1846833,1,0.306,True,
+sb062,reentrancy,completed,True,21.275,1791816365.3996646,1791816386.6749382,3,0.395,True,
+sb063,reentrancy,completed,True,36.166,1791816382.5993614,1791816418.7649386,2,0.305,True,
+sb064,reentrancy,completed,True,20.821,1791816387.2041924,1791816408.0251315,6,0.343,True,
+sb065,reentrancy,completed,True,31.321,1791816408.4823549,1791816439.8029318,2,0.318,True,
+sb066,reentrancy,completed,True,23.595,1791816419.1983821,1791816442.79387,6,0.334,True,
+sb067,reentrancy,completed,True,32.608,1791816440.229989,1791816472.837509,5,0.346,True,
+sb068,reentrancy,completed,True,27.293,1791816443.2470574,1791816470.5399835,8,0.317,True,
+sb069,reentrancy,completed,True,22.764,1791816470.9662066,1791816493.7305622,7,0.322,True,
+sb070,reentrancy,completed,True,23.345,1791816473.303015,1791816496.6482162,5,0.336,True,
+sb071,reentrancy,completed,True,26.476,1791816494.160758,1791816520.6364005,6,0.391,True,
+sb072,reentrancy,completed,True,35.578,1791816497.1048698,1791816532.6831555,3,0.313,True,
+sb073,reentrancy,completed,True,33.466,1791816521.1675892,1791816554.6336706,2,0.334,True,
+sb074,reentrancy,completed,True,35.48,1791816533.1060536,1791816568.5857353,1,0.358,True,
+sb075,reentrancy,completed,True,23.351,1791816555.082752,1791816578.4340043,4,0.341,True,
+sb076,reentrancy,completed,True,32.94,1791816569.0621803,1791816602.0022516,3,0.359,True,
+sb077,reentrancy,completed,True,22.397,1791816578.8846262,1791816601.2811494,2,0.318,True,
+sb078,reentrancy,completed,True,26.353,1791816601.7262726,1791816628.0796752,11,0.329,True,
+sb079,reentrancy,completed,True,26.037,1791816602.4798577,1791816628.5166998,1,2.355,True,
+sb080,reentrancy,completed,True,16.735,1791816628.5362542,1791816645.2713902,6,2.02,True,
+sb081,reentrancy,completed,True,19.394,1791816630.997919,1791816650.3921475,0,0.391,True,
+sb082,reentrancy,completed,True,21.308,1791816647.4163382,1791816668.7242258,0,2.0,True,
+sb083,reentrancy,completed,True,23.846,1791816650.9362893,1791816674.7824075,5,0.336,True,
+sb084,reentrancy,completed,True,22.664,1791816670.832784,1791816693.4968476,10,2.201,True,
+sb085,reentrancy,completed,True,31.95,1791816675.2414606,1791816707.191078,12,2.082,True,
+sb086,short_addresses,completed,True,20.829,1791816695.819013,1791816716.6477225,11,0.324,True,
+sb087,time_manipulation,completed,True,22.044,1791816709.3820283,1791816731.425889,0,2.265,True,
+sb088,time_manipulation,completed,True,41.164,1791816717.086721,1791816758.2503805,0,1.877,True,
+sb089,time_manipulation,completed,True,17.202,1791816733.8081758,1791816751.0100043,2,2.025,True,
+sb090,time_manipulation,completed,True,17.322,1791816753.1500363,1791816770.4716232,0,0.356,True,
+sb091,time_manipulation,completed,True,15.245,1791816760.2257931,1791816775.4708447,0,0.318,True,
+sb092,unchecked_low_level_calls,completed,True,67.11,1791816770.9547777,1791816838.0651708,0,1.825,True,
+sb093,unchecked_low_level_calls,completed,True,15.557,1791816775.9075,1791816791.4641478,3,2.289,True,
+sb094,unchecked_low_level_calls,completed,True,74.57,1791816793.8869803,1791816868.4569013,18,2.07,True,
+sb095,unchecked_low_level_calls,completed,True,19.551,1791816839.995429,1791816859.5461533,0,2.274,True,
+sb096,unchecked_low_level_calls,completed,True,37.878,1791816861.9701068,1791816899.8485181,3,1.911,True,
+sb097,unchecked_low_level_calls,completed,True,37.094,1791816870.6518738,1791816907.7455418,5,15.689,True,
+sb098,unchecked_low_level_calls,completed,True,39.778,1791816901.87919,1791816941.6570165,0,2.08,True,
+sb099,unchecked_low_level_calls,completed,True,27.493,1791816923.6182625,1791816951.11089,0,1.944,True,
+sb100,unchecked_low_level_calls,completed,True,17.718,1791816943.903615,1791816961.6213238,0,1.811,True,
+sb101,unchecked_low_level_calls,completed,True,24.915,1791816953.1677613,1791816978.0830977,0,2.025,True,
+sb102,unchecked_low_level_calls,completed,True,20.557,1791816963.5443246,1791816984.1016989,0,2.045,True,
+sb103,unchecked_low_level_calls,completed,True,15.281,1791816980.2156737,1791816995.4969978,0,2.216,True,
+sb104,unchecked_low_level_calls,completed,True,22.333,1791816986.2739701,1791817008.6069188,5,2.15,True,
+sb105,unchecked_low_level_calls,completed,True,25.094,1791816997.8416462,1791817022.9351943,0,2.095,True,
+sb106,unchecked_low_level_calls,completed,True,27.46,1791817010.9276555,1791817038.387527,2,2.125,True,
+sb107,unchecked_low_level_calls,completed,True,34.708,1791817026.2457383,1791817060.9532797,5,2.045,True,
+sb108,unchecked_low_level_calls,completed,True,67.482,1791817040.649,1791817108.1311584,16,1.86,True,
+sb109,unchecked_low_level_calls,completed,True,22.262,1791817064.4345648,1791817086.6967342,0,1.962,True,
+sb110,unchecked_low_level_calls,completed,True,22.582,1791817088.7670236,1791817111.3494139,0,2.119,True,
+sb111,unchecked_low_level_calls,completed,True,24.131,1791817110.0982099,1791817134.228965,0,2.046,True,
+sb112,unchecked_low_level_calls,completed,True,48.189,1791817113.5886917,1791817161.77759,0,2.131,True,
+sb113,unchecked_low_level_calls,completed,True,24.013,1791817136.399187,1791817160.412,0,1.949,True,
+sb114,unchecked_low_level_calls,completed,True,27.242,1791817162.475513,1791817189.7176075,4,2.073,True,
+sb115,unchecked_low_level_calls,preparation_incomplete,False,40.322,1791817164.0281625,1791817204.3504705,0,,True,"forge test (json) 失败且判定为 ERROR（未进入正常测试流程）。完整诊断见 compile_error.txt
+
+Compiler run failed:
+Warning: Defining constructors as functions with the same name as the contract is deprecated. Use ""constructor(...) { ... }"" instead.
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:51:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use ""constructor(...) { ... }"" instead.
+    function TownCrier() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:95:17: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+                throw;
+                ^---^
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:102:13: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+            throw;
+            ^---^
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:108:17: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+                throw;
+                ^---^
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:119:17: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+                throw;
+                ^---^
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:198:13: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+            throw;
+            ^---^
+Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:212:17: Warning: ""throw"" is deprecated in favour of ""revert()"", ""require()"" and ""assert()"".
+                throw;
+                ^---^
+Warning: Defining constructors as functions with the same name as the contract is deprecated. Use ""constructor(...) { ... }"" instead.
+test/sb115_Functional.t.sol:26:5: Warning: Defining constructors as functions with the same name as the contract is deprecated. Use ""constructor(...) { ... }"" instead.
+    function TownCrier_FunctionalTest() public {
+    ^ (Relevant source part starts here and spans across multiple lines).
+Warning: Invoking events without ""emit"" prefix is deprecated.
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:67:13: Warning: Invoking events without ""emit"" prefix is deprecated.
+            Upgrade(newAddr);
+            ^--------------^
+Warning: Invoking events without ""emit"" prefix is deprecated.
+src/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol:76:13: Warning: Invoking events without ""emit"" prefix is deprecated.
+            Reset(GAS_PRICE, MIN_FEE, CANCELLATION_FEE);"
+sb116,unchecked_low_level_calls,completed,True,33.988,1791817191.8999748,1791817225.887803,4,2.075,True,
+sb117,unchecked_low_level_calls,completed,True,37.624,1791817204.5072126,1791817242.1313396,1,2.016,True,
+sb118,unchecked_low_level_calls,completed,True,39.449,1791817228.0773926,1791817267.5264502,0,1.967,True,
+sb119,unchecked_low_level_calls,completed,True,24.621,1791817244.2577376,1791817268.8786278,0,2.056,True,
+sb120,unchecked_low_level_calls,completed,True,18.743,1791817269.6030312,1791817288.346234,0,2.002,True,
+sb121,unchecked_low_level_calls,completed,True,26.767,1791817271.2042735,1791817297.9716341,5,0.314,True,
+sb122,unchecked_low_level_calls,completed,True,23.093,1791817290.4713044,1791817313.5639126,8,2.025,True,
+sb123,unchecked_low_level_calls,completed,True,32.279,1791817298.3972578,1791817330.6759372,1,2.176,True,
+sb124,unchecked_low_level_calls,completed,True,41.329,1791817315.6991973,1791817357.0283294,1,2.082,True,
+sb125,unchecked_low_level_calls,completed,True,19.333,1791817332.9873078,1791817352.3206065,5,1.926,True,
+sb126,unchecked_low_level_calls,completed,True,24.507,1791817354.3859518,1791817378.893002,3,2.226,True,
+sb127,unchecked_low_level_calls,completed,True,29.616,1791817359.250555,1791817388.866668,3,1.858,True,
+sb128,unchecked_low_level_calls,completed,True,25.257,1791817381.2294228,1791817406.4866724,0,1.941,True,
+sb129,unchecked_low_level_calls,completed,True,17.668,1791817390.8397849,1791817408.5075467,0,2.139,True,
+sb130,unchecked_low_level_calls,completed,True,25.778,1791817408.5439162,1791817434.3220131,0,2.153,True,
+sb131,unchecked_low_level_calls,completed,True,42.709,1791817410.7837844,1791817453.4932606,5,2.03,True,
+sb132,unchecked_low_level_calls,completed,True,24.93,1791817436.5994756,1791817461.5292876,0,2.475,True,
+sb133,unchecked_low_level_calls,completed,True,21.501,1791817455.6414895,1791817477.1421375,0,1.995,True,
+sb134,unchecked_low_level_calls,completed,True,19.038,1791817464.1422904,1791817483.1807895,0,2.092,True,
+sb135,unchecked_low_level_calls,completed,True,26.019,1791817479.2598364,1791817505.2792184,2,1.989,True,
+sb136,unchecked_low_level_calls,completed,True,33.047,1791817485.4181464,1791817518.4654827,4,1.876,True,
+sb137,unchecked_low_level_calls,completed,True,14.998,1791817507.4034314,1791817522.4014308,0,2.102,True,
+sb138,unchecked_low_level_calls,completed,True,22.589,1791817520.448688,1791817543.0373225,0,2.064,True,
+sb139,unchecked_low_level_calls,completed,True,25.94,1791817524.644915,1791817550.5849588,9,1.918,True,
+sb140,unchecked_low_level_calls,completed,True,26.512,1791817545.227692,1791817571.7396724,3,1.94,True,
+sb141,unchecked_low_level_calls,completed,True,22.165,1791817552.6075203,1791817574.772818,0,2.204,True,
+sb142,unchecked_low_level_calls,completed,True,18.663,1791817573.7908468,1791817592.4540064,0,1.96,True,
+sb143,unchecked_low_level_calls,completed,True,20.061,1791817577.099171,1791817597.1606672,3,2.034,True,

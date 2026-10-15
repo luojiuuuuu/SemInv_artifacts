@@ -1,0 +1,9 @@
+measure,count,scope_or_note
+abi_signatures,706,34 successfully processed contracts
+read_only_getters,264,subset of ABI signatures
+assignment_sites,419,structural recovery output
+entry_context_update_records,616,structural recovery output
+nested_mapping_records,109,subset of entry-context updates
+targeted_evm_contracts,21,targeted execution validation
+reproduced_reports,37,targeted execution validation
+

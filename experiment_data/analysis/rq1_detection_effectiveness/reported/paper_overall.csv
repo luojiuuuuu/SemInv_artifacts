@@ -1,0 +1,3 @@
+system,detected_labeled_contracts,labeled_contracts,vulnerability_categories,recall_pct,fpr_pct,f1_pct
+SemInv,125,139,8,89.93,6.58,76.22
+

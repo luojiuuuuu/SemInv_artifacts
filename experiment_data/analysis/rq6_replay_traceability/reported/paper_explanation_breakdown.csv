@@ -1,0 +1,6 @@
+outcome,count,note
+matching_source_context,513,reproduced explanations
+context_mismatch,57,across 10 contracts
+no_context,165,
+unmatched_or_no_signal,219,replay outcomes
+timeout,2,replay outcomes

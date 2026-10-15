@@ -1,0 +1,177 @@
+source_table_row,file,contract_id,standard,function,violation_type,violation,symgpt_gt_count,symgpt_detected_count,symgpt_tp,symgpt_fp,symgpt_fn
+3,KuCoin.sol,KuCoin,ERC20,approve,interface,missing function approve,1,1,1,0,0
+4,KuCoin.sol,KuCoin,ERC20,transferFrom,interface,missing function transferFrom,1,1,1,0,0
+5,KuCoin.sol,KuCoin,ERC20,allowance,interface,missing function allowance,0,0,0,0,0
+6,KuCoin.sol,KuCoin,ERC20,balanceOf,interface,missing function balanceOf,0,0,0,0,0
+7,KuCoin.sol,KuCoin,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+8,KuCoin.sol,KuCoin,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+9,KuCoin.sol,KuCoin,ERC20,transfer,interface,function transfer not return,1,1,1,0,0
+10,KuCoin.sol,KuCoin,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+11,KuCoin.sol,KuCoin,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+13,mxm.sol,mxm,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+14,mxm.sol,mxm,ERC20,burnFrom,emit,missing event Transfer at burnFrom,1,1,1,0,0
+15,mxm.sol,mxm,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+16,mxm.sol,mxm,ERC20,transfer,interface,function transfer not return,1,1,1,0,0
+17,mxm.sol,mxm,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+18,mxm.sol,mxm,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+19,mxm.sol,mxm,ERC20,approve,emit,missing event Approval at approve,1,1,1,0,0
+20,mxm.sol,mxm,ERC20,approveAndCall,emit,missing event Approval at approveAndCall,1,1,1,0,0
+21,mxm.sol,mxm,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+23,dai.sol,dai,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+24,dai.sol,dai,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+25,dai.sol,dai,ERC20,mint,emit,missing event Transfer at mint,1,1,1,0,0
+26,dai.sol,dai,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+27,dai.sol,dai,ERC20,name,interface,name should return string,1,1,1,0,0
+28,dai.sol,dai,ERC20,symbol,interface,symbol should return string,1,1,1,0,0
+29,dai.sol,dai,ERC20,transferFrom,throw,transferFrom should throw if msgsender not authorized,1,1,1,0,0
+31,KIMEX.sol,KIMEX,ERC20,allocateReservedTokens,emit,missing event Transfer at allocateReservedTokens,1,1,1,0,0
+32,KIMEX.sol,KIMEX,ERC20,allocateSalesTokens,emit,missing event Transfer at allocateSalesTokens,1,1,1,0,0
+33,KIMEX.sol,KIMEX,ERC20,allocateTokensForTeam,emit,missing event Transfer at allocateTokensForTeam,1,1,1,0,0
+34,KIMEX.sol,KIMEX,ERC20,allocateTokensForFounder,emit,missing event Transfer at allocateTokensForFounder,1,1,1,0,0
+35,KIMEX.sol,KIMEX,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+36,KIMEX.sol,KIMEX,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+37,KIMEX.sol,KIMEX,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+39,EZOToken.sol,EZOToken,ERC20,approve,interface,missing approve,1,1,1,0,0
+40,EZOToken.sol,EZOToken,ERC20,transferFrom,interface,missing transferFrom,1,1,1,0,0
+41,EZOToken.sol,EZOToken,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+42,EZOToken.sol,EZOToken,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+43,EZOToken.sol,EZOToken,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+44,EZOToken.sol,EZOToken,ERC20,allowance,interface,missing allowance,1,1,1,0,0
+45,EZOToken.sol,EZOToken,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+46,EZOToken.sol,EZOToken,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+47,EZOToken.sol,EZOToken,ERC20,transfer,return,incorrect return at transfer,1,0,0,0,1
+49,CMBToken.sol,CMBToken,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+50,CMBToken.sol,CMBToken,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+51,CMBToken.sol,CMBToken,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+53,LUTOKEN.sol,LUTOKEN,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+54,LUTOKEN.sol,LUTOKEN,ERC20,upgrade,emit,missing event Transfer at function upgrade,1,1,1,0,0
+56,PKG.sol,PKG,ERC20,transfer,interface,no return at function transfer,1,1,1,0,0
+57,PKG.sol,PKG,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+58,PKG.sol,PKG,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+59,PKG.sol,PKG,ERC20,burnFrom,emit,missing event Transfer at burnFrom,1,1,1,0,0
+60,PKG.sol,PKG,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+61,PKG.sol,PKG,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+63,aoa.sol,aoa,ERC20,transfer,throw,should throw if the message caller's account balance does not have enough tokens,1,1,1,0,0
+64,aoa.sol,aoa,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+65,aoa.sol,aoa,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+66,aoa.sol,aoa,ERC20,transferFrom,throw,transferFrom should throw if sender is not authorized,1,1,1,0,0
+68,huobi.sol,huobi,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+69,huobi.sol,huobi,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+70,huobi.sol,huobi,ERC20,transferFrom,throw,transferFrom should throw if sender is not authorized,1,1,1,0,0
+72,KINGSGLOBAL.sol,KINGSGLOBAL,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+73,KINGSGLOBAL.sol,KINGSGLOBAL,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+74,KINGSGLOBAL.sol,KINGSGLOBAL,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+75,KINGSGLOBAL.sol,KINGSGLOBAL,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+77,idex.sol,idex,ERC20,transfer,interface,no return at function transfer,1,1,1,0,0
+78,idex.sol,idex,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+79,idex.sol,idex,ERC20,approve,emit,missing event Approval at function approve,1,1,1,0,0
+80,idex.sol,idex,ERC20,approveAndCall,emit,missing event Approval at approveAndCall,1,1,1,0,0
+81,idex.sol,idex,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+83,axpire.sol,axpire,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+84,axpire.sol,axpire,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+85,axpire.sol,axpire,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+86,axpire.sol,axpire,ERC20,Transfer,interface,Transfer event interface is wrong (missing indexed),1,1,1,0,0
+87,axpire.sol,axpire,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+88,axpire.sol,axpire,ERC20,transferFrom,throw,"transferFrom should throw unless sender is authorized, but it returns false",1,1,1,0,0
+89,axpire.sol,axpire,ERC20,createTokens,emit,missing event Transfer at createTokens,1,1,1,0,0
+91,xeuro.sol,xeuro,ERC20,mintTokens,emit,missing event Transfer at mintTokens,1,1,1,0,0
+92,xeuro.sol,xeuro,ERC20,burnTokens,emit,missing event Transfer at burnTokens,1,1,1,0,0
+93,xeuro.sol,xeuro,ERC20,approve,interface,missing function approve,1,1,1,0,0
+94,xeuro.sol,xeuro,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+95,xeuro.sol,xeuro,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,0,1,0,1,0
+97,zrx.sol,zrx,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+98,zrx.sol,zrx,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+99,zrx.sol,zrx,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+100,zrx.sol,zrx,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+102,iostoken.sol,iostoken,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+103,iostoken.sol,iostoken,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+104,iostoken.sol,iostoken,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+106,egypt.sol,egypt,ERC20,giveBlockReward,emit,Missing event Transfer at giveBlockReward,1,1,1,0,0
+107,egypt.sol,egypt,ERC20,totalSupply,return,Incorrect return at totalSupply,1,0,0,0,1
+109,bitcoinsvgold.sol,bitcoinsvgold,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+110,bitcoinsvgold.sol,bitcoinsvgold,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+111,bitcoinsvgold.sol,bitcoinsvgold,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+112,bitcoinsvgold.sol,bitcoinsvgold,ERC20,transferFrom,throw,no throw unless from account has authorized authorization mechanism,1,1,1,0,0
+114,omg.sol,omg,ERC20,mint,emit,missing event Transfer at mint,1,1,1,0,0
+115,omg.sol,omg,ERC20,transfer,interface,no return from function transfer,1,1,1,0,0
+116,omg.sol,omg,ERC20,transferFrom,interface,no return from function transferFrom,1,1,1,0,0
+117,omg.sol,omg,ERC20,mintTimelocked,emit,missing Transfer at mintTimelocked,1,1,1,0,0
+118,omg.sol,omg,ERC20,approve,interface,no return from function approve,1,1,1,0,0
+119,omg.sol,omg,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+121,battoken.sol,battoken,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+122,battoken.sol,battoken,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+123,battoken.sol,battoken,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+124,battoken.sol,battoken,ERC20,createTokens,emit,missing event Transfer at createTokens,1,1,1,0,0
+125,battoken.sol,battoken,ERC20,Refund,emit,missing event Transfer at Refund,1,1,1,0,0
+126,battoken.sol,battoken,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+127,battoken.sol,battoken,ERC20,transferFrom,throw,no throw unless from account has authorized authorization mechanism,1,1,1,0,0
+129,mkr.sol,mkr,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+130,mkr.sol,mkr,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+131,mkr.sol,mkr,ERC20,mint,emit,missing event Transfer at mint,1,1,1,0,0
+132,mkr.sol,mkr,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+133,mkr.sol,mkr,ERC20,name,interface,name should return string,1,1,1,0,0
+134,mkr.sol,mkr,ERC20,symbol,interface,symbol should return string,1,1,1,0,0
+135,mkr.sol,mkr,ERC20,transferFrom,throw,no throw unless from account has authorized authorization mechanism,1,1,1,0,0
+137,bnb.sol,bnb,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+138,bnb.sol,bnb,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+139,bnb.sol,bnb,ERC20,approve,emit,missing event Approval at approve,1,1,1,0,0
+140,bnb.sol,bnb,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+141,bnb.sol,bnb,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+142,bnb.sol,bnb,ERC20,transfer,interface,no return at transfer,1,1,1,0,0
+143,bnb.sol,bnb,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+145,xn35.sol,xn35,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+146,xn35.sol,xn35,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+147,xn35.sol,xn35,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+149,gencoin.sol,gencoin,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+150,gencoin.sol,gencoin,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+151,gencoin.sol,gencoin,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+152,gencoin.sol,gencoin,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+154,wit.sol,wit,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+155,wit.sol,wit,ERC20,transferFrom,throw,transferFrom should throw if no enough balance,0,0,0,0,0
+156,wit.sol,wit,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+158,jntr.sol,jntr,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+159,jntr.sol,jntr,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+160,jntr.sol,jntr,ERC20,mint,emit,missing event Transfer at mint,1,1,1,0,0
+161,jntr.sol,jntr,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+162,jntr.sol,jntr,ERC20,setAccount,emit,missing event Transfer at setAccount,1,1,1,0,0
+163,jntr.sol,jntr,ERC20,decimals,interface,decimals should return uint8,1,1,1,0,0
+165,silkroad.sol,silkroad,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+166,silkroad.sol,silkroad,ERC20,burnFrom,emit,missing event Transfer at burnFrom,1,1,1,0,0
+167,silkroad.sol,silkroad,ERC20,burn,emit,missing event Transfer at burn,1,1,1,0,0
+168,silkroad.sol,silkroad,ERC20,transfer,interface,no return at transfer,1,1,1,0,0
+169,silkroad.sol,silkroad,ERC20,approve,emit,missing event Approval at approve,1,1,1,0,0
+170,silkroad.sol,silkroad,ERC20,approveAndCall,emit,missing event Approval at approveAndCall,1,1,1,0,0
+171,silkroad.sol,silkroad,ERC20,Approval,interface,missing event Approval,1,1,1,0,0
+172,silkroad.sol,silkroad,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+173,silkroad.sol,silkroad,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+175,organicco.sol,organicco,ERC20,constructor,emit,missing event Transfer at constructor,1,1,1,0,0
+176,organicco.sol,organicco,ERC20,transfer,throw,transfer should throw if no enough balance,1,1,1,0,0
+177,organicco.sol,organicco,ERC20,approve,assign,function approve should overwrite value instead of increment,1,1,1,0,0
+178,organicco.sol,organicco,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+180,pandai.sol,pandai,ERC20,transferFrom,throw,transferFrom should throw unless sender is authorized,1,1,1,0,0
+182,husky.sol,husky,ERC20,transfer,throw,zero value transfer forbidden at transfer,1,1,1,0,0
+183,husky.sol,husky,ERC20,transferFrom,throw,zero value transfer forbidden at transferFrom,1,1,1,0,0
+184,husky.sol,husky,ERC20,excludeAccount,emit,missing Transfer excludeAccount,0,0,0,0,0
+185,husky.sol,husky,ERC20,includeAccount,emit,missing Transfer includeAccount,0,0,0,0,0
+187,721_candidate_1.sol,721_candidate_1,ERC721,safeTransferFrom(4),interface,Missing safeTransferFrom(4),1,1,1,0,0
+188,721_candidate_1.sol,721_candidate_1,ERC721,safeTransferFrom(3),interface,Missing safeTransferFrom(3),1,1,1,0,0
+189,721_candidate_1.sol,721_candidate_1,ERC721,setApprovalForAll,interface,Missing setApprovalForAll,1,1,1,0,0
+190,721_candidate_1.sol,721_candidate_1,ERC721,isApprovedForAll,interface,Missing isApprovedForAll,1,1,1,0,0
+191,721_candidate_1.sol,721_candidate_1,ERC721,Transfer,interface,Incorrect Transfer event: missing indexed,1,1,1,0,0
+192,721_candidate_1.sol,721_candidate_1,ERC721,Approval,interface,Incorrect Approval event: missing indexed,1,1,1,0,0
+193,721_candidate_1.sol,721_candidate_1,ERC721,ApprovalForAll,interface,Incorrect ApprovalForAll event: Missing indexed,1,1,1,0,0
+194,721_candidate_1.sol,721_candidate_1,ERC721,balanceOf,throw,balanceOf throw if _owner is the zero address,1,1,1,0,0
+195,721_candidate_1.sol,721_candidate_1,ERC721,ownerOf,throw,ownerOf throw if NFTs assigned to zero address,1,1,1,0,0
+197,721_candidate_2.sol,721_candidate_2,ERC721,*,*,No ground-truth violation; all variant findings are false positives,0,0,0,0,0
+199,721_candidate_3.sol,721_candidate_3,ERC721,Transfer,interface,Transfer missing index,1,1,1,0,0
+200,721_candidate_3.sol,721_candidate_3,ERC721,getApproved,throw,getApproved throw if _tokenId is not a valid NFT,1,1,1,0,0
+201,721_candidate_3.sol,721_candidate_3,ERC721,Approval,interface,Approval missing index,1,1,1,0,0
+203,721_candidate_4.sol,721_candidate_4,ERC721,transfer,emit,Missing Approval in transfer,1,1,1,0,0
+205,721_candidate_5.sol,721_candidate_5,ERC721,safeTransferFrom(3),emit,Missing Approval in safeTransferFrom(3),1,1,1,0,0
+206,721_candidate_5.sol,721_candidate_5,ERC721,safeTransferFrom(4),emit,Missing Approval in safeTransferFrom(4),1,1,1,0,0
+208,1155_candidate_1.sol,1155_candidate_1,ERC1155,safeBatchTransferFrom,throw,safeBatchTransferFrom : throw if `_to` is the zero address,1,1,1,0,0
+210,1155_candidate_2.sol,1155_candidate_2,ERC1155,*,*,No ground-truth violation; all variant findings are false positives,0,0,0,0,0
+212,1155_candidate_3.sol,1155_candidate_3,ERC1155,burnBatch,emit,burnBatch Can emit TransferBatch without burning token,1,1,1,0,0
+214,1155_candidate_4.sol,1155_candidate_4,ERC1155,withdrawBatch,emit,withdrawBatch emit TransferBatch without burning token,1,1,1,0,0
+216,1155_candidate_5.sol,1155_candidate_5,ERC1155,Gamemint,emit,Gamemint emit TransferBatch without burning token,1,1,1,0,0
+217,1155_candidate_5.sol,1155_candidate_5,ERC1155,Gameburn,emit,Gameburn emit TransferBatch without burning token,1,1,1,0,0

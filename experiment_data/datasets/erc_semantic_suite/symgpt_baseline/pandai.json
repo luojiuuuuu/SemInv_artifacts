@@ -1,0 +1,18 @@
+{
+    "sol_file": "benchmark/baseline/pandai.sol",
+    "contract": {
+        "PandAIToken": [
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "PandAIToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,2531 @@
+{
+  "scope": "finite fresh-deployment cached-bytecode local EVM probes; no storage injection",
+  "full_pipeline": false,
+  "fuzz": false,
+  "replay": false,
+  "minimization": false,
+  "runtime_seconds": 4.8242734,
+  "deployments": [
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "status": "deployed",
+      "address": "0x5fbdb2315678afecb367f032d93f642f64180aa3"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_2.sol",
+      "status": "deployed",
+      "address": "0xe7f1725e7734ce288f8367e1bb143e90bb3f0512"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "status": "deployed",
+      "address": "0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_4.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_5.sol",
+      "status": "deployed",
+      "address": "0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "status": "deployed",
+      "address": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "status": "deployed",
+      "address": "0x2279b7a0a67db372996a5fab50d91eaa73d2ebe6"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "status": "deployed",
+      "address": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "status": "deployed",
+      "address": "0x0b306bf915c4d645ff596e518faf3f9669b97016"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "status": "deployed",
+      "address": "0x959922be3caee4b8cd9a407cc3ac1c251c2007b1"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "status": "deployed",
+      "address": "0xc6e7df5e7b4f2a278906862b61205850344d4e7d"
+    },
+    {
+      "sample_id": "symgpt-public/husky.sol",
+      "status": "missing compiler"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "status": "deployed",
+      "address": "0xa85233c63b9ee964add6f2cffe00fd84eb32338f"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "status": "deployed",
+      "address": "0xc5a5c42992decbae36851359345fe25997f5c42d"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "status": "deployed",
+      "address": "0x67d269191c92caf3cd7723f116c85e6e9bf55933"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/LUTOKEN.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "status": "deployed",
+      "address": "0x9e545e3c0baab3e08cdfd552c960a1050f373042"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "status": "deployed",
+      "address": "0x851356ae760d987e095750cceb3bc6014560891c"
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "status": "deployed",
+      "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "status": "deployed",
+      "address": "0x8f86403a4de0bb5791fa46b8e795c547942fe4cf"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "status": "constructor arguments required; skipped"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "status": "deployed",
+      "address": "0x36c02da8a0983159322a80ffe9f24b1acff8b570"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "status": "deployed",
+      "address": "0x1291be112d480055dafd8a610b7d1e203891c274"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "status": "deployed",
+      "address": "0xb7278a61aa25c888815afc32ad3cc52ff24fe575"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "status": "deployed",
+      "address": "0x2bdcc0de6be1f7d2ee689a0342d76f52e8efaba3"
+    }
+  ],
+  "probes": [
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "rule": "zero_owner",
+      "signature": "balanceOf(address)",
+      "args": [
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "rule": "invalid_token",
+      "signature": "ownerOf(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "rule": "invalid_token",
+      "signature": "getApproved(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_2.sol",
+      "rule": "zero_owner",
+      "signature": "balanceOf(address)",
+      "args": [
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: ERC721: address zero is not a valid owner\", \"data\": \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000294552433732313a2061646472657373207a65726f206973206e6f7420612076616c6964206f776e65720000000000000000000000000000000000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_2.sol",
+      "rule": "invalid_token",
+      "signature": "ownerOf(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: ERC721: invalid token ID\", \"data\": \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000184552433732313a20696e76616c696420746f6b656e2049440000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_2.sol",
+      "rule": "invalid_token",
+      "signature": "getApproved(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: ERC721: invalid token ID\", \"data\": \"0x08c379a0000000000000000000000000000000000000000000000000000000000000002000000000000000000000000000000000000000000000000000000000000000184552433732313a20696e76616c696420746f6b656e2049440000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "rule": "zero_owner",
+      "signature": "balanceOf(address)",
+      "args": [
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "rule": "invalid_token",
+      "signature": "ownerOf(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "rule": "invalid_token",
+      "signature": "getApproved(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_5.sol",
+      "rule": "zero_owner",
+      "signature": "balanceOf(address)",
+      "args": [
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: custom error 0x89c62b64: \\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\\u0000\", \"data\": \"0x89c62b640000000000000000000000000000000000000000000000000000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_5.sol",
+      "rule": "invalid_token",
+      "signature": "ownerOf(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: custom error 0x7e273289: 8000000000000000000000000000000000000000000000000000000000000000\", \"data\": \"0x7e2732898000000000000000000000000000000000000000000000000000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_5.sol",
+      "rule": "invalid_token",
+      "signature": "getApproved(uint256)",
+      "args": [
+        57896044618658097711785492504343953926634992332820282019728792003956564819968
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: custom error 0x7e273289: 8000000000000000000000000000000000000000000000000000000000000000\", \"data\": \"0x7e2732898000000000000000000000000000000000000000000000000000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x3d2185384f0c5f9b77146abaf177e243881995f37af6c8f418a966a8484d78f6",
+          "blockNumber": "0x8",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x9a4fe211b5ded778eb27db58f2ba20a96c1ed7e45b2a3ccf7e89f14faa0b427d",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xdc64a140aa3e981100a9beca4e685f962f0cf6c9",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0x0af4c3558801593bbc7152d819b2fe6242cdf15f05502c9da6bfa6d67141f7f1",
+          "blockNumber": "0x9",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x6ab14b741bdcf3a3906077bd6f7be96f7591837dbb9e7912e08f1c026f658a98",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2279b7a0a67db372996a5fab50d91eaa73d2ebe6",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xcb2b05f2cc62ce38a52ad34fb438569d5902ed9de8071224aae3863a59eef09d",
+          "blockNumber": "0xb",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xe276b59e28c732ba8d355d923cd65c016eaa9c32dacd9cf2408a9a444978667e",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2279b7a0a67db372996a5fab50d91eaa73d2ebe6",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xc2a0988efb92d4194294385a54781f25099c87187490bb977b5a4012d363716e",
+          "blockNumber": "0xc",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x060ad72ac521391615df8870120e3c06baad62e1a2eae93c3b69d415c6d7d955",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xf5fb9b65a41348718e9dd7ce8e9a3ef9275ead03c87d249d46756d93c44a3d8c",
+          "blockNumber": "0xe",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x72e0db01517e84069127615ef8cb6f5b72a7ae259255df14d3bf4d3814f467f3",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x7a3e4d7a1bc5d2377870ac631d99e6ab82a316f628cd7ad1cb68bb88455f2b4e",
+          "blockNumber": "0xf",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x2cb8a3c70683cf53f36604d0a0c36fdf3eba7a9941d3ee662c65c98d205cd5e4",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x2834670cf4b48c37990a06f3ca92f65c6180256bd7ebbeb696545fe1060cfda5",
+          "blockNumber": "0x10",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xbc15c610311a88f553a4b45d63c048e41a23a0235f0086f26595e7d5fe077587",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7f8bc63bbcad18155201308c8f3540b07f84f5e",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xf846bdd18eb4d507ca8ecf10058f291d76293414d2ddcc16d75589755b1fad38",
+          "blockNumber": "0x11",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xb521cf4c6c98ac97503f95d567e095b8e10be490e62b86778abc2aa4308a648a",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x959922be3caee4b8cd9a407cc3ac1c251c2007b1",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x9388f613923d652e66c94ed293569b54ca212ecfd39db94fba3a057dbef0aa47",
+          "blockNumber": "0x16",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xaf2f116ab3c7ee272c0efe6d99f486187b933c4dd94bd71827f61eae8f09f8a6",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x959922be3caee4b8cd9a407cc3ac1c251c2007b1",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0x1ea84554420e99f8391db2c2ac7e59b9cf36ea0fbfe3ce32a8023cb4292a5b89",
+          "blockNumber": "0x17",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x1e0dec7226255e1927e3a47c591efea72bbd0a20e6554e34c39497539dac52c9",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xc6e7df5e7b4f2a278906862b61205850344d4e7d",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xab59ff111a038ecf1477fdebe0e4e0e5a520e6b75d6905387207b23d951f7429",
+          "blockNumber": "0x19",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x158a727bcf9a34e5fbb1b1a0ec72c32692ab0b900aa5c13b216fa7d5394e226a",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xc6e7df5e7b4f2a278906862b61205850344d4e7d",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xc5d830cec0c279141e3f539c46da57b8f0e9ac62161ced43db2d8f29b26d33cc",
+          "blockNumber": "0x1a",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xce72fcc0a1d310a9b5b3a42610f2130125046465af2f0571dfb5c194ba64480a",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xc6e7df5e7b4f2a278906862b61205850344d4e7d",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xb9aebb1c76dd8102cf7d2bb7641af41210d3772cac6db2b556150d6aac16e535",
+          "blockNumber": "0x1b",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x0dae28ad634f2ae4c157479eb4c8a45d713037b5e6b6e8e0a224f3920eab497c",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xc6e7df5e7b4f2a278906862b61205850344d4e7d",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0x7567c42500c344152f92b7cd15d2e49959aa1d9140b4c4b4c918cc9ce4a19f22",
+          "blockNumber": "0x1c",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xf3ea3107fab1fc59ce23175ce99158827e94cce93cfdd5a60210c16618a489f5",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xa85233c63b9ee964add6f2cffe00fd84eb32338f",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x5d1ef3d6d16024f8c766ceb4c9acc954e19fc825761095ecacfdbbee5d011271",
+          "blockNumber": "0x1e",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xb417f7e99f366335d5939794234355718a0ead954ee4e0763834bdf5e0056a28",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xa85233c63b9ee964add6f2cffe00fd84eb32338f",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x02530c4a6d23a56074a683b2891a7c18d49eda1860e04bcc427c004aec277336",
+          "blockNumber": "0x1f",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x47ac7f89af53955b2d65570079a095ac2525418e1d298d27d72d415a46921de4",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xa85233c63b9ee964add6f2cffe00fd84eb32338f",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x85e0125a12232a4ba8ebf6816dc4722a0f36e0a61c852ba735acf0f6cdc3d463",
+          "blockNumber": "0x20",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0x79d44cc1e2ebdf07128928908d008a8e2afcc2ab0b7d545d4e488ebfacec032f",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xa85233c63b9ee964add6f2cffe00fd84eb32338f",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0x28252c8de38ff2439df4c3b8a1115d5c727c35a35394bd1ff0a9c0ca7e88bf56",
+          "blockNumber": "0x21",
+          "blockTimestamp": "0x6acdec8c",
+          "transactionHash": "0xb39dc0c10939ab0a61aed2969108a8d15fa50c49eb159c2cd8274a270ec536f1",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x67d269191c92caf3cd7723f116c85e6e9bf55933",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xe23019c445c00fb61b120f226c175fb43280d77927f7c75e4d6f9b76509a17e3",
+          "blockNumber": "0x26",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x1f17208eeacb28861faaeaca89a1128c64128f996fea087969420c981c2597d3",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x67d269191c92caf3cd7723f116c85e6e9bf55933",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xdb716f7265b8475f2f24b418fa8c8099d7016053a40f35f039c0a663efec51ac",
+          "blockNumber": "0x27",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x208fbecbb2efbe64d2fcfc3c7b56904a71d2410329a4b435bb022ebe20688e8e",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x9e545e3c0baab3e08cdfd552c960a1050f373042",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xbbdea937e057a02a0ca55129f3fac0322b79ceaaec034e317cf17eaa1b8ac6dc",
+          "blockNumber": "0x29",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x7c2017ae98e326a6f7b6c97f430a6fdb5f20893c3d4e07f6726f4afc643ea8db",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x9e545e3c0baab3e08cdfd552c960a1050f373042",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xb504286f6aa2f89afe56084783a3e4d9dfce03740c7ddc3e91cfa0d0a0d781b9",
+          "blockNumber": "0x2a",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x088392c8451a9d0e2b29fe5a01b1a02b3a72eb7691203db06ed9596a7df244a8",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: panic: arithmetic underflow or overflow (0x11)\", \"data\": \"0x4e487b710000000000000000000000000000000000000000000000000000000000000011\"}"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x9e545e3c0baab3e08cdfd552c960a1050f373042",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x3a023dc16afc16829efd0c638217696db2d36fd7a025a446ecc6abe6df878775",
+          "blockNumber": "0x2b",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0xeb032ca8ea64134f98411f106811ed508860852ffdb6a7a8df884a959be10adf",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+      "receipt_status": 1,
+      "logs": []
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x851356ae760d987e095750cceb3bc6014560891c",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xfb6e5d60fbecff97d9732ea7c2b4f15a19c256fefef32779db60dff4370bfd15",
+          "blockNumber": "0x2f",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0xb65cd1db5e94ce326af3958391f28e7dd47ae5c3f703a59fa634bfcd422c8933",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x851356ae760d987e095750cceb3bc6014560891c",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xf9acb6c9e4ba9bc772089b2fb2e64b6eca21d3cead5dbed1957d969922f36b1a",
+          "blockNumber": "0x30",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0xc1363923a16deb8613ed900756188631bbd5ebdcb901c1e200c8fdf0bf188a5d",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000012"
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xb176ca5d7fbae646461b68c69dc76fa5a84a7efd6295bb1a53a30b9374c8a4aa",
+          "blockNumber": "0x32",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0xd1ba6f92248387764238ce34323b2df6971c780870bdc4c3fd2bec368d83e662",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x0000000000000000000000003c44cdddb6a900fa2b585dd299e03d12fa4293bc"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x20c420416155b5e3a5e5c1d31a59e7c6c35f199d8203c672a312f18f62d4c54a",
+          "blockNumber": "0x33",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x12f9f229b7fed8272a5b9088eb4027c1d5b4288549bcb5a2911683bc94abd8be",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        },
+        {
+          "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x20c420416155b5e3a5e5c1d31a59e7c6c35f199d8203c672a312f18f62d4c54a",
+          "blockNumber": "0x33",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x12f9f229b7fed8272a5b9088eb4027c1d5b4288549bcb5a2911683bc94abd8be",
+          "transactionIndex": "0x0",
+          "logIndex": "0x1",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: ERC20: transfer amount exceeds balance\", \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000002645524332303a207472616e7366657220616d6f756e7420657863656564732062616c616e63650000000000000000000000000000000000000000000000000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted: ERC20: insufficient allowance\", \"data\": \"0x08c379a00000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000000000000000000000000000001d45524332303a20696e73756666696369656e7420616c6c6f77616e6365000000\"}"
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0x9e197c6030b9f8abbb99da640d14eb5d8be5bb56955e434165f17759e31ecb21",
+          "blockNumber": "0x34",
+          "blockTimestamp": "0x6acdec8d",
+          "transactionHash": "0x529040bbf18b9aa04019ab14a1c0972d156cf7bc2384964971a9984d48727c14",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x70e0ba845a1a0f2da3359c97e0285013525ffc49",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xd603ba1e7d5fd59fcc83639b3505096cf9cbf4ea343e365df2d78c15318c9089",
+          "blockNumber": "0x35",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x400b193380744e57bd25c0529860d2a958c8fc33f58d7d6c54753e0065108bd7",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x8f86403a4de0bb5791fa46b8e795c547942fe4cf",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xaeb2938425563c4d6f200fe8b3245d572afbd87ea75ff07449ef408b2e55b41b",
+          "blockNumber": "0x37",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0xbbe3c72a8cf69e18f09829dc184d6629e3352d5fae6e61c6cf3e11203a868eec",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x8f86403a4de0bb5791fa46b8e795c547942fe4cf",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0x6e7c5e648e9489dde387c66324101bea65f51cbe34e683dbf9050fcb53b9b2cc",
+          "blockNumber": "0x38",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x91512fa4e01fba158bd0ab444c7afb82216ffc7b71ccf1e24ec7e294a355ecf6",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x36c02da8a0983159322a80ffe9f24b1acff8b570",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xe290ceec45c13464bd465a53a0adf62f431cbb09b93dbe3234e131e8ebdf0791",
+          "blockNumber": "0x3a",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0xfa767b4cb0fed942c018c9f6dc5be084c8b72d79d0c5aef302b4f2420aac43dc",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x36c02da8a0983159322a80ffe9f24b1acff8b570",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0xe442e4444eb5a1deeb26215a20aebfa62808b8473ee3f7755d16fa0d7d1b842e",
+          "blockNumber": "0x3b",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x84897fe02a735a1ef877554959d69336005090ba17e312245c2f173d7c284718",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x36c02da8a0983159322a80ffe9f24b1acff8b570",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xf2cc0352334f012f73e33e18303f615b263431c7c478769a70cdca8403acf018",
+          "blockNumber": "0x3c",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0xd8d710646642e8c75e23244dad1963491090b4b240179415142a6f525ed7c4ad",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x1291be112d480055dafd8a610b7d1e203891c274",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x2b8a7122d1ad899d2329def840a8ad55e024824786fc3d5e286184754f8f8a58",
+          "blockNumber": "0x3e",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0xacee5a2d7275f08c9d0349dcb2338dd46eb0687298db738e2a8c7e9465c8d248",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x1291be112d480055dafd8a610b7d1e203891c274",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x701792f9e7adffdbdbc21c6bd230472bf30235d74b302a3f371b57e01a15dec1",
+          "blockNumber": "0x3f",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x5e6801621337b8f3fedb64a8274a6eab8a61d2a5ae78a46b140f7f377baf76af",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "selector unavailable"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "reverted",
+      "error": "{\"code\": 3, \"message\": \"execution reverted\", \"data\": \"0x\"}"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7278a61aa25c888815afc32ad3cc52ff24fe575",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xb56087f5b4c5840598705f362119548a202613e6cd91cee79b32d1e781413302",
+          "blockNumber": "0x41",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x6021aba6a767422c2e121e8664f5ed5ad37589e545433eea49d1bf6a23ce5b58",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0xb7278a61aa25c888815afc32ad3cc52ff24fe575",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xe8db5ad4d4ec244e48b3a4c74feb6bf87453a163a9093d82cdeac76afa807674",
+          "blockNumber": "0x42",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x111bdbb4d35f9e7b3e7d6db91575f036de42935f2f355cbd4bb6d5de77575b4a",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "zero_transfer",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2bdcc0de6be1f7d2ee689a0342d76f52e8efaba3",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x107fd3252d390ccd0055e6feeec55c698eb8c367384f82bfd3cd8e30b45578e4",
+          "blockNumber": "0x44",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x14184ec83b53b6c8f449fe4372f575df2171f26f7a65946e95d886f11a1435dd",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "zero_transfer",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        0
+      ],
+      "sender": "0x3c44cdddb6a900fa2b585dd299e03d12fa4293bc",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2bdcc0de6be1f7d2ee689a0342d76f52e8efaba3",
+          "topics": [
+            "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000070997970c51812dc3a010c7d01b50e0d17dc79c8"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000000",
+          "blockHash": "0x91a8facb323af448ac0fdba694d69f0da5e8db273a4870f28b5226ef3f80702a",
+          "blockNumber": "0x45",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0xb66d6fb4e49a19175b22612b80b778984694839dc0ff6aed1527dae13b450c32",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "insufficient_balance",
+      "signature": "transfer(address,uint256)",
+      "args": [
+        "0xa0ee7a142d267c1f36714e4a8f75612f20a79720",
+        1
+      ],
+      "sender": "0x23618e81e3f5cdf7f54c3d65f7fbc0abf5b21e8f",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "unauthorized",
+      "signature": "transferFrom(address,address,uint256)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x70997970c51812dc3a010c7d01b50e0d17dc79c8",
+        1
+      ],
+      "sender": "0x14dc79964da2c08b23698b3d3cc7ca32193d9955",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        7
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2bdcc0de6be1f7d2ee689a0342d76f52e8efaba3",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x0000000000000000000000000000000000000000000000000000000000000007",
+          "blockHash": "0xb025e349a5d3119985abed917767c8a4c14a8522df5d238b653d1c74f7563daf",
+          "blockNumber": "0x46",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x04f1612c27283b0c1263bb9b190a63e810a3aab1d8dc71b95caaca000ec185e7",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "approve_setup",
+      "signature": "approve(address,uint256)",
+      "args": [
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906",
+        11
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x0000000000000000000000000000000000000000000000000000000000000001",
+      "receipt_status": 1,
+      "logs": [
+        {
+          "address": "0x2bdcc0de6be1f7d2ee689a0342d76f52e8efaba3",
+          "topics": [
+            "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925",
+            "0x000000000000000000000000f39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+            "0x00000000000000000000000090f79bf6eb2c4f870365e785982e1f101e93b906"
+          ],
+          "data": "0x000000000000000000000000000000000000000000000000000000000000000b",
+          "blockHash": "0xdbf2a244fcaf659f4fbdd533ccf8b804876878e4c1d86b3aa37f3db1098c5aa9",
+          "blockNumber": "0x47",
+          "blockTimestamp": "0x6acdec8e",
+          "transactionHash": "0x1092a1db401babc3163bbbf75290eeeb569abd9f176db21dbc494cd56dacf2b5",
+          "transactionIndex": "0x0",
+          "logIndex": "0x0",
+          "removed": false
+        }
+      ]
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "rule": "allowance_overwrite",
+      "signature": "allowance(address,address)",
+      "args": [
+        "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+        "0x90f79bf6eb2c4f870365e785982e1f101e93b906"
+      ],
+      "sender": "0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266",
+      "status": "returned",
+      "return_data": "0x000000000000000000000000000000000000000000000000000000000000000b"
+    }
+  ]
+}

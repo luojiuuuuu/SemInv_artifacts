@@ -1,0 +1,8 @@
+measure,numerator,denominator,rate_pct
+three_replay_reproduction,514,735,69.93
+shortened_multi_transaction,64,234,27.35
+signal_retention_after_reduction,20,32,62.50
+one_deletion_minimal,6,12,50.00
+successfully_parsed_explanations,735,880,83.52
+matching_source_context,513,735,69.80
+

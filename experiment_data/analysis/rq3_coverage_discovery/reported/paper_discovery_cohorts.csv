@@ -1,0 +1,7 @@
+baseline,paired_contracts,seminv_hits_at_10s,baseline_hits_at_10s,seminv_reaches_95pct_final
+DepFuzz,120,112,84,true
+ConFuzzius,131,119,97,true
+SMARTIAN,98,,,true
+sFuzz,51,,,true
+ItyFuzz,18,,,true
+

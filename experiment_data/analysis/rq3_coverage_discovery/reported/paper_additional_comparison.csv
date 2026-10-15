@@ -1,0 +1,9 @@
+measure,value,scope
+common_contracts,125,SemInv versus ConFuzzius
+seminv_ground_truth_hits,118,common contracts
+baseline_ground_truth_hits,102,common contracts
+seminv_exclusive_hits,17,common contracts
+exclusive_hits_with_identical_coverage,10,SemInv-exclusive hits
+sb085_instruction_coverage_pct,94.75,both systems
+sb085_branch_coverage_pct,86.84,both systems
+

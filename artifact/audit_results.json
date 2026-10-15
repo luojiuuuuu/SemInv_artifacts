@@ -1,0 +1,686 @@
+{
+  "schema": "seminv-artifact-audit-v1",
+  "status": "pass_with_known_limitations",
+  "check_count": 38,
+  "supported_count": 37,
+  "known_discrepancy_count": 1,
+  "failure_count": 0,
+  "checks": [
+    {
+      "rq": "inputs",
+      "claim": "SmartBugs Curated snapshot",
+      "status": "supported",
+      "expected": 143,
+      "observed": 143,
+      "evidence": "experiment_data/datasets/smartbugs_curated"
+    },
+    {
+      "rq": "inputs",
+      "claim": "ERC semantic suite",
+      "status": "supported",
+      "expected": 35,
+      "observed": 35,
+      "evidence": "experiment_data/datasets/erc_semantic_suite/contracts"
+    },
+    {
+      "rq": "inputs",
+      "claim": "RQ6 frozen payload present",
+      "status": "supported",
+      "expected": true,
+      "observed": true,
+      "evidence": "rq6_replay_traceability/evidence/frozen/finding_payloads.json"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "overall detection effectiveness",
+      "status": "supported",
+      "expected": {
+        "detected": 125,
+        "recall_pct": 89.93,
+        "fpr_pct": 6.58,
+        "f1_pct": 76.22
+      },
+      "observed": {
+        "detected": 125,
+        "recall_pct": 89.93,
+        "fpr_pct": 6.58,
+        "f1_pct": 76.22
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/overall.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: ConFuzzius",
+      "status": "supported",
+      "expected": {
+        "N": 133,
+        "K": 7,
+        "seminv_recall": 92.48,
+        "baseline_recall": 55.64,
+        "seminv_fpr": 7.64,
+        "baseline_fpr": 6.89,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 87.76,
+        "seminv_f1": 77.6,
+        "baseline_f1": 56.49
+      },
+      "observed": {
+        "N": 133,
+        "K": 7,
+        "seminv_recall": 92.48,
+        "baseline_recall": 55.64,
+        "seminv_fpr": 7.64,
+        "baseline_fpr": 6.89,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 87.76,
+        "seminv_f1": 77.6,
+        "baseline_f1": 56.49
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: Mythril",
+      "status": "supported",
+      "expected": {
+        "N": 133,
+        "K": 7,
+        "seminv_recall": 92.48,
+        "baseline_recall": 58.65,
+        "seminv_fpr": 7.64,
+        "baseline_fpr": 14.16,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 81.95,
+        "seminv_f1": 77.6,
+        "baseline_f1": 48.15
+      },
+      "observed": {
+        "N": 133,
+        "K": 7,
+        "seminv_recall": 92.48,
+        "baseline_recall": 58.65,
+        "seminv_fpr": 7.64,
+        "baseline_fpr": 14.16,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 81.95,
+        "seminv_f1": 77.6,
+        "baseline_f1": 48.15
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: Slither",
+      "status": "supported",
+      "expected": {
+        "N": 120,
+        "K": 6,
+        "seminv_recall": 90.83,
+        "baseline_recall": 88.33,
+        "seminv_fpr": 6.33,
+        "baseline_fpr": 33.83,
+        "seminv_accuracy": 93.19,
+        "baseline_accuracy": 69.86,
+        "seminv_f1": 81.65,
+        "baseline_f1": 49.42
+      },
+      "observed": {
+        "N": 120,
+        "K": 6,
+        "seminv_recall": 90.83,
+        "baseline_recall": 88.33,
+        "seminv_fpr": 6.33,
+        "baseline_fpr": 33.83,
+        "seminv_accuracy": 93.19,
+        "baseline_accuracy": 69.86,
+        "seminv_f1": 81.65,
+        "baseline_f1": 49.42
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: SmartCheck",
+      "status": "supported",
+      "expected": {
+        "N": 108,
+        "K": 7,
+        "seminv_recall": 90.74,
+        "baseline_recall": 70.37,
+        "seminv_fpr": 5.4,
+        "baseline_fpr": 14.04,
+        "seminv_accuracy": 94.05,
+        "baseline_accuracy": 83.73,
+        "seminv_f1": 81.33,
+        "baseline_f1": 55.27
+      },
+      "observed": {
+        "N": 108,
+        "K": 7,
+        "seminv_recall": 90.74,
+        "baseline_recall": 70.37,
+        "seminv_fpr": 5.4,
+        "baseline_fpr": 14.04,
+        "seminv_accuracy": 94.05,
+        "baseline_accuracy": 83.73,
+        "seminv_f1": 81.33,
+        "baseline_f1": 55.27
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: sFuzz",
+      "status": "supported",
+      "expected": {
+        "N": 54,
+        "K": 3,
+        "seminv_recall": 88.89,
+        "baseline_recall": 38.89,
+        "seminv_fpr": 7.41,
+        "baseline_fpr": 6.48,
+        "seminv_accuracy": 91.36,
+        "baseline_accuracy": 75.31,
+        "seminv_f1": 87.27,
+        "baseline_f1": 51.22
+      },
+      "observed": {
+        "N": 54,
+        "K": 3,
+        "seminv_recall": 88.89,
+        "baseline_recall": 38.89,
+        "seminv_fpr": 7.41,
+        "baseline_fpr": 6.48,
+        "seminv_accuracy": 91.36,
+        "baseline_accuracy": 75.31,
+        "seminv_f1": 87.27,
+        "baseline_f1": 51.22
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: SMARTIAN",
+      "status": "supported",
+      "expected": {
+        "N": 67,
+        "K": 2,
+        "seminv_recall": 97.01,
+        "baseline_recall": 89.55,
+        "seminv_fpr": 1.49,
+        "baseline_fpr": 2.99,
+        "seminv_accuracy": 97.76,
+        "baseline_accuracy": 93.28,
+        "seminv_f1": 97.74,
+        "baseline_f1": 93.02
+      },
+      "observed": {
+        "N": 67,
+        "K": 2,
+        "seminv_recall": 97.01,
+        "baseline_recall": 89.55,
+        "seminv_fpr": 1.49,
+        "baseline_fpr": 2.99,
+        "seminv_accuracy": 97.76,
+        "baseline_accuracy": 93.28,
+        "seminv_f1": 97.74,
+        "baseline_f1": 93.02
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: ItyFuzz",
+      "status": "supported",
+      "expected": {
+        "N": 116,
+        "K": 4,
+        "seminv_recall": 93.97,
+        "baseline_recall": 3.45,
+        "seminv_fpr": 5.75,
+        "baseline_fpr": 0.86,
+        "seminv_accuracy": 94.18,
+        "baseline_accuracy": 75.22,
+        "seminv_f1": 88.98,
+        "baseline_f1": 6.5
+      },
+      "observed": {
+        "N": 116,
+        "K": 4,
+        "seminv_recall": 93.97,
+        "baseline_recall": 3.45,
+        "seminv_fpr": 5.75,
+        "baseline_fpr": 0.86,
+        "seminv_accuracy": 94.18,
+        "baseline_accuracy": 75.22,
+        "seminv_f1": 88.98,
+        "baseline_f1": 6.5
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ1",
+      "claim": "Table 4: DepFuzz",
+      "status": "supported",
+      "expected": {
+        "N": 139,
+        "K": 5,
+        "seminv_recall": 93.33,
+        "baseline_recall": 76.67,
+        "seminv_fpr": 7.83,
+        "baseline_fpr": 4.87,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 91.94,
+        "seminv_f1": 80.87,
+        "baseline_f1": 76.67
+      },
+      "observed": {
+        "N": 139,
+        "K": 5,
+        "seminv_recall": 93.33,
+        "baseline_recall": 76.67,
+        "seminv_fpr": 7.83,
+        "baseline_fpr": 4.87,
+        "seminv_accuracy": 92.37,
+        "baseline_accuracy": 91.94,
+        "seminv_f1": 80.87,
+        "baseline_f1": 76.67
+      },
+      "evidence": "rq1_detection_effectiveness/evidence/paired_metrics.csv"
+    },
+    {
+      "rq": "RQ2",
+      "claim": "Table 6: SemInv-ERC",
+      "status": "supported",
+      "expected": {
+        "TP": 142,
+        "unmatched": 23,
+        "FN": 10,
+        "precision_pct": 86.06,
+        "recall_pct": 93.42,
+        "f1_pct": 89.59
+      },
+      "observed": {
+        "TP": 142,
+        "unmatched": 23,
+        "FN": 10,
+        "precision_pct": 86.06,
+        "recall_pct": 93.42,
+        "f1_pct": 89.59
+      },
+      "evidence": "rq2_semantic_recovery/evidence/obligation_comparison.csv"
+    },
+    {
+      "rq": "RQ2",
+      "claim": "Table 6: SymGPT",
+      "status": "supported",
+      "expected": {
+        "TP": 132,
+        "unmatched": 16,
+        "FN": 20,
+        "precision_pct": 89.19,
+        "recall_pct": 86.84,
+        "f1_pct": 88.0
+      },
+      "observed": {
+        "TP": 132,
+        "unmatched": 16,
+        "FN": 20,
+        "precision_pct": 89.19,
+        "recall_pct": 86.84,
+        "f1_pct": 88.0
+      },
+      "evidence": "rq2_semantic_recovery/evidence/obligation_comparison.csv"
+    },
+    {
+      "rq": "RQ2",
+      "claim": "structural recovery: state_declarations",
+      "status": "supported",
+      "expected": {
+        "precision_pct": 100.0,
+        "recall_pct": 96.56,
+        "missing": 14
+      },
+      "observed": {
+        "precision_pct": 100.0,
+        "recall_pct": 96.56,
+        "missing": 14
+      },
+      "evidence": "rq2_semantic_recovery/evidence/structural_scores.json"
+    },
+    {
+      "rq": "RQ2",
+      "claim": "structural recovery: storage_bindings",
+      "status": "supported",
+      "expected": {
+        "precision_pct": 100.0,
+        "recall_pct": 96.42,
+        "missing": 12
+      },
+      "observed": {
+        "precision_pct": 100.0,
+        "recall_pct": 96.42,
+        "missing": 12
+      },
+      "evidence": "rq2_semantic_recovery/evidence/structural_scores.json"
+    },
+    {
+      "rq": "RQ2",
+      "claim": "structural recovery: static_may_write",
+      "status": "supported",
+      "expected": {
+        "precision_pct": 98.03,
+        "recall_pct": 65.95,
+        "missing": 206
+      },
+      "observed": {
+        "precision_pct": 98.03,
+        "recall_pct": 65.95,
+        "missing": 206
+      },
+      "evidence": "rq2_semantic_recovery/evidence/structural_scores.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7 common cohort size",
+      "status": "supported",
+      "expected": 128,
+      "observed": 128,
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7: SemInv",
+      "status": "supported",
+      "expected": {
+        "instruction_600": 89.72,
+        "branch_600": 91.04,
+        "instruction_gain": 4.47,
+        "branch_gain": 3.77
+      },
+      "observed": {
+        "instruction_600": 89.72,
+        "branch_600": 91.04,
+        "instruction_gain": 4.47,
+        "branch_gain": 3.77
+      },
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7: DepFuzz",
+      "status": "supported",
+      "expected": {
+        "instruction_600": 90.78,
+        "branch_600": 83.53,
+        "instruction_gain": 0.58,
+        "branch_gain": 0.71
+      },
+      "observed": {
+        "instruction_600": 90.78,
+        "branch_600": 83.53,
+        "instruction_gain": 0.58,
+        "branch_gain": 0.71
+      },
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7: ConFuzzius",
+      "status": "supported",
+      "expected": {
+        "instruction_600": 91.69,
+        "branch_600": 92.37,
+        "instruction_gain": 1.15,
+        "branch_gain": 0.98
+      },
+      "observed": {
+        "instruction_600": 91.69,
+        "branch_600": 92.37,
+        "instruction_gain": 1.15,
+        "branch_gain": 0.98
+      },
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7: SMARTIAN",
+      "status": "supported",
+      "expected": {
+        "instruction_600": 88.66,
+        "branch_600": 70.58,
+        "instruction_gain": 1.0,
+        "branch_gain": 0.86
+      },
+      "observed": {
+        "instruction_600": 88.66,
+        "branch_600": 70.58,
+        "instruction_gain": 1.0,
+        "branch_gain": 0.86
+      },
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ3",
+      "claim": "Table 7: ItyFuzz",
+      "status": "supported",
+      "expected": {
+        "instruction_600": 40.91,
+        "branch_600": 34.48,
+        "instruction_gain": 2.43,
+        "branch_gain": 2.0
+      },
+      "observed": {
+        "instruction_600": 40.91,
+        "branch_600": 34.48,
+        "instruction_gain": 2.43,
+        "branch_gain": 2.0
+      },
+      "evidence": "rq3_coverage_discovery/evidence/fuzz_comparison_metrics.json"
+    },
+    {
+      "rq": "RQ4",
+      "claim": "Table 8 Full GT-matching hits",
+      "status": "known_source_snapshot_discrepancy",
+      "expected": 129,
+      "observed": 128,
+      "evidence": "rq4_component_ablation/evidence/main_metrics.csv"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 9: linked_inputs",
+      "status": "supported",
+      "expected": {
+        "finds": 281,
+        "pocs": 45
+      },
+      "observed": {
+        "finds": 281,
+        "pocs": 45
+      },
+      "evidence": "rq5_defi_alignment/evidence/summary.json"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 9: poc_function_matches",
+      "status": "supported",
+      "expected": {
+        "finds": 131,
+        "pocs": 39
+      },
+      "observed": {
+        "finds": 131,
+        "pocs": 39
+      },
+      "evidence": "rq5_defi_alignment/evidence/summary.json"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 9: multi_transaction_prefixes",
+      "status": "supported",
+      "expected": {
+        "finds": 198,
+        "pocs": 42
+      },
+      "observed": {
+        "finds": 198,
+        "pocs": 42
+      },
+      "evidence": "rq5_defi_alignment/evidence/summary.json"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 9: function-aligned multi-transaction",
+      "status": "supported",
+      "expected": {
+        "finds": 80,
+        "pocs": 31
+      },
+      "observed": {
+        "finds": 80,
+        "pocs": 31
+      },
+      "evidence": "rq5_defi_alignment/evidence/event_path_recovery.csv"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 10: resource.bounded_execution",
+      "status": "supported",
+      "expected": {
+        "finds": 200,
+        "pocs": 45
+      },
+      "observed": {
+        "finds": 200,
+        "pocs": 45
+      },
+      "evidence": "rq5_defi_alignment/evidence/event_path_recovery.csv"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 10: execution.numeric_integrity",
+      "status": "supported",
+      "expected": {
+        "finds": 54,
+        "pocs": 19
+      },
+      "observed": {
+        "finds": 54,
+        "pocs": 19
+      },
+      "evidence": "rq5_defi_alignment/evidence/event_path_recovery.csv"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 10: external.call_return_consistency",
+      "status": "supported",
+      "expected": {
+        "finds": 35,
+        "pocs": 25
+      },
+      "observed": {
+        "finds": 35,
+        "pocs": 25
+      },
+      "evidence": "rq5_defi_alignment/evidence/event_path_recovery.csv"
+    },
+    {
+      "rq": "RQ5",
+      "claim": "Table 10: external.bad_randomness_dependency",
+      "status": "supported",
+      "expected": {
+        "finds": 6,
+        "pocs": 5
+      },
+      "observed": {
+        "finds": 6,
+        "pocs": 5
+      },
+      "evidence": "rq5_defi_alignment/evidence/event_path_recovery.csv"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: three_replay_reproduction",
+      "status": "supported",
+      "expected": [
+        514,
+        735
+      ],
+      "observed": [
+        514,
+        735
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: shortened_multi_transaction",
+      "status": "supported",
+      "expected": [
+        64,
+        234
+      ],
+      "observed": [
+        64,
+        234
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: signal_retention_after_reduction",
+      "status": "supported",
+      "expected": [
+        20,
+        32
+      ],
+      "observed": [
+        20,
+        32
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: one_deletion_minimal",
+      "status": "supported",
+      "expected": [
+        6,
+        12
+      ],
+      "observed": [
+        6,
+        12
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: successfully_parsed_explanations",
+      "status": "supported",
+      "expected": [
+        735,
+        880
+      ],
+      "observed": [
+        735,
+        880
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    },
+    {
+      "rq": "RQ6",
+      "claim": "Table 12: matching_source_context",
+      "status": "supported",
+      "expected": [
+        513,
+        735
+      ],
+      "observed": [
+        513,
+        735
+      ],
+      "evidence": "rq6_replay_traceability/evidence/metrics.json"
+    }
+  ]
+}

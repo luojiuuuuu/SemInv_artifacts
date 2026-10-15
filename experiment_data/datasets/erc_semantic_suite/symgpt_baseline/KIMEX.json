@@ -1,0 +1,40 @@
+{
+    "sol_file": "benchmark/baseline/KIMEX.sol",
+    "contract": {
+        "KIMEX": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function decimals() public view returns (uint8)",
+                "contract": "KIMEX",
+                "fn_interface": null,
+                "rid": 2,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "KIMEX",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 7,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "KIMEX",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 12,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

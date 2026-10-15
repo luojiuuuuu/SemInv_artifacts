@@ -1,0 +1,10 @@
+configuration,gt_matching_hits,total_labeled_sources,detection_rate_pct,instruction_coverage_pct
+Full,129,139,92.81,89.50
+w/o functional seeds,129,139,92.81,89.37
+w/o property tests,129,139,92.81,89.04
+w/o InvAnno (all),119,139,85.61,88.69
+w/o InvAnno guidance,129,139,92.81,89.11
+w/o solver,126,139,90.65,83.35
+w/o guidance + solver,127,139,91.37,83.36
+w/o InvAnno (all) + solver,117,139,84.17,83.22
+

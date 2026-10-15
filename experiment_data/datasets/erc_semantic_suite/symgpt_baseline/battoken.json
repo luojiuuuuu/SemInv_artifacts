@@ -1,0 +1,84 @@
+{
+    "sol_file": "benchmark/baseline/battoken.sol",
+    "contract": {
+        "BAToken": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function decimals() public view returns (uint8)",
+                "contract": "BAToken",
+                "fn_interface": null,
+                "rid": 2,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the message caller's account balance does not have enough tokens to spend",
+                "contract": "BAToken",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 6,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "BAToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "BAToken",
+                "fn_interface": "constructor(address,address,uint256,uint256) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "BAToken",
+                "fn_interface": "createTokens() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "BAToken",
+                "fn_interface": "refund() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "BAToken",
+                "fn_interface": "constructor(address,address,uint256,uint256) returns()",
+                "rid": 21,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

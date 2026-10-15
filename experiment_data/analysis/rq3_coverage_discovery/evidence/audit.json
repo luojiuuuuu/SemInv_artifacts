@@ -1,0 +1,237 @@
+{
+  "created": "2026-10-13T17:09:45.068376+08:00",
+  "main_campaign": "<seminv-workspace>\\outputs\\rq5_sb143_timecurves_20261012_223258",
+  "baseline_campaign": "<seminv-workspace>\\outputs\\rq5_baselines_after_20261012_223258",
+  "runs": 858,
+  "timepoint_rows": 7722,
+  "status_counts": {
+    "SemInv": {
+      "budget_completed": 129,
+      "tool_failed": 11,
+      "prepare_failed": 2,
+      "untestable": 1
+    },
+    "DepFuzz": {
+      "completed": 140,
+      "tool_failed": 3
+    },
+    "ConFuzzius": {
+      "completed": 137,
+      "tool_failed": 5,
+      "no_search_observation": 1
+    },
+    "SMARTIAN": {
+      "completed": 139,
+      "tool_failed": 3,
+      "compile_failed": 1
+    },
+    "ItyFuzz": {
+      "completed": 131,
+      "compile_failed": 1,
+      "no_search_observation": 2,
+      "tool_failed": 9
+    },
+    "sFuzz": {
+      "completed": 139,
+      "compile_failed": 1,
+      "tool_failed": 3
+    }
+  },
+  "seminv_scope": "preparation_plus_search_T",
+  "clock": "search seconds after preparation; preparation candidates form initial state",
+  "frozen_mapping": {
+    "SemInv": [
+      "access_control",
+      "arithmetic",
+      "bad_randomness",
+      "denial_of_service",
+      "front_running",
+      "reentrancy",
+      "time_manipulation",
+      "unchecked_low_level_calls"
+    ],
+    "DepFuzz": [
+      "access_control",
+      "arithmetic",
+      "front_running",
+      "reentrancy",
+      "unchecked_low_level_calls"
+    ],
+    "ConFuzzius": [
+      "access_control",
+      "arithmetic",
+      "denial_of_service",
+      "front_running",
+      "reentrancy",
+      "time_manipulation",
+      "unchecked_low_level_calls"
+    ],
+    "SMARTIAN": [
+      "arithmetic",
+      "unchecked_low_level_calls"
+    ],
+    "ItyFuzz": [
+      "access_control",
+      "arithmetic",
+      "reentrancy",
+      "unchecked_low_level_calls"
+    ],
+    "sFuzz": [
+      "reentrancy",
+      "time_manipulation"
+    ]
+  },
+  "posthoc_audited_mapping": {
+    "SemInv": [
+      "access_control",
+      "arithmetic",
+      "bad_randomness",
+      "denial_of_service",
+      "front_running",
+      "reentrancy",
+      "time_manipulation",
+      "unchecked_low_level_calls"
+    ],
+    "DepFuzz": [
+      "access_control",
+      "arithmetic",
+      "front_running",
+      "reentrancy",
+      "unchecked_low_level_calls"
+    ],
+    "ConFuzzius": [
+      "access_control",
+      "arithmetic",
+      "denial_of_service",
+      "front_running",
+      "reentrancy",
+      "time_manipulation",
+      "unchecked_low_level_calls"
+    ],
+    "SMARTIAN": [
+      "arithmetic",
+      "reentrancy",
+      "unchecked_low_level_calls"
+    ],
+    "ItyFuzz": [
+      "access_control"
+    ],
+    "sFuzz": [
+      "arithmetic",
+      "reentrancy",
+      "time_manipulation"
+    ]
+  },
+  "checks": {
+    "all_campaigns_finished": true,
+    "all_858_status_files": true,
+    "all_main_search_only_T_scores_reproduced": true,
+    "coverage_denominators_recomputed": true,
+    "coverage_bounds": true,
+    "GT_monotonic": true
+  },
+  "quality_notes": [
+    {
+      "tool": "sFuzz",
+      "case_id": "sb041",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb092",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb094",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb095",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb104",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb110",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb113",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb114",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb115",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb120",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb128",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb132",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb135",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb140",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb141",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb142",
+      "issue": "repeated_csv_header",
+      "count": 1
+    },
+    {
+      "tool": "sFuzz",
+      "case_id": "sb143",
+      "issue": "repeated_csv_header",
+      "count": 1
+    }
+  ]
+}

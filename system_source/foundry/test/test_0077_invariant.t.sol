@@ -1,0 +1,101 @@
+// SPDX-License-Identifier: UNLICENSED
+pragma solidity >=0.4.22 <0.5.0;
+import "../src/assert_multitx_2.sol";
+
+interface Vm {
+    function deal(address who, uint256 newBalance) external;
+    function startPrank(address) external;
+    function stopPrank() external;
+}
+
+contract LegacyCheatcodes {
+    function _vm() internal pure returns (Vm) {
+        return Vm(address(uint160(uint256(keccak256("hevm cheat code")))));
+    }
+}
+
+contract SimpleAssert {
+    function _assertTrue(bool x) internal pure { require(x); }
+    function _assertEq(uint256 a, uint256 b) internal pure { require(a == b); }
+}
+contract AssertMultiTx2Handler is LegacyCheatcodes {
+    AssertMultiTx2 public target;
+
+    address[] internal actors;
+    uint internal nonce;
+
+    mapping(address=>uint256) public ethSent;
+    mapping(address=>uint256) public callCount;
+    bool public lastCallOk;
+
+    constructor(AssertMultiTx2 _target) public {
+        target = _target;
+
+        actors.push(address(0x100));
+        actors.push(address(0x200));
+        actors.push(address(0x300));
+        actors.push(address(0x400));
+        actors.push(address(this));
+
+        for(uint i=0;i<actors.length;i++){
+            _vm().deal(actors[i],100 ether);
+        }
+    }
+
+    function actorCount() public view returns(uint){
+        return actors.length;
+    }
+
+    function actor(uint i) public view returns(address){
+        return actors[i];
+    }
+
+    function call_AssertMultiTx2(uint256 arg0) public {
+        nonce++;
+        address sender = actors[nonce % actors.length];
+        callCount[sender]++;
+        _vm().startPrank(sender);
+        arg0 = uint256(uint256(arg0) % 1000);
+        (bool ok,) = address(target).call(abi.encodeWithSignature("AssertMultiTx2(uint256)", arg0));
+        lastCallOk = ok;
+        _vm().stopPrank();
+    }
+
+    function call_run() public {
+        nonce++;
+        address sender = actors[nonce % actors.length];
+        callCount[sender]++;
+        _vm().startPrank(sender);
+        (bool ok,) = address(target).call(abi.encodeWithSignature("run()"));
+        lastCallOk = ok;
+        _vm().stopPrank();
+    }
+
+    function call_set(uint256 arg0) public {
+        nonce++;
+        address sender = actors[nonce % actors.length];
+        callCount[sender]++;
+        _vm().startPrank(sender);
+        arg0 = uint256(uint256(arg0) % 1000);
+        (bool ok,) = address(target).call(abi.encodeWithSignature("set(uint256)", arg0));
+        lastCallOk = ok;
+        _vm().stopPrank();
+    }
+}
+
+contract AssertMultiTx2LegacyPropertyTest is SimpleAssert, LegacyCheatcodes {
+    AssertMultiTx2 target;
+    AssertMultiTx2Handler handler;
+
+    function setUp() public {
+        target = new AssertMultiTx2(1);
+        handler = new AssertMultiTx2Handler(target);
+        _vm().deal(address(handler), 100 ether);
+    }
+
+    function _run_basic_sequence() internal {
+        handler.call_AssertMultiTx2(1);
+        handler.call_run();
+        handler.call_set(1);
+    }
+}

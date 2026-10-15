@@ -1,0 +1,7 @@
+system,instruction_coverage_600s_pct,branch_coverage_600s_pct,instruction_gain_60_to_600_pct_points,branch_gain_60_to_600_pct_points
+SemInv,89.72,91.04,4.47,3.77
+DepFuzz,90.78,83.53,0.58,0.71
+ConFuzzius,91.69,92.37,1.15,0.98
+SMARTIAN,88.66,70.58,1.00,0.86
+ItyFuzz,40.91,34.48,2.43,2.00
+

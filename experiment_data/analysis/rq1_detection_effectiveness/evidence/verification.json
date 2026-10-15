@@ -1,0 +1,26 @@
+{
+  "reporting_policy": "T-v1",
+  "selection": "first300 replaced by retry600 only for first300 timeout",
+  "selected_300": 62,
+  "selected_600": 77,
+  "selected_1200": 0,
+  "raw_status_verified": true,
+  "unchanged_nonretry_predictions_verified": true,
+  "baseline_scoped_predictions_reproduced": true,
+  "baseline_record_counts": {
+    "ConFuzzius": 139,
+    "Mythril": 133,
+    "Slither": 120,
+    "SmartCheck": 108,
+    "sFuzz": 139,
+    "SMARTIAN": 139,
+    "ItyFuzz": 139,
+    "DepFuzz": 139
+  },
+  "globally_excluded": 0,
+  "fuzz_or_replay_executed": false,
+  "uniform_600s_baseline_experiment_verified": false,
+  "input": "<seminv-workspace>\\outputs\\seminv_T_unified_failure_policy_20261012",
+  "experiment": "<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009",
+  "depfuzz_run": "<seminv-workspace>\\outputs\\depfuzz_coverage_adapter_full139_1200s_seed1_20261008"
+}

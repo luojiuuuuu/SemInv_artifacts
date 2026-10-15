@@ -1,0 +1,73 @@
+{
+    "sol_file": "benchmark/baseline/jntr.sol",
+    "contract": {
+        "JNTR": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function decimals() public view returns (uint8)",
+                "contract": "JNTR",
+                "fn_interface": null,
+                "rid": 2,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "JNTR",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 12,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "JNTR",
+                "fn_interface": "constructor() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "JNTR",
+                "fn_interface": "setAccount(address) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "JNTR",
+                "fn_interface": "mint(uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "JNTR",
+                "fn_interface": "burn(uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

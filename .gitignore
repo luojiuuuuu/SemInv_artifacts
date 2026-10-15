@@ -1,0 +1,11 @@
+.env
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+system_source/outputs/
+system_source/foundry/cache/
+system_source/foundry/out/
+system_source/foundry/broadcast/
+*.log

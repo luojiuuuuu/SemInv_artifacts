@@ -1,0 +1,73 @@
+{
+    "sol_file": "benchmark/baseline/mxm.sol",
+    "contract": {
+        "TokenERC20": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "contract": "TokenERC20",
+                "fn_interface": null,
+                "rid": 5,
+                "tags": [
+                    "incorrect_return"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "event Approval(address indexed _owner, address indexed _spender, uint256 _value)",
+                "contract": "TokenERC20",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "event"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit '['Approval']' if function successfully executes",
+                "contract": "TokenERC20",
+                "fn_interface": "function approve(address _spender, uint256 _value) public returns (bool success)",
+                "rid": 18,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "TokenERC20",
+                "fn_interface": "constructor(uint256,string,string) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "TokenERC20",
+                "fn_interface": "burn(uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "TokenERC20",
+                "fn_interface": "burnFrom(address,uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

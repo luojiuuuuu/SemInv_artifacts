@@ -1,0 +1,28 @@
+{
+  "schema": "seminv-reproducibility-status-v1",
+  "overall": "review_ready_but_not_full_clean_room_rerun_ready",
+  "levels": {
+    "paper_number_audit": "supported",
+    "archived_result_analysis": "supported_with_one_documented_rq4_discrepancy",
+    "seminv_cli_smoke": "supported",
+    "full_experiment_rerun": "partial"
+  },
+  "included_inputs": {
+    "smartbugs_solidity_files": 143,
+    "erc_semantic_solidity_files": 35,
+    "symgpt_per_contract_results": 35,
+    "rq6_frozen_payload_archive": true
+  },
+  "blocking_gaps": [
+    "The 65 DeFiHackLabs PoC source files are not bundled.",
+    "Exact immutable revisions or binaries for every RQ1/RQ3 baseline are not all recorded in the package.",
+    "The paper names DeepSeek-V3 but does not identify an immutable model snapshot or deterministic API configuration.",
+    "No project-wide code/data redistribution license has been selected.",
+    "The exact run artifact behind the paper's RQ4 Full=129 row is absent; the preserved source snapshot yields 128."
+  ],
+  "non_blocking_limitations": [
+    "Some historical execution evidence uses sanitized local-root placeholders.",
+    "Search results are single-run measurements for the main time curves; baseline tools without seed flags retain native randomness."
+  ]
+}
+

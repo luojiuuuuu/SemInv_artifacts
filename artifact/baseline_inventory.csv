@@ -1,0 +1,11 @@
+tool,paper_use,version,execution_form,seed_control,budget,status
+ConFuzzius,RQ1 and RQ3,unknown,external baseline checkout,seed 11 in RQ3,600s in RQ3,incomplete provenance
+Mythril,RQ1,unknown,external installation,unknown,matched cohort,incomplete provenance
+Slither,RQ1,unknown,external installation,not applicable,matched cohort,incomplete provenance
+SmartCheck,RQ1,unknown,external installation,not applicable,matched cohort,incomplete provenance
+sFuzz,RQ1 and RQ3,unspecified,sfuzz/ethfuzzer:latest 2019 container,no exposed seed flag,600s in RQ3,exact version not included
+SMARTIAN,RQ1 and RQ3,unspecified,isolated container build,no exposed seed flag,600s in RQ3,exact version not included
+ItyFuzz,RQ1 and RQ3,unspecified,nightly Linux binary,native seed support where accepted,600s in RQ3,exact version not included
+DepFuzz,RQ1 and RQ3,unknown,external checkout,seed 11,600s in RQ3,incomplete provenance
+SymGPT,RQ2,unknown,symgpt-local:artifact container,not applicable,35-contract fresh run,outputs bundled but source version missing
+

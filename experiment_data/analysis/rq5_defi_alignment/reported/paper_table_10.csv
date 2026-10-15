@@ -1,0 +1,7 @@
+invariant,finds,pocs,share_of_finds_pct
+resource.bounded_execution,200,45,67.80
+execution.numeric_integrity,54,19,18.31
+external.call_return_consistency,35,25,11.86
+external.bad_randomness_dependency,6,5,2.03
+Total,295,,100.00
+

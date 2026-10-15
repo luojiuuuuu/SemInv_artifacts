@@ -1,0 +1,40 @@
+{
+    "sol_file": "benchmark/baseline/xeuro.sol",
+    "contract": {
+        "xEuro": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function approve(address _spender, uint256 _value) public returns (bool success)",
+                "contract": "xEuro",
+                "fn_interface": null,
+                "rid": 7,
+                "tags": [
+                    "no_function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "event Approval(address indexed _owner, address indexed _spender, uint256 _value)",
+                "contract": "xEuro",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "event"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "xEuro",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

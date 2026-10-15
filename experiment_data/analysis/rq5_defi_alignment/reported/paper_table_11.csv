@@ -1,0 +1,10 @@
+incident,date,signal_family,function,finds_or_status,transactions,path_evidence
+YSDAO,2026-05-29,bounded,pancakeCall,4,5,testExploit L81; callback L95; call L126
+YSDAO,2026-05-29,bounded,pancakeV3FlashCallback,2,5,testExploit L81; callback L95; call L126
+Thetanuts Vault Share Rounding,2026-04-20,numeric,testExploit,assertion fail,1,testExploit L50; onMorphoFlashLoan L77
+Thetanuts Vault Share Rounding,2026-04-20,bounded,onMorphoFlashLoan,,5,testExploit L50; callback L77
+LAXO Token,2026-02-22,call_return,start,,1,start L57; pancakeV3FlashCallback L61
+LAXO Token,2026-02-22,bounded,pancakeV3FlashCallback,,5,start L57; pancakeV3FlashCallback L61
+WHALEExploit,2026-06,bounded,attack(uint256),2,5,"attack(uint256); onMoolahFlashLoan(uint256,bytes)"
+WHALEExploit,2026-06,bounded,onMoolahFlashLoan,2,5,"attack(uint256); onMoolahFlashLoan(uint256,bytes)"
+

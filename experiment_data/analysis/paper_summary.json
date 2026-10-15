@@ -1,0 +1,42 @@
+{
+  "paper": "SemInv: Detecting Smart Contract Vulnerabilities through Semantic Invariants",
+  "section": "5 Evaluation",
+  "research_questions": [
+    {
+      "id": "RQ1",
+      "topic": "detection effectiveness",
+      "headline": "SemInv detects 125 of 139 labeled contracts with 89.93% recall, 6.58% false-positive rate, and 76.22% F1."
+    },
+    {
+      "id": "RQ2",
+      "topic": "semantic recovery",
+      "headline": "SemInv-ERC reaches 93.42% recall and 89.59% F1 over 152 public ERC violation labels, while structural recovery is evaluated separately."
+    },
+    {
+      "id": "RQ3",
+      "topic": "coverage and discovery",
+      "headline": "SemInv reaches at least 95% of its final candidate hits in every paired cohort and reports 89.72% instruction and 91.04% branch coverage at 600 seconds."
+    },
+    {
+      "id": "RQ4",
+      "topic": "component contribution",
+      "headline": "Invariant annotations and solver support provide complementary effects; removing both reduces GT-matching hits to 117 of 139 labeled sources."
+    },
+    {
+      "id": "RQ5",
+      "topic": "DeFi incident alignment",
+      "headline": "Among 48 completed PoCs, 45 contain linked SemInv inputs, 39 contain PoC-function matches, and 31 contain function-aligned multi-transaction prefixes."
+    },
+    {
+      "id": "RQ6",
+      "topic": "replay and traceability",
+      "headline": "514 of 735 saved sequences reproduce in all three replays; 513 reproduced explanations match source context."
+    }
+  ],
+  "interpretation_policy": {
+    "reported_values": "Paper tables and figure data are authoritative.",
+    "run_evidence": "Preserved unchanged for provenance and diagnosis.",
+    "rq3_table_07": "Structured table values are used when nearby prose rounds or differs slightly."
+  }
+}
+

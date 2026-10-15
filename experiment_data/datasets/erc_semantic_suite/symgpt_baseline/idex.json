@@ -1,0 +1,62 @@
+{
+    "sol_file": "benchmark/baseline/idex.sol",
+    "contract": {
+        "MyToken": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "contract": "MyToken",
+                "fn_interface": null,
+                "rid": 5,
+                "tags": [
+                    "incorrect_return"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "event Approval(address indexed _owner, address indexed _spender, uint256 _value)",
+                "contract": "MyToken",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "event"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit '['Approval']' if function successfully executes",
+                "contract": "MyToken",
+                "fn_interface": "function approve(address _spender, uint256 _value) public returns (bool success)",
+                "rid": 18,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "MyToken",
+                "fn_interface": "constructor(uint256,string,uint8,string) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "MyToken",
+                "fn_interface": "constructor(uint256,string,uint8,string) returns()",
+                "rid": 21,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

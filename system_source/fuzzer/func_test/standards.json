@@ -1,0 +1,479 @@
+{
+  "version": "oz-5.x-2025-09",
+  "standards": {
+
+    "Ownable": {
+      "group": "Access",
+      "match": {
+        "must": ["owner()"],
+        "any": ["transferOwnership(address)", "renounceOwnership()"]
+      },
+      "sequences": [
+        {
+          "name": "ownable_transfer",
+          "intent": "Owner transfers ownership to bob",
+          "steps": [{ "who": "self", "call": "transferOwnership(bob)" }],
+          "post": ["owner() == bob"],
+          "events": ["OwnershipTransferred(address,address)"]
+        },
+        {
+          "name": "ownable_renounce_if_available",
+          "intent": "Owner renounces ownership (if contract supports it)",
+          "requires": ["renounceOwnership()"],
+          "steps": [{ "who": "self", "call": "renounceOwnership()" }],
+          "post": [],
+          "events": ["OwnershipTransferred(address,address)"]
+        }
+      ]
+    },
+
+    "Ownable2Step": {
+      "group": "Access",
+      "match": {
+        "must": ["owner()"],
+        "any": ["transferOwnership(address)", "acceptOwnership()"]
+      },
+      "sequences": [
+        {
+          "name": "ownable2step_flow",
+          "intent": "Two-step ownership transfer to bob",
+          "requires": ["acceptOwnership()"],
+          "steps": [
+            { "who": "self", "call": "transferOwnership(bob)" },
+            { "who": "bob",  "call": "acceptOwnership()" }
+          ],
+          "post": ["owner() == bob"],
+          "events": [
+            "OwnershipTransferStarted(address,address)",
+            "OwnershipTransferred(address,address)"
+          ]
+        }
+      ]
+    },
+
+    "AccessControl": {
+      "group": "Access",
+      "match": {
+        "must": [
+          "hasRole(bytes32,address)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "renounceRole(bytes32,address)",
+          "getRoleAdmin(bytes32)"
+        ],
+        "any": []
+      },
+      "sequences": [
+        {
+          "name": "ac_grant_admin_to_alice",
+          "intent": "Grant DEFAULT_ADMIN_ROLE to alice by self(admin)",
+          "steps": [{ "who": "self", "call": "grantRole(DEFAULT_ADMIN_ROLE, alice)" }],
+          "post": ["hasRole(DEFAULT_ADMIN_ROLE, alice) == true"],
+          "events": ["RoleGranted(bytes32,address,address)"]
+        },
+        {
+          "name": "ac_grant_then_revoke_bob",
+          "intent": "Grant then revoke admin from bob",
+          "steps": [
+            { "who": "self", "call": "grantRole(DEFAULT_ADMIN_ROLE, bob)" },
+            { "who": "self", "call": "revokeRole(DEFAULT_ADMIN_ROLE, bob)" }
+          ],
+          "post": ["hasRole(DEFAULT_ADMIN_ROLE, bob) == false"],
+          "events": ["RoleGranted(bytes32,address,address)", "RoleRevoked(bytes32,address,address)"]
+        },
+        {
+          "name": "ac_grant_then_renounce_carol",
+          "intent": "Grant admin to carol then carol renounces",
+          "steps": [
+            { "who": "self",  "call": "grantRole(DEFAULT_ADMIN_ROLE, carol)" },
+            { "who": "carol", "call": "renounceRole(DEFAULT_ADMIN_ROLE, carol)" }
+          ],
+          "post": ["hasRole(DEFAULT_ADMIN_ROLE, carol) == false"],
+          "events": ["RoleGranted(bytes32,address,address)", "RoleRevoked(bytes32,address,address)"]
+        }
+      ]
+    },
+
+    "AccessControlEnumerable": {
+      "group": "Access",
+      "match": {
+        "must": [
+          "hasRole(bytes32,address)",
+          "grantRole(bytes32,address)",
+          "revokeRole(bytes32,address)",
+          "getRoleAdmin(bytes32)"
+        ],
+        "any": ["getRoleMember(bytes32,uint256)", "getRoleMemberCount(bytes32)"]
+      },
+      "sequences": [
+        {
+          "name": "ac_enum_member_count",
+          "intent": "Grant admin to alice & bob and check enumeration count",
+          "requires": ["getRoleMemberCount(bytes32)"],
+          "steps": [
+            { "who": "self", "call": "grantRole(DEFAULT_ADMIN_ROLE, alice)" },
+            { "who": "self", "call": "grantRole(DEFAULT_ADMIN_ROLE, bob)" }
+          ],
+          "post": [
+            "hasRole(DEFAULT_ADMIN_ROLE, alice) == true",
+            "hasRole(DEFAULT_ADMIN_ROLE, bob) == true",
+            "getRoleMemberCount(DEFAULT_ADMIN_ROLE) == 2"
+          ],
+          "events": ["RoleGranted(bytes32,address,address)"]
+        }
+      ]
+    },
+
+    "AccessManager": {
+      "group": "Access",
+      "match": {
+        "must": ["grantRole(bytes32,address)", "revokeRole(bytes32,address)", "hasRole(bytes32,address)"],
+        "any": ["setTargetFunctionRole(address,bytes4,bytes32)", "setTargetAdminDelay(address,bytes32,uint32)"]
+      },
+      "sequences": []
+    },
+
+    "ERC4337Account": {
+      "group": "Account",
+      "match": {
+        "must": ["entryPoint()"],
+        "any": ["execute(address,uint256,bytes)"]
+      },
+      "sequences": [
+        {
+          "name": "account_entrypoint_view",
+          "intent": "Read entry point address",
+          "steps": [{ "who": "self", "call": "entryPoint()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "PaymentSplitter_removed_v5": {
+      "group": "Finance",
+      "removed": true,
+      "match": { "must": [], "any": [] },
+      "sequences": []
+    },
+
+    "TimelockController": {
+      "group": "Governance",
+      "match": {
+        "must": ["getMinDelay()"],
+        "any": ["updateDelay(uint256)"]
+      },
+      "sequences": [
+        {
+          "name": "timelock_view_delay",
+          "intent": "Read min delay (lightweight check)",
+          "steps": [{ "who": "self", "call": "getMinDelay()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "Governor": {
+      "group": "Governance",
+      "match": {
+        "must": ["name()", "proposalThreshold()", "quorum(uint256)"],
+        "any": ["proposalSnapshot(uint256)", "state(uint256)"]
+      },
+      "sequences": [
+        {
+          "name": "governor_read_views",
+          "intent": "Read governor views (no proposal flow)",
+          "steps": [
+            { "who": "self", "call": "name()" },
+            { "who": "self", "call": "proposalThreshold()" }
+          ],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC165": {
+      "group": "Interfaces",
+      "match": { "must": ["supportsInterface(bytes4)"], "any": [] },
+      "sequences": [
+        {
+          "name": "erc165_check_self",
+          "intent": "supportsInterface check on self for 0x01ffc9a7",
+          "steps": [{ "who": "self", "call": "supportsInterface(0x01ffc9a7)" }],
+          "post": []
+        }
+      ]
+    },
+
+    "IERC20": {
+      "group": "Interfaces",
+      "match": { "must": ["totalSupply()", "balanceOf(address)", "transfer(address,uint256)"], "any": [] },
+      "sequences": []
+    },
+
+    "IERC721": {
+      "group": "Interfaces",
+      "match": { "must": ["balanceOf(address)", "ownerOf(uint256)", "transferFrom(address,address,uint256)"], "any": ["safeTransferFrom(address,address,uint256)"] },
+      "sequences": []
+    },
+
+    "IERC1155": {
+      "group": "Interfaces",
+      "match": { "must": ["balanceOf(address,uint256)", "safeTransferFrom(address,address,uint256,uint256,bytes)"], "any": ["setApprovalForAll(address,bool)"] },
+      "sequences": []
+    },
+
+    "IERC6909": {
+      "group": "Interfaces",
+      "match": { "must": ["balanceOf(address,int256)"], "any": ["transfer(address,int256,int256)"] },
+      "sequences": []
+    },
+
+    "ERC2771Context": {
+      "group": "Meta Transactions",
+      "match": {
+        "must": ["isTrustedForwarder(address)"],
+        "any": []
+      },
+      "sequences": [
+        {
+          "name": "metatx_forwarder_default_false",
+          "intent": "By default, arbitrary forwarder is not trusted",
+          "steps": [{ "who": "self", "call": "isTrustedForwarder(alice)" }],
+          "post": []
+        }
+      ]
+    },
+
+    "MinimalForwarder": {
+      "group": "Meta Transactions",
+      "match": {
+        "must": ["getNonce(address)"],
+        "any": ["execute((address,address,uint256,uint256,uint256,uint256,bytes,bytes),bytes)"]
+      },
+      "sequences": [
+        {
+          "name": "forwarder_view_nonce",
+          "intent": "Read nonce for alice",
+          "steps": [{ "who": "self", "call": "getNonce(alice)" }],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC1967Proxy": {
+      "group": "Proxy",
+      "match": { "must": ["implementation()"], "any": [] },
+      "sequences": [
+        {
+          "name": "proxy_impl_view",
+          "intent": "Read implementation address",
+          "steps": [{ "who": "self", "call": "implementation()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "TransparentUpgradeableProxy": {
+      "group": "Proxy",
+      "match": { "must": ["implementation()"], "any": [] },
+      "sequences": []
+    },
+
+    "ERC20": {
+      "group": "Tokens / ERC20",
+      "match": {
+        "must": ["totalSupply()", "balanceOf(address)", "transfer(address,uint256)"],
+        "any": ["allowance(address,address)", "approve(address,uint256)", "transferFrom(address,address,uint256)"]
+      },
+      "sequences": [
+        {
+          "name": "erc20_transfer",
+          "intent": "Transfer 60 from alice to bob (supply conserved)",
+          "bootstrap": [{ "kind": "mint_or_transfer_to_alice", "amount": "600" }],
+          "steps": [{ "who": "alice", "call": "transfer(bob, 60)" }],
+          "post": ["balance(bob) += 60", "balance(alice) -= 60", "supply conserved"],
+          "events": ["Transfer(address,address,uint256)"]
+        },
+        {
+          "name": "erc20_approve_spend",
+          "intent": "approve -> transferFrom flow",
+          "bootstrap": [{ "kind": "mint_or_transfer_to_alice", "amount": "200" }],
+          "steps": [
+            { "who": "alice", "call": "approve(bob, 100)" },
+            { "who": "bob",   "call": "transferFrom(alice, bob, 60)" }
+          ],
+          "post": ["allowance(alice,bob) == 40", "balance(bob) += 60", "balance(alice) -= 60", "supply conserved"],
+          "events": ["Approval(address,address,uint256)", "Transfer(address,address,uint256)"]
+        }
+      ]
+    },
+
+    "ERC20Votes": {
+      "group": "Tokens / ERC20",
+      "match": {
+        "must": ["getVotes(address)", "getPastVotes(address,uint256)"],
+        "any": ["delegate(address)", "delegates(address)"]
+      },
+      "sequences": [
+        {
+          "name": "erc20votes_read_views",
+          "intent": "Read votes (no full voting flow)",
+          "steps": [{ "who": "self", "call": "getVotes(alice)" }],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC20Permit": {
+      "group": "Tokens / ERC20",
+      "match": {
+        "must": ["nonces(address)", "DOMAIN_SEPARATOR()"],
+        "any": ["permit(address,address,uint256,uint256,uint8,bytes32,bytes32)"]
+      },
+      "sequences": [
+        {
+          "name": "erc20permit_views",
+          "intent": "Read nonces and domain separator",
+          "steps": [
+            { "who": "self", "call": "nonces(alice)" },
+            { "who": "self", "call": "DOMAIN_SEPARATOR()" }
+          ],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC721": {
+      "group": "Tokens / ERC721",
+      "match": {
+        "must": ["balanceOf(address)", "ownerOf(uint256)", "transferFrom(address,address,uint256)"],
+        "any": ["safeTransferFrom(address,address,uint256)"]
+      },
+      "sequences": [
+        {
+          "name": "erc721_simple_transferfrom",
+          "intent": "Transfer tokenId 1 from alice to bob (requires prior mint to alice)",
+          "bootstrap": [],
+          "steps": [
+            { "who": "alice", "call": "transferFrom(alice, bob, 1)" }
+          ],
+          "post": [],
+          "events": ["Transfer(address,address,uint256)"]
+        }
+      ]
+    },
+
+    "ERC721Enumerable": {
+      "group": "Tokens / ERC721",
+      "match": { "must": ["totalSupply()"], "any": ["tokenByIndex(uint256)", "tokenOfOwnerByIndex(address,uint256)"] },
+      "sequences": [
+        {
+          "name": "erc721enum_view_total",
+          "intent": "Read totalSupply",
+          "steps": [{ "who": "self", "call": "totalSupply()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC1155": {
+      "group": "Tokens / ERC1155",
+      "match": {
+        "must": ["balanceOf(address,uint256)", "safeTransferFrom(address,address,uint256,uint256,bytes)"],
+        "any": ["setApprovalForAll(address,bool)", "isApprovedForAll(address,address)"]
+      },
+      "sequences": [
+        {
+          "name": "erc1155_transfer_single",
+          "intent": "Single ID transfer (id=1, amount=10) from alice to bob",
+          "bootstrap": [],
+          "steps": [
+            { "who": "alice", "call": "safeTransferFrom(alice, bob, 1, 10, hex\"01\")" }
+          ],
+          "post": [],
+          "events": ["TransferSingle(address,address,address,uint256,uint256)"]
+        }
+      ]
+    },
+
+    "ERC1155Supply": {
+      "group": "Tokens / ERC1155",
+      "match": { "must": ["totalSupply(uint256)", "exists(uint256)"], "any": [] },
+      "sequences": [
+        {
+          "name": "erc1155supply_views",
+          "intent": "Read totalSupply for id=1",
+          "steps": [{ "who": "self", "call": "totalSupply(1)" }],
+          "post": []
+        }
+      ]
+    },
+
+    "ERC6909": {
+      "group": "Tokens / ERC6909",
+      "match": {
+        "must": ["balanceOf(address,int256)"],
+        "any": ["transfer(address,int256,int256)", "setOperator(address, bool)"]
+      },
+      "sequences": [
+        {
+          "name": "erc6909_simple_transfer",
+          "intent": "Transfer id=1 amount=10 from alice to bob",
+          "steps": [{ "who": "alice", "call": "transfer(bob, 1, 10)" }],
+          "post": [],
+          "events": ["Transfer(address,address,int256,int256)"]
+        }
+      ]
+    },
+
+    "Pausable": {
+      "group": "Common",
+      "match": { "must": ["paused()"], "any": ["pause()", "unpause()"] },
+      "sequences": [
+        {
+          "name": "pause_unpause_if_available",
+          "intent": "Pause then unpause if functions exist",
+          "requires": ["pause()", "unpause()"],
+          "steps": [{ "who": "self", "call": "pause()" }, { "who": "self", "call": "unpause()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "Multicall": {
+      "group": "Common",
+      "match": { "must": ["multicall(bytes[])"], "any": [] },
+      "sequences": []
+    },
+
+      "group": "Utils",
+      "match": { "must": ["DOMAIN_SEPARATOR()"], "any": [] },
+      "sequences": [
+        {
+          "name": "eip712_domain",
+          "intent": "Read EIP-712 domain separator",
+          "steps": [{ "who": "self", "call": "DOMAIN_SEPARATOR()" }],
+          "post": []
+        }
+      ]
+    },
+
+    "UUPSUpgradeable_like": {
+      "group": "Utils",
+      "match": { "must": ["proxiableUUID()"], "any": [] },
+      "sequences": []
+    },
+
+    "SignatureChecker": {
+      "group": "Cryptography",
+      "match": { "must": ["isValidSignatureNow(address,bytes32,bytes)"], "any": [] },
+      "sequences": []
+    },
+
+    "ECDSA_like": {
+      "group": "Cryptography",
+      "match": { "must": [], "any": [] },
+      "sequences": []
+    }
+}
+

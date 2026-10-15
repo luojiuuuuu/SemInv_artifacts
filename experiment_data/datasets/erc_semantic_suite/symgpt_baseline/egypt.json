@@ -1,0 +1,18 @@
+{
+    "sol_file": "benchmark/baseline/egypt.sol",
+    "contract": {
+        "Egypt": [
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "Egypt",
+                "fn_interface": "giveBlockReward() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

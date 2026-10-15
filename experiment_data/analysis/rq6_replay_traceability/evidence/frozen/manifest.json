@@ -1,0 +1,33 @@
+{
+  "schema": "rq1-t-independent-validation.v1",
+  "inputs": {
+    "predictions": {
+      "path": "<seminv-workspace>\\outputs\\seminv_T_unified_failure_policy_20261012\\round_1200s\\predictions.csv"
+    },
+    "event_audit": {
+      "path": "<seminv-workspace>\\outputs\\seminv_T_final_20261011\\round_1200s\\event_audit.csv"
+    },
+    "T_report": {
+      "path": "<previous-artifact-root>\\revision\\RQ1_T_final_comparison_analysis_20261011.md"
+    },
+    "fuzzer_main": {
+      "path": "<seminv-workspace>\\fuzzer\\main.py"
+    },
+    "finding_schema": {
+      "path": "<seminv-workspace>\\fuzzer\\reporting\\finding_schema.py"
+    }
+  },
+  "selected_runs": 139,
+  "retained_events": 880,
+  "counts": {
+    "dynamic": 735,
+    "raw_exact": 614,
+    "shortened": 64,
+    "source_pattern": 145
+  },
+  "notes": [
+    "Historical search and T predictions are unchanged.",
+    "Archived result matches are candidates until transaction-level identity is verified.",
+    "No replay or minimization was executed by this freezing step."
+  ]
+}

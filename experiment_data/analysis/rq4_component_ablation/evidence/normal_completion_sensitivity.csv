@@ -1,0 +1,13 @@
+﻿scope,variant,n_pairs,Full_hits,ablated_hits,Full_only,ablated_only
+strict8_139_seed11,NoFunctionalSeeds,124,116.0,117.0,0,1
+strict8_139_seed11,NoPropertyTests,126,118.0,119.0,0,1
+strict8_139_seed11,LegacyNoUIR_NoSymbolic,126,118.0,108.0,11,1
+repeat24_five_seeds,NoFunctionalSeeds,110,100.0,100.0,0,0
+repeat24_five_seeds,NoPropertyTests,115,105.0,105.0,0,0
+repeat24_five_seeds,LegacyNoUIR_NoSymbolic,115,105.0,85.0,20,0
+nonempty_functional_seeds_seed11,NoFunctionalSeeds,81,76.0,76.0,0,0
+nonempty_functional_seeds_seed11,NoPropertyTests,83,78.0,78.0,0,0
+nonempty_functional_seeds_seed11,LegacyNoUIR_NoSymbolic,83,78.0,70.0,8,0
+empty_functional_seeds_seed11,NoFunctionalSeeds,43,40.0,41.0,0,1
+empty_functional_seeds_seed11,NoPropertyTests,43,40.0,41.0,0,1
+empty_functional_seeds_seed11,LegacyNoUIR_NoSymbolic,43,40.0,38.0,3,1

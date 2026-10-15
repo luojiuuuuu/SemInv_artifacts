@@ -1,0 +1,6 @@
+alignment_level,finds,total_finds,pocs,total_completed_pocs,find_pct,poc_pct
+linked_inputs,281,295,45,48,95.25,93.75
+poc_function_matches,131,295,39,48,44.41,81.25
+multi_transaction_prefixes,198,295,42,48,67.12,87.50
+function_aligned_multi_transaction,80,131,31,39,61.07,79.49
+

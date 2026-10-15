@@ -1,0 +1,5 @@
+task,matched,reference_total,precision_pct,recall_pct,missing
+state_declarations,393,407,100.00,96.56,14
+storage_bindings,323,335,100.00,96.42,12
+static_may_write,,,98.03,65.95,206
+

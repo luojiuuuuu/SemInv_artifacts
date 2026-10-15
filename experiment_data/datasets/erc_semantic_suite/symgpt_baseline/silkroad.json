@@ -1,0 +1,95 @@
+{
+    "sol_file": "benchmark/baseline/silkroad.sol",
+    "contract": {
+        "SilkToken": [
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "contract": "SilkToken",
+                "fn_interface": null,
+                "rid": 5,
+                "tags": [
+                    "incorrect_return"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "interface",
+                "rule": "event Approval(address indexed _owner, address indexed _spender, uint256 _value)",
+                "contract": "SilkToken",
+                "fn_interface": null,
+                "rid": 1,
+                "tags": [
+                    "event"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "SilkToken",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 7,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "SilkToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 12,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit '['Approval']' if function successfully executes",
+                "contract": "SilkToken",
+                "fn_interface": "function approve(address _spender, uint256 _value) public returns (bool success)",
+                "rid": 18,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "SilkToken",
+                "fn_interface": "burn(uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "SilkToken",
+                "fn_interface": "burnFrom(address,uint256) returns(bool)",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "SilkToken",
+                "fn_interface": "constructor(uint256,string,string) returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

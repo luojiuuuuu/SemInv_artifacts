@@ -1,0 +1,18 @@
+{
+    "sol_file": "benchmark/baseline/721_candidate_4.sol",
+    "contract": {
+        "BaseRegistrarImplementation": [
+            {
+                "erc": "ERC721",
+                "type": "emit",
+                "rule": "emit '['Approval']' if the owner or an approved operator revokes approval for a token",
+                "contract": "BaseRegistrarImplementation",
+                "fn_interface": "function safeTransferFrom(address _from, address _to, uint256 _tokenId, bytes data) external payable",
+                "rid": 10,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,3828 @@
+{
+  "protocol": "development cohort; prediction code does not read labels; opt-in cached-AST adapter",
+  "predictions": [
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "supportsInterface(1)",
+      "reason": "missing required function signature",
+      "evidence": "supportsInterface(bytes4)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "safeTransferFrom(3)",
+      "reason": "missing required function signature",
+      "evidence": "safeTransferFrom(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "safeTransferFrom(4)",
+      "reason": "missing required function signature",
+      "evidence": "safeTransferFrom(address,address,uint256,bytes)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "setApprovalForAll(2)",
+      "reason": "missing required function signature",
+      "evidence": "setApprovalForAll(address,bool)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "isApprovedForAll(2)",
+      "reason": "missing required function signature",
+      "evidence": "isApprovedForAll(address,address)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "Transfer",
+      "reason": "incorrect required event indexing",
+      "evidence": "Transfer(address,address,uint256) indexed=[True, True, True]; observed [[True, True, False]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.index",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "incorrect required event indexing",
+      "evidence": "Approval(address,address,uint256) indexed=[True, True, True]; observed [[True, True, False]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.index",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "ApprovalForAll",
+      "reason": "missing required event signature",
+      "evidence": "ApprovalForAll(address,address,bool)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "throw",
+      "function": "balanceOf(address)",
+      "rule_id": "zero_owner",
+      "normative": "MUST",
+      "reason": "total getter has no invalid-input rejection",
+      "evidence": {
+        "function_ids": [
+          163
+        ],
+        "src": "3217:171:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "throw",
+      "function": "ownerOf(uint256)",
+      "rule_id": "invalid_token",
+      "normative": "MUST",
+      "reason": "total getter has no invalid-input rejection",
+      "evidence": {
+        "function_ids": [
+          176,
+          453
+        ],
+        "src": "3394:156:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "violation_type": "throw",
+      "function": "getApproved(uint256)",
+      "rule_id": "invalid_token",
+      "normative": "MUST",
+      "reason": "total getter has no invalid-input rejection",
+      "evidence": {
+        "function_ids": [
+          412,
+          479
+        ],
+        "src": "5496:167:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "Transfer",
+      "reason": "incorrect required event indexing",
+      "evidence": "Transfer(address,address,uint256) indexed=[True, True, True]; observed [[True, True, False]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.index",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "standard": "ERC721",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "incorrect required event indexing",
+      "evidence": "Approval(address,address,uint256) indexed=[True, True, True]; observed [[True, True, False]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.index",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "standard": "ERC721",
+      "violation_type": "throw",
+      "function": "getApproved(uint256)",
+      "rule_id": "invalid_token",
+      "normative": "MUST",
+      "reason": "total getter has no invalid-input rejection",
+      "evidence": {
+        "function_ids": [
+          2333
+        ],
+        "src": "38121:120:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2195:392:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2319:262:0",
+        "role_storage_ids": [
+          249
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2593:774:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2978:383:0",
+        "role_storage_ids": [
+          255
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 299,
+          "target_id": 249,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4357:37:0",
+          "lhs_ref": "('index', ('id', 249), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 266)",
+          "node_id": 280
+        },
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 299,
+          "target_id": 4,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "4443:28:0",
+          "lhs_ref": "('id', 4)",
+          "delta_ref": "('id', 266)",
+          "node_id": 284
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "createTokens()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "createTokens()",
+          "declaring_function_id": 869,
+          "target_id": 221,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "10126:27:0",
+          "lhs_ref": "('id', 221)",
+          "delta_ref": "('id', 837)",
+          "node_id": 853
+        },
+        {
+          "function": "createTokens()",
+          "declaring_function_id": 869,
+          "target_id": 477,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "10163:30:0",
+          "lhs_ref": "('index', ('id', 477), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 825)",
+          "node_id": 860
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "7721:171:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "4627:262:0",
+        "role_storage_ids": [
+          477
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "7898:209:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "5060:383:0",
+        "role_storage_ids": [
+          483
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(address,address)",
+          "declaring_function_id": 801,
+          "target_id": 477,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "9424:46:0",
+          "lhs_ref": "('index', ('id', 477), ('id', 709))",
+          "delta_ref": "('id', 724)",
+          "node_id": 789
+        },
+        {
+          "function": "(address,address)",
+          "declaring_function_id": 801,
+          "target_id": 221,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "9480:30:0",
+          "lhs_ref": "('id', 221)",
+          "delta_ref": "('id', 724)",
+          "node_id": 793
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "createTokens()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "createTokens()",
+          "declaring_function_id": 537,
+          "target_id": 90,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "5583:27:0",
+          "lhs_ref": "('id', 90)",
+          "delta_ref": "('id', 506)",
+          "node_id": 521
+        },
+        {
+          "function": "createTokens()",
+          "declaring_function_id": 537,
+          "target_id": 330,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "5620:30:0",
+          "lhs_ref": "('index', ('id', 330), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 498)",
+          "node_id": 528
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "refund()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "refund()",
+          "declaring_function_id": 677,
+          "target_id": 330,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "6943:24:0",
+          "lhs_ref": "('index', ('id', 330), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('literal', '0')",
+          "node_id": 642
+        },
+        {
+          "function": "refund()",
+          "declaring_function_id": 677,
+          "target_id": 90,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "6977:47:0",
+          "lhs_ref": "('id', 90)",
+          "delta_ref": "None",
+          "node_id": 649
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "1690:364:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "1786:262:0",
+        "role_storage_ids": [
+          330
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2060:540:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2211:383:0",
+        "role_storage_ids": [
+          336
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(address,address,uint256,uint256)",
+          "declaring_function_id": 464,
+          "target_id": 90,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "4813:21:0",
+          "lhs_ref": "('id', 90)",
+          "delta_ref": "('id', 375)",
+          "node_id": 450
+        },
+        {
+          "function": "(address,address,uint256,uint256)",
+          "declaring_function_id": 464,
+          "target_id": 330,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4844:34:0",
+          "lhs_ref": "('index', ('id', 330), ('id', 357))",
+          "delta_ref": "('id', 375)",
+          "node_id": 456
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2193:699:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2624:262:0",
+        "role_storage_ids": [
+          251
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2898:774:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "3283:383:0",
+        "role_storage_ids": [
+          257
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 316,
+          "target_id": 251,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4716:49:0",
+          "lhs_ref": "('index', ('id', 251), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('literal', '21000000000000000000000000')",
+          "node_id": 285
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 316,
+          "target_id": 259,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "4775:40:0",
+          "lhs_ref": "('id', 259)",
+          "delta_ref": "('literal', '21000000000000000000000000')",
+          "node_id": 289
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2456:683:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approve(address,uint256)",
+      "rule_id": "event.Approval",
+      "normative": "MUST",
+      "reason": "required event absent from resolved implementation and callees",
+      "evidence": [
+        {
+          "function": "approve(address,uint256)",
+          "declaring_function_id": 335,
+          "target_id": 157,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "3340:40:0",
+          "lhs_ref": "('index', ('index', ('id', 157), ('member', ('id', -15), 'sender')), ('id', 309))",
+          "delta_ref": "('id', 311)",
+          "node_id": 330
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "3461:908:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 503,
+          "target_id": 147,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4568:71:0",
+          "lhs_ref": "('index', ('id', 147), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "None",
+          "node_id": 484
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 503,
+          "target_id": 141,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "4677:51:0",
+          "lhs_ref": "('id', 141)",
+          "delta_ref": "None",
+          "node_id": 492
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "freeze(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "freeze(uint256)",
+          "declaring_function_id": 564,
+          "target_id": 147,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "5019:71:0",
+          "lhs_ref": "('index', ('id', 147), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "None",
+          "node_id": 539
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "unfreeze(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "unfreeze(uint256)",
+          "declaring_function_id": 625,
+          "target_id": 147,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "5598:71:0",
+          "lhs_ref": "('index', ('id', 147), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "None",
+          "node_id": 614
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 226,
+          "target_id": 147,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "2041:37:0",
+          "lhs_ref": "('index', ('id', 147), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 185)",
+          "node_id": 199
+        },
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 226,
+          "target_id": 141,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "2127:27:0",
+          "lhs_ref": "('id', 141)",
+          "delta_ref": "('id', 185)",
+          "node_id": 203
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2638:332:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2976:531:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 206,
+          "target_id": 189,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "2364:35:0",
+          "lhs_ref": "('index', ('id', 189), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 176)",
+          "node_id": 203
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "name(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "string",
+        "observed": [
+          {
+            "signature": "name()",
+            "params": [],
+            "returns": [
+              "bytes32"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "symbol(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "string",
+        "observed": [
+          {
+            "signature": "symbol()",
+            "params": [],
+            "returns": [
+              "bytes32"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 1040,
+          "target_id": 606,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "13130:41:0",
+          "lhs_ref": "('index', ('id', 606), ('id', 1007))",
+          "delta_ref": "None",
+          "node_id": 1025
+        },
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 1040,
+          "target_id": 602,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "13181:27:0",
+          "lhs_ref": "('id', 602)",
+          "delta_ref": "None",
+          "node_id": 1032
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 1040,
+          "target_id": 606,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "13130:41:0",
+          "lhs_ref": "('index', ('id', 606), ('id', 1007))",
+          "delta_ref": "None",
+          "node_id": 1025
+        },
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 1040,
+          "target_id": 602,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "13181:27:0",
+          "lhs_ref": "('id', 602)",
+          "delta_ref": "None",
+          "node_id": 1032
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 1111,
+          "target_id": 606,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "13496:41:0",
+          "lhs_ref": "('index', ('id', 606), ('id', 1042))",
+          "delta_ref": "None",
+          "node_id": 1096
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 1111,
+          "target_id": 602,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "13547:27:0",
+          "lhs_ref": "('id', 602)",
+          "delta_ref": "None",
+          "node_id": 1103
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(address,uint256)",
+          "declaring_function_id": 1111,
+          "target_id": 606,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "13496:41:0",
+          "lhs_ref": "('index', ('id', 606), ('id', 1042))",
+          "delta_ref": "None",
+          "node_id": 1096
+        },
+        {
+          "function": "burn(address,uint256)",
+          "declaring_function_id": 1111,
+          "target_id": 602,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "13547:27:0",
+          "lhs_ref": "('id', 602)",
+          "delta_ref": "None",
+          "node_id": 1103
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256)",
+          "declaring_function_id": 629,
+          "target_id": 606,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "9488:30:0",
+          "lhs_ref": "('index', ('id', 606), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 614)",
+          "node_id": 622
+        },
+        {
+          "function": "(uint256)",
+          "declaring_function_id": 629,
+          "target_id": 602,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "9528:16:0",
+          "lhs_ref": "('id', 602)",
+          "delta_ref": "('id', 614)",
+          "node_id": 626
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "giveBlockReward()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "giveBlockReward()",
+          "declaring_function_id": 327,
+          "target_id": 26,
+          "target": "balanceOf",
+          "op": "add",
+          "index_depth": 1,
+          "src": "4994:30:0",
+          "lhs_ref": "('index', ('id', 26), ('member', ('id', -4), 'coinbase'))",
+          "delta_ref": "('literal', '1')",
+          "node_id": 324
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transferFrom(3)",
+      "reason": "missing required function signature",
+      "evidence": "transferFrom(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "approve(2)",
+      "reason": "missing required function signature",
+      "evidence": "approve(address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "allowance(2)",
+      "reason": "missing required function signature",
+      "evidence": "allowance(address,address)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "9560:3588:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 506,
+          "target_id": 3,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "6417:24:0",
+          "lhs_ref": "('id', 3)",
+          "delta_ref": "('literal', '2400')",
+          "node_id": 492
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 506,
+          "target_id": 369,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "6451:34:0",
+          "lhs_ref": "('index', ('id', 369), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 3)",
+          "node_id": 499
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approveAndCall(address,uint256,bytes)",
+      "rule_id": "event.Approval",
+      "normative": "effect-diagnostic",
+      "reason": "allowance assignment with no reachable Approval event",
+      "evidence": [
+        {
+          "function": "approveAndCall(address,uint256,bytes)",
+          "declaring_function_id": 425,
+          "target_id": 252,
+          "target": "allowed",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "4105:38:0",
+          "lhs_ref": "('index', ('index', ('id', 252), ('member', ('id', -15), 'sender')), ('id', 379))",
+          "delta_ref": "('id', 381)",
+          "node_id": 395
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "982:364:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "1078:262:0",
+        "role_storage_ids": [
+          246
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "1352:534:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "1497:383:0",
+        "role_storage_ids": [
+          252
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 311,
+          "target_id": 246,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3177:47:0",
+          "lhs_ref": "('index', ('id', 246), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('literal', '500000000000000000000000')",
+          "node_id": 280
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 311,
+          "target_id": 254,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "3234:38:0",
+          "lhs_ref": "('id', 254)",
+          "delta_ref": "('literal', '500000000000000000000000')",
+          "node_id": 284
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "4353:453:0",
+        "role_storage_ids": [
+          80
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2300:325:0",
+        "role_storage_ids": [
+          271
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approve(address,uint256)",
+      "rule_id": "event.Approval",
+      "normative": "MUST",
+      "reason": "required event absent from resolved implementation and callees",
+      "evidence": [
+        {
+          "function": "approve(address,uint256)",
+          "declaring_function_id": 149,
+          "target_id": 34,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "2030:40:0",
+          "lhs_ref": "('index', ('index', ('id', 34), ('member', ('id', -15), 'sender')), ('id', 130))",
+          "delta_ref": "('id', 132)",
+          "node_id": 144
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approveAndCall(address,uint256,bytes)",
+      "rule_id": "event.Approval",
+      "normative": "effect-diagnostic",
+      "reason": "allowance assignment with no reachable Approval event",
+      "evidence": [
+        {
+          "function": "approveAndCall(address,uint256,bytes)",
+          "declaring_function_id": 149,
+          "target_id": 34,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "2030:40:0",
+          "lhs_ref": "('index', ('index', ('id', 34), ('member', ('id', -15), 'sender')), ('id', 130))",
+          "delta_ref": "('id', 132)",
+          "node_id": 144
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 77,
+          "target_id": 28,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "1009:37:0",
+          "lhs_ref": "('index', ('id', 28), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 44)",
+          "node_id": 58
+        },
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 77,
+          "target_id": 24,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "1095:27:0",
+          "lhs_ref": "('id', 24)",
+          "delta_ref": "('id', 44)",
+          "node_id": 62
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "5032:453:0",
+        "role_storage_ids": [
+          269
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2873:325:0",
+        "role_storage_ids": [
+          263
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "setAccount(address)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "setAccount(address)",
+          "declaring_function_id": 348,
+          "target_id": 225,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3057:22:0",
+          "lhs_ref": "('index', ('id', 225), ('id', 296))",
+          "delta_ref": "('literal', '0')",
+          "node_id": 343
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "4336:719:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 677,
+          "target_id": 225,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "5491:60:0",
+          "lhs_ref": "('index', ('id', 225), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "None",
+          "node_id": 665
+        },
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 677,
+          "target_id": 210,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "5561:42:0",
+          "lhs_ref": "('id', 210)",
+          "delta_ref": "None",
+          "node_id": 672
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 730,
+          "target_id": 225,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "5823:60:0",
+          "lhs_ref": "('index', ('id', 225), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "None",
+          "node_id": 718
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 730,
+          "target_id": 210,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "5893:42:0",
+          "lhs_ref": "('id', 210)",
+          "delta_ref": "None",
+          "node_id": 725
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 268,
+          "target_id": 225,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "2313:34:0",
+          "lhs_ref": "('index', ('id', 225), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 210)",
+          "node_id": 248
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "6789:364:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "7190:491:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "allocateTokensForFounder()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "allocateTokensForFounder()",
+          "declaring_function_id": 1070,
+          "target_id": 172,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "11076:63:0",
+          "lhs_ref": "('index', ('id', 172), ('id', 184))",
+          "delta_ref": "('id', 1033)",
+          "node_id": 1051
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "allocateTokensForTeam()",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "allocateTokensForTeam()",
+          "declaring_function_id": 1180,
+          "target_id": 172,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "11727:57:0",
+          "lhs_ref": "('index', ('id', 172), ('id', 186))",
+          "delta_ref": "('id', 1093)",
+          "node_id": 1116
+        },
+        {
+          "function": "allocateTokensForTeam()",
+          "declaring_function_id": 1180,
+          "target_id": 172,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "12097:57:0",
+          "lhs_ref": "('index', ('id', 172), ('id', 186))",
+          "delta_ref": "('id', 1093)",
+          "node_id": 1161
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "allocateReservedTokens(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "allocateReservedTokens(address,uint256)",
+          "declaring_function_id": 1230,
+          "target_id": 172,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "12559:46:0",
+          "lhs_ref": "('index', ('id', 172), ('id', 1182))",
+          "delta_ref": "('id', 1184)",
+          "node_id": 1215
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "allocateSalesTokens(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "allocateSalesTokens(address,uint256)",
+          "declaring_function_id": 1280,
+          "target_id": 172,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "12998:46:0",
+          "lhs_ref": "('index', ('id', 172), ('id', 1232))",
+          "delta_ref": "('id', 1234)",
+          "node_id": 1265
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2067:364:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2163:262:0",
+        "role_storage_ids": [
+          251
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "2437:540:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2588:383:0",
+        "role_storage_ids": [
+          257
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 316,
+          "target_id": 251,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4279:54:0",
+          "lhs_ref": "('index', ('id', 251), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('literal', '2000000000000000000000000000000')",
+          "node_id": 285
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 316,
+          "target_id": 259,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "4343:45:0",
+          "lhs_ref": "('id', 259)",
+          "delta_ref": "('literal', '2000000000000000000000000000000')",
+          "node_id": 289
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transferFrom(3)",
+      "reason": "missing required function signature",
+      "evidence": "transferFrom(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "approve(2)",
+      "reason": "missing required function signature",
+      "evidence": "approve(address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2035:105:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 178,
+          "target_id": 13,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "2417:31:0",
+          "lhs_ref": "('index', ('id', 13), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 144)",
+          "node_id": 163
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 178,
+          "target_id": 9,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "2486:21:0",
+          "lhs_ref": "('id', 9)",
+          "delta_ref": "('id', 144)",
+          "node_id": 167
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 68,
+          "target_id": 13,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "951:37:0",
+          "lhs_ref": "('index', ('id', 13), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 35)",
+          "node_id": 49
+        },
+        {
+          "function": "(uint256,string,uint8,string)",
+          "declaring_function_id": 68,
+          "target_id": 9,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "1037:27:0",
+          "lhs_ref": "('id', 9)",
+          "delta_ref": "('id', 35)",
+          "node_id": 53
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/LUTOKEN.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "upgrade(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "upgrade(uint256)",
+          "declaring_function_id": 944,
+          "target_id": 366,
+          "target": "balances",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "15032:54:0",
+          "lhs_ref": "('index', ('id', 366), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 862)",
+          "node_id": 909
+        },
+        {
+          "function": "upgrade(uint256)",
+          "declaring_function_id": 944,
+          "target_id": 368,
+          "target": "totalSupply_",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "15140:38:0",
+          "lhs_ref": "('id', 368)",
+          "delta_ref": "('id', 862)",
+          "node_id": 916
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/LUTOKEN.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(string,string,uint8,uint256)",
+          "declaring_function_id": 1194,
+          "target_id": 368,
+          "target": "totalSupply_",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "18375:27:0",
+          "lhs_ref": "('id', 368)",
+          "delta_ref": "('id', 1170)",
+          "node_id": 1184
+        },
+        {
+          "function": "(string,string,uint8,uint256)",
+          "declaring_function_id": 1194,
+          "target_id": 366,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "18412:35:0",
+          "lhs_ref": "('index', ('id', 366), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 368)",
+          "node_id": 1191
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "name(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "string",
+        "observed": [
+          {
+            "signature": "name()",
+            "params": [],
+            "returns": [
+              "bytes32"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "symbol(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "string",
+        "observed": [
+          {
+            "signature": "symbol()",
+            "params": [],
+            "returns": [
+              "bytes32"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 1043,
+          "target_id": 609,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "14693:41:0",
+          "lhs_ref": "('index', ('id', 609), ('id', 1010))",
+          "delta_ref": "None",
+          "node_id": 1028
+        },
+        {
+          "function": "mint(uint256)",
+          "declaring_function_id": 1043,
+          "target_id": 605,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "14744:27:0",
+          "lhs_ref": "('id', 605)",
+          "delta_ref": "None",
+          "node_id": 1035
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 1043,
+          "target_id": 609,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "14693:41:0",
+          "lhs_ref": "('index', ('id', 609), ('id', 1010))",
+          "delta_ref": "None",
+          "node_id": 1028
+        },
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 1043,
+          "target_id": 605,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "14744:27:0",
+          "lhs_ref": "('id', 605)",
+          "delta_ref": "None",
+          "node_id": 1035
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 1114,
+          "target_id": 609,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "15059:41:0",
+          "lhs_ref": "('index', ('id', 609), ('id', 1045))",
+          "delta_ref": "None",
+          "node_id": 1099
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 1114,
+          "target_id": 605,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "15110:27:0",
+          "lhs_ref": "('id', 605)",
+          "delta_ref": "None",
+          "node_id": 1106
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(address,uint256)",
+          "declaring_function_id": 1114,
+          "target_id": 609,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "15059:41:0",
+          "lhs_ref": "('index', ('id', 609), ('id', 1045))",
+          "delta_ref": "None",
+          "node_id": 1099
+        },
+        {
+          "function": "burn(address,uint256)",
+          "declaring_function_id": 1114,
+          "target_id": 605,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "15110:27:0",
+          "lhs_ref": "('id', 605)",
+          "delta_ref": "None",
+          "node_id": 1106
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256)",
+          "declaring_function_id": 632,
+          "target_id": 609,
+          "target": "_balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "11020:30:0",
+          "lhs_ref": "('index', ('id', 609), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 617)",
+          "node_id": 625
+        },
+        {
+          "function": "(uint256)",
+          "declaring_function_id": 632,
+          "target_id": 605,
+          "target": "_supply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "11060:16:0",
+          "lhs_ref": "('id', 605)",
+          "delta_ref": "('id', 617)",
+          "node_id": 629
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2770:146:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "3586:358:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approve(address,uint256)",
+      "rule_id": "event.Approval",
+      "normative": "MUST",
+      "reason": "required event absent from resolved implementation and callees",
+      "evidence": [
+        {
+          "function": "approve(address,uint256)",
+          "declaring_function_id": 317,
+          "target_id": 38,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "4357:40:0",
+          "lhs_ref": "('index', ('index', ('id', 38), ('member', ('id', -15), 'sender')), ('id', 290))",
+          "delta_ref": "('id', 292)",
+          "node_id": 312
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approveAndCall(address,uint256,bytes)",
+      "rule_id": "event.Approval",
+      "normative": "effect-diagnostic",
+      "reason": "allowance assignment with no reachable Approval event",
+      "evidence": [
+        {
+          "function": "approveAndCall(address,uint256,bytes)",
+          "declaring_function_id": 317,
+          "target_id": 38,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "4357:40:0",
+          "lhs_ref": "('index', ('index', ('id', 38), ('member', ('id', -15), 'sender')), ('id', 290))",
+          "delta_ref": "('id', 292)",
+          "node_id": 312
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 411,
+          "target_id": 32,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "5584:31:0",
+          "lhs_ref": "('index', ('id', 32), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 369)",
+          "node_id": 396
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 411,
+          "target_id": 22,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "5653:21:0",
+          "lhs_ref": "('id', 22)",
+          "delta_ref": "('id', 369)",
+          "node_id": 400
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burnFrom(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 475,
+          "target_id": 32,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "6333:26:0",
+          "lhs_ref": "('index', ('id', 32), ('id', 414))",
+          "delta_ref": "('id', 416)",
+          "node_id": 452
+        },
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 475,
+          "target_id": 22,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "6495:21:0",
+          "lhs_ref": "('id', 22)",
+          "delta_ref": "('id', 416)",
+          "node_id": 465
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,string)",
+          "declaring_function_id": 94,
+          "target_id": 22,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "1293:53:0",
+          "lhs_ref": "('id', 22)",
+          "delta_ref": "None",
+          "node_id": 71
+        },
+        {
+          "function": "(uint256,string,string)",
+          "declaring_function_id": 94,
+          "target_id": 32,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "1403:35:0",
+          "lhs_ref": "('index', ('id', 32), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 22)",
+          "node_id": 78
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transferFrom(3)",
+      "reason": "incorrect required return type",
+      "evidence": "transferFrom(address,address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "approve(2)",
+      "reason": "incorrect required return type",
+      "evidence": "approve(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "decimals(0)",
+      "rule_id": "interface.return",
+      "normative": "optional-present",
+      "reason": "optional metadata present with incorrect return type",
+      "evidence": {
+        "expected": "uint8",
+        "observed": [
+          {
+            "signature": "decimals()",
+            "params": [],
+            "returns": [
+              "uint256"
+            ]
+          }
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mintTimelocked(address,uint256,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mintTimelocked(address,uint256,uint256)",
+          "declaring_function_id": 576,
+          "target_id": 179,
+          "target": "totalSupply",
+          "op": "add",
+          "index_depth": 0,
+          "src": "7208:35:0",
+          "lhs_ref": "('id', 179)",
+          "delta_ref": "('id', 543)",
+          "node_id": 556
+        },
+        {
+          "function": "mintTimelocked(address,uint256,uint256)",
+          "declaring_function_id": 576,
+          "target_id": 212,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "7253:39:0",
+          "lhs_ref": "('index', ('id', 212), ('id', 541))",
+          "delta_ref": "('id', 543)",
+          "node_id": 566
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mint(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 576,
+          "target_id": 179,
+          "target": "totalSupply",
+          "op": "add",
+          "index_depth": 0,
+          "src": "7208:35:0",
+          "lhs_ref": "('id', 179)",
+          "delta_ref": "('id', 543)",
+          "node_id": 556
+        },
+        {
+          "function": "mint(address,uint256)",
+          "declaring_function_id": 576,
+          "target_id": 212,
+          "target": "balances",
+          "op": "add",
+          "index_depth": 1,
+          "src": "7253:39:0",
+          "lhs_ref": "('index', ('id', 212), ('id', 541))",
+          "delta_ref": "('id', 543)",
+          "node_id": 566
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "4114:427:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "4199:314:0",
+        "role_storage_ids": [
+          84
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "false"
+        ],
+        "src": "5347:664:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "5472:511:0",
+        "role_storage_ids": [
+          90
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "assign",
+      "function": "approve(address,uint256)",
+      "rule_id": "allowance_overwrite",
+      "normative": "MUST",
+      "reason": "allowance role updated additively by approve amount",
+      "evidence": [
+        {
+          "function": "approve(address,uint256)",
+          "declaring_function_id": 662,
+          "target_id": 90,
+          "target": "_allowances",
+          "op": "add",
+          "index_depth": 2,
+          "src": "6097:94:0",
+          "lhs_ref": "('index', ('index', ('id', 90), ('member', ('id', -15), 'sender')), ('id', 628))",
+          "delta_ref": "('id', 630)",
+          "node_id": 650
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 355,
+          "target_id": 84,
+          "target": "_balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3470:53:0",
+          "lhs_ref": "('index', ('id', 84), ('id', 284))",
+          "delta_ref": "None",
+          "node_id": 308
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 355,
+          "target_id": 84,
+          "target": "_balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3559:53:0",
+          "lhs_ref": "('index', ('id', 84), ('id', 287))",
+          "delta_ref": "None",
+          "node_id": 319
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 355,
+          "target_id": 84,
+          "target": "_balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3650:48:0",
+          "lhs_ref": "('index', ('id', 84), ('id', 290))",
+          "delta_ref": "None",
+          "node_id": 330
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 355,
+          "target_id": 84,
+          "target": "_balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3734:43:0",
+          "lhs_ref": "('index', ('id', 84), ('id', 293))",
+          "delta_ref": "None",
+          "node_id": 341
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 355,
+          "target_id": 84,
+          "target": "_balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3813:44:0",
+          "lhs_ref": "('index', ('id', 84), ('id', 296))",
+          "delta_ref": "None",
+          "node_id": 352
+        },
+        {
+          "function": "(string,string,uint8,uint256)",
+          "declaring_function_id": 118,
+          "target_id": 80,
+          "target": "_totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "1445:26:0",
+          "lhs_ref": "('id', 80)",
+          "delta_ref": "('id', 98)",
+          "node_id": 115
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 242,
+          "target_id": 13,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "1880:31:0",
+          "lhs_ref": "('index', ('id', 13), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 208)",
+          "node_id": 227
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 242,
+          "target_id": 9,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "1921:21:0",
+          "lhs_ref": "('id', 9)",
+          "delta_ref": "('id', 208)",
+          "node_id": 231
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burnFrom(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 297,
+          "target_id": 13,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "2228:26:0",
+          "lhs_ref": "('index', ('id', 13), ('id', 244))",
+          "delta_ref": "('id', 246)",
+          "node_id": 274
+        },
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 297,
+          "target_id": 9,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "2312:21:0",
+          "lhs_ref": "('id', 9)",
+          "delta_ref": "('id', 246)",
+          "node_id": 287
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "1015:105:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "1126:298:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 478,
+          "target_id": 9,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "3517:43:0",
+          "lhs_ref": "('id', 9)",
+          "delta_ref": "('literal', '10000000000000000000000000000')",
+          "node_id": 429
+        },
+        {
+          "function": "()",
+          "declaring_function_id": 478,
+          "target_id": 13,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "3570:78:0",
+          "lhs_ref": "('index', ('id', 13), None)",
+          "delta_ref": "('id', 9)",
+          "node_id": 438
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "transfer(2)",
+      "reason": "incorrect required return type",
+      "evidence": "transfer(address,uint256) returns ['bool']; observed [[]]",
+      "source": "compiler ABI",
+      "rule_id": "interface.return",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2995:105:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "3369:317:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approve(address,uint256)",
+      "rule_id": "event.Approval",
+      "normative": "MUST",
+      "reason": "required event absent from resolved implementation and callees",
+      "evidence": [
+        {
+          "function": "approve(address,uint256)",
+          "declaring_function_id": 283,
+          "target_id": 73,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "4058:40:0",
+          "lhs_ref": "('index', ('index', ('id', 73), ('member', ('id', -15), 'sender')), ('id', 264))",
+          "delta_ref": "('id', 266)",
+          "node_id": 278
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "approveAndCall(address,uint256,bytes)",
+      "rule_id": "event.Approval",
+      "normative": "effect-diagnostic",
+      "reason": "allowance assignment with no reachable Approval event",
+      "evidence": [
+        {
+          "function": "approveAndCall(address,uint256,bytes)",
+          "declaring_function_id": 283,
+          "target_id": 73,
+          "target": "allowance",
+          "op": "assign",
+          "index_depth": 2,
+          "src": "4058:40:0",
+          "lhs_ref": "('index', ('index', ('id', 73), ('member', ('id', -15), 'sender')), ('id', 264))",
+          "delta_ref": "('id', 266)",
+          "node_id": 278
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burn(uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 361,
+          "target_id": 67,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "5203:31:0",
+          "lhs_ref": "('index', ('id', 67), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 327)",
+          "node_id": 346
+        },
+        {
+          "function": "burn(uint256)",
+          "declaring_function_id": 361,
+          "target_id": 63,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "5272:21:0",
+          "lhs_ref": "('id', 63)",
+          "delta_ref": "('id', 327)",
+          "node_id": 350
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burnFrom(address,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 417,
+          "target_id": 67,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "5911:26:0",
+          "lhs_ref": "('index', ('id', 67), ('id', 364))",
+          "delta_ref": "('id', 366)",
+          "node_id": 394
+        },
+        {
+          "function": "burnFrom(address,uint256)",
+          "declaring_function_id": 417,
+          "target_id": 63,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "6073:21:0",
+          "lhs_ref": "('id', 63)",
+          "delta_ref": "('id', 366)",
+          "node_id": 407
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "(uint256,string,string)",
+          "declaring_function_id": 124,
+          "target_id": 63,
+          "target": "totalSupply",
+          "op": "assign",
+          "index_depth": 0,
+          "src": "1537:53:0",
+          "lhs_ref": "('id', 63)",
+          "delta_ref": "None",
+          "node_id": 106
+        },
+        {
+          "function": "(uint256,string,string)",
+          "declaring_function_id": 124,
+          "target_id": 67,
+          "target": "balanceOf",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "1654:35:0",
+          "lhs_ref": "('index', ('id', 67), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 63)",
+          "node_id": 113
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "2631:47:0",
+        "role_storage_ids": [
+          408
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "3157:56:0",
+        "role_storage_ids": [
+          415
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "approve(2)",
+      "reason": "missing required function signature",
+      "evidence": "approve(address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "standard": "ERC20",
+      "violation_type": "interface",
+      "function": "Approval",
+      "reason": "missing required event signature",
+      "evidence": "Approval(address,address,uint256)",
+      "source": "compiler ABI",
+      "rule_id": "interface.missing",
+      "normative": "MUST"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "mintTokens(uint256,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "mintTokens(uint256,uint256)",
+          "declaring_function_id": 985,
+          "target_id": 160,
+          "target": "totalSupply",
+          "op": "add",
+          "index_depth": 0,
+          "src": "14143:36:0",
+          "lhs_ref": "('id', 160)",
+          "delta_ref": "('id', 868)",
+          "node_id": 900
+        },
+        {
+          "function": "mintTokens(uint256,uint256)",
+          "declaring_function_id": 985,
+          "target_id": 164,
+          "target": "balanceOf",
+          "op": "add",
+          "index_depth": 1,
+          "src": "14265:62:0",
+          "lhs_ref": "('index', ('id', 164), None)",
+          "delta_ref": "('id', 868)",
+          "node_id": 917
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "burnTokens(uint256,uint256,uint256)",
+      "rule_id": "event.Transfer",
+      "normative": "effect-diagnostic",
+      "reason": "token supply/balance update with no reachable Transfer event",
+      "evidence": [
+        {
+          "function": "burnTokens(uint256,uint256,uint256)",
+          "declaring_function_id": 1209,
+          "target_id": 164,
+          "target": "balanceOf",
+          "op": "sub",
+          "index_depth": 1,
+          "src": "17246:62:0",
+          "lhs_ref": "('index', ('id', 164), None)",
+          "delta_ref": "('id', 1080)",
+          "node_id": 1135
+        },
+        {
+          "function": "burnTokens(uint256,uint256,uint256)",
+          "declaring_function_id": 1209,
+          "target_id": 160,
+          "target": "totalSupply",
+          "op": "sub",
+          "index_depth": 0,
+          "src": "17318:36:0",
+          "lhs_ref": "('id', 160)",
+          "delta_ref": "('id', 1080)",
+          "node_id": 1142
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2373:333:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "zero_transfer",
+      "normative": "MUST",
+      "reason": "all supported zero-amount paths reject or return false",
+      "evidence": {
+        "outcomes": [
+          "revert"
+        ],
+        "src": "2712:532:0"
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 236,
+          "target_id": 219,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "2099:35:0",
+          "lhs_ref": "('index', ('id', 219), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 206)",
+          "node_id": 233
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transferFrom(address,address,uint256)",
+      "rule_id": "unauthorized",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "3747:453:0",
+        "role_storage_ids": [
+          264
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "standard": "ERC20",
+      "violation_type": "throw",
+      "function": "transfer(address,uint256)",
+      "rule_id": "insufficient_balance",
+      "normative": "SHOULD",
+      "reason": "explicit insufficient-resource branch returns false instead of reverting",
+      "evidence": {
+        "branch_src": "1693:325:0",
+        "role_storage_ids": [
+          258
+        ]
+      },
+      "source": "cached compiler AST sidecar"
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "standard": "ERC20",
+      "violation_type": "emit",
+      "function": "constructor()",
+      "rule_id": "event.Transfer",
+      "normative": "SHOULD",
+      "reason": "constructor token allocation without Transfer event",
+      "evidence": [
+        {
+          "function": "()",
+          "declaring_function_id": 383,
+          "target_id": 258,
+          "target": "balances",
+          "op": "assign",
+          "index_depth": 1,
+          "src": "4508:34:0",
+          "lhs_ref": "('index', ('id', 258), ('member', ('id', -15), 'sender'))",
+          "delta_ref": "('id', 366)",
+          "node_id": 380
+        }
+      ],
+      "source": "cached compiler AST sidecar"
+    }
+  ],
+  "evidence": [
+    {
+      "sample_id": "symgpt-public/721_candidate_1.sol",
+      "standard": "ERC721",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_2.sol",
+      "standard": "ERC721",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_3.sol",
+      "standard": "ERC721",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_4.sol",
+      "standard": "ERC721",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/721_candidate_5.sol",
+      "standard": "ERC721",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/aoa.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/axpire.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/battoken.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/bitcoinsvgold.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/bnb.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/CMBToken.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/dai.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/egypt.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/EZOToken.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/gencoin.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/huobi.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/husky.sol",
+      "standard": "ERC20",
+      "abi_available": false
+    },
+    {
+      "sample_id": "symgpt-public/idex.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/iostoken.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/jntr.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/KIMEX.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/KINGSGLOBAL.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/KuCoin.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/LUTOKEN.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/mkr.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/mxm.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/omg.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/organicco.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/pandai.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/PKG.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/silkroad.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/wit.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/xeuro.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/xn35.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    },
+    {
+      "sample_id": "symgpt-public/zrx.sol",
+      "standard": "ERC20",
+      "abi_available": true
+    }
+  ],
+  "runtime_seconds": 0.8866841,
+  "replay": false,
+  "minimization": false,
+  "full_pipeline": false
+}

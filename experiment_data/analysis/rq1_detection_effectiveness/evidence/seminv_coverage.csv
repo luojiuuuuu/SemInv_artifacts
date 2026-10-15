@@ -1,0 +1,9 @@
+﻿budget_seconds,scope,metric,scope_samples,N,mean_pct
+600,all_available_observations,observed_code_coverage_pct,139,127,83.35267716535436
+600,all_available_observations,observed_branch_coverage_pct,139,127,85.89188976377949
+600,all_available_observations,normalized_concrete_code_coverage_pct,139,91,86.53604410821893
+600,all_available_observations,normalized_concrete_branch_coverage_pct,139,91,89.7896152830865
+600,genuinely_completed_only,observed_code_coverage_pct,91,91,86.53560439560441
+600,genuinely_completed_only,observed_branch_coverage_pct,91,91,89.78934065934064
+600,genuinely_completed_only,normalized_concrete_code_coverage_pct,91,91,86.53604410821893
+600,genuinely_completed_only,normalized_concrete_branch_coverage_pct,91,91,89.7896152830865

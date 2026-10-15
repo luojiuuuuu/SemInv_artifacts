@@ -1,0 +1,14 @@
+﻿tool,metric,n,unit,mean_last_value,median_last_observed_s
+ItyFuzz,branch,132,native_percent_last_log_clock,59.2230303030303,0.0
+ItyFuzz,executions,138,native_count,13908818,599.0
+ItyFuzz,instruction,132,native_percent_last_log_clock,66.34598484848485,0.0
+SMARTIAN,Covered Def-Use Chains,77,native_count,2702.5454545454545,600
+SMARTIAN,Covered Edges,77,native_count,46.883116883116884,600
+SMARTIAN,Covered Instructions,77,native_count,519.4805194805194,600
+SMARTIAN,Total Executions,77,native_count,813749.1298701299,600
+sFuzz,branches,140,native_stats_field,14.664285714285715,595.0085
+sFuzz,coverage,140,native_stats_field,33.292857142857144,595.0085
+sFuzz,cycle,140,native_stats_field,53603.75,595.0085
+sFuzz,execution,140,native_stats_field,1380137.3642857142,595.0085
+sFuzz,speed,140,native_stats_field,2322.1995870714286,595.0085
+sFuzz,tuple,140,native_stats_field,17.92142857142857,595.0085

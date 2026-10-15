@@ -1,0 +1,24 @@
+﻿tool,case_id,category,legacy_hit_600,corrected_hit_600,reason
+sFuzz,sb056,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb058,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb059,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb061,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb062,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb063,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb064,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb065,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb068,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb069,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb070,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb071,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb073,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb074,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb075,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb077,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb078,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb079,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb080,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb082,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb083,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb084,reentrancy,0,1,CSV leading spaces and repeated headers normalized
+sFuzz,sb087,time_manipulation,0,1,CSV leading spaces and repeated headers normalized

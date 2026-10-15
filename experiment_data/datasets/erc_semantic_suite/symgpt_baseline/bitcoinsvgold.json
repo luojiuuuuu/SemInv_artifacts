@@ -1,0 +1,40 @@
+{
+    "sol_file": "benchmark/baseline/bitcoinsvgold.sol",
+    "contract": {
+        "BITCOINSVGOLD": [
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the message caller's account balance does not have enough tokens to spend",
+                "contract": "BITCOINSVGOLD",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 6,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": " throw if the _from account has not deliberately authorized the sender of the message via some mechanism",
+                "contract": "BITCOINSVGOLD",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 11,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "BITCOINSVGOLD",
+                "fn_interface": "constructor() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

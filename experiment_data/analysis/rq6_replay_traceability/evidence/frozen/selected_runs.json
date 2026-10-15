@@ -1,0 +1,1114 @@
+[
+  {
+    "source": "comp_dataset/access_control/arbitrary_location_write_simple.sol",
+    "contract": "Wallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Wallet_access_control_arbitrary_location_write_dcd77defb2",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/FibonacciBalance.sol",
+    "contract": "FibonacciBalance",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\FibonacciBalance_access_control_7c8f2a1dae",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/incorrect_constructor_name1.sol",
+    "contract": "Missing",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Missing_access_control_incorrect_constructor_na_900acbe638",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/incorrect_constructor_name2.sol",
+    "contract": "Missing",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Missing_access_control_incorrect_constructor_na_aabf1937a9",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/incorrect_constructor_name3.sol",
+    "contract": "Missing",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Missing_access_control_incorrect_constructor_na_7b02c7b119",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/mapping_write.sol",
+    "contract": "Map",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Map_access_control_dbb3baa9de",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/multiowned_vulnerable.sol",
+    "contract": "MultiOwnable",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MultiOwnable_access_control_b13df875b1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/mycontract.sol",
+    "contract": "MyContract",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MyContract_access_control_a815abb62a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/parity_wallet_bug_1.sol",
+    "contract": "WalletLibrary",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WalletLibrary_access_control_parity_wallet_bug_1_65f7b70911",
+    "solc": "v0.4.11",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/parity_wallet_bug_2.sol",
+    "contract": "WalletLibrary",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WalletLibrary_access_control_parity_wallet_bug_2_3d02f35553",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/phishable.sol",
+    "contract": "Phishable",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Phishable_access_control_1c0babd925",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/proxy.sol",
+    "contract": "Proxy",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Proxy_access_control_9a87af695a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/rubixi.sol",
+    "contract": "Rubixi",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Rubixi_access_control_c71a1519ea",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/simple_suicide.sol",
+    "contract": "SimpleSuicide",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SimpleSuicide_access_control_46423b7fe1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/unprotected0.sol",
+    "contract": "Unprotected",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Unprotected_access_control_b7749fee1a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/wallet_02_refund_nosub.sol",
+    "contract": "Wallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Wallet_access_control_wallet_02_refund_nosub_8e9bbf1c06",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/wallet_03_wrong_constructor.sol",
+    "contract": "Wallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Wallet_access_control_wallet_03_wrong_construc_e52e44c0d9",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/access_control/wallet_04_confused_sign.sol",
+    "contract": "Wallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Wallet_access_control_wallet_04_confused_sign_82e1f95ebb",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/BECToken.sol",
+    "contract": "PausableToken",
+    "status": "tool_failed",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PausableToken_arithmetic_d7095df15d",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/insecure_transfer.sol",
+    "contract": "IntegerOverflowAdd",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowAdd_arithmetic_insecure_transfer_64e023d26b",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_1.sol",
+    "contract": "Overflow",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Overflow_arithmetic_4cbe6c8189",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_add.sol",
+    "contract": "IntegerOverflowAdd",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowAdd_arithmetic_integer_overflow_add_91eca9c7ff",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_benign_1.sol",
+    "contract": "IntegerOverflowBenign1",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowBenign1_arithmetic_1c100f1280",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_mapping_sym_1.sol",
+    "contract": "IntegerOverflowMappingSym1",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowMappingSym1_arithmetic_0b3aca7cdc",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_minimal.sol",
+    "contract": "IntegerOverflowMinimal",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowMinimal_arithmetic_2c82cc63fd",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_mul.sol",
+    "contract": "IntegerOverflowMul",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowMul_arithmetic_ee7b0afd73",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_multitx_multifunc_feasible.sol",
+    "contract": "IntegerOverflowMultiTxMultiFuncFeasible",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowMultiTxMultiFuncFeasible_arithmetic_11d91e345c",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/integer_overflow_multitx_onefunc_feasible.sol",
+    "contract": "IntegerOverflowMultiTxOneFuncFeasible",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowMultiTxOneFuncFeasible_arithmetic_94c630693f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/overflow_simple_add.sol",
+    "contract": "Overflow_Add",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Overflow_Add_arithmetic_5d3a74ad78",
+    "solc": "v0.4.25",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/overflow_single_tx.sol",
+    "contract": "IntegerOverflowSingleTransaction",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\IntegerOverflowSingleTransaction_arithmetic_0fbcb0eddc",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/timelock.sol",
+    "contract": "TimeLock",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TimeLock_arithmetic_e05a72b87d",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/token.sol",
+    "contract": "Token",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Token_arithmetic_e63e569e5d",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/arithmetic/tokensalechallenge.sol",
+    "contract": "TokenSaleChallenge",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenSaleChallenge_arithmetic_fbd93a365f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/blackjack.sol",
+    "contract": "BlackJack",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\BlackJack_bad_randomness_370e4009c0",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/etheraffle.sol",
+    "contract": "Ethraffle_v4b",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Ethraffle_v4b_bad_randomness_f82a14855f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/guess_the_random_number.sol",
+    "contract": "GuessTheRandomNumberChallenge",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\GuessTheRandomNumberChallenge_bad_randomness_1574805ce2",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/lottery.sol",
+    "contract": "Lottery",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Lottery_bad_randomness_d0158cf5eb",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/lucky_doubler.sol",
+    "contract": "LuckyDoubler",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\LuckyDoubler_bad_randomness_99ace48044",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/old_blockhash.sol",
+    "contract": "PredictTheBlockHashChallenge",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PredictTheBlockHashChallenge_bad_randomness_820a72d0b4",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/random_number_generator.sol",
+    "contract": "RandomNumberGenerator",
+    "status": "untestable",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\RandomNumberGenerator_bad_randomness_824924128e",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/bad_randomness/smart_billions.sol",
+    "contract": "SmartBillions",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SmartBillions_bad_randomness_40f0dc909f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/auction.sol",
+    "contract": "DosAuction",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DosAuction_denial_of_service_34e23cb7ab",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/dos_address.sol",
+    "contract": "DosGas",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DosGas_denial_of_service_54612dd964",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/dos_number.sol",
+    "contract": "DosNumber",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DosNumber_denial_of_service_8cc3ff23f7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/dos_simple.sol",
+    "contract": "DosOneFunc",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DosOneFunc_denial_of_service_9b3bd2caf9",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/list_dos.sol",
+    "contract": "Government",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Government_denial_of_service_6ffb2b91e4",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/denial_of_service/send_loop.sol",
+    "contract": "Refunder",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Refunder_denial_of_service_f3256fe8fe",
+    "solc": "v0.4.24",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/front_running/ERC20.sol",
+    "contract": "ERC20",
+    "status": "tool_failed",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ERC20_front_running_507f3b54ba",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/front_running/eth_tx_order_dependence_minimal.sol",
+    "contract": "EthTxOrderDependenceMinimal",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EthTxOrderDependenceMinimal_front_running_3b70f73616",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/front_running/FindThisHash.sol",
+    "contract": "FindThisHash",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\FindThisHash_front_running_1763442048",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/front_running/odds_and_evens.sol",
+    "contract": "OddsAndEvens",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\OddsAndEvens_front_running_034e7119d2",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x01f8c4e3fa3edeb29e514cba738d87ce8c091d3f.sol",
+    "contract": "PERSONAL_BANK",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PERSONAL_BANK_reentrancy_6eeee7d4dd",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x23a91059fdc9579a9fbd0edc5f2ea0bfdb70deb4.sol",
+    "contract": "PrivateBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PrivateBank_reentrancy_0x23a91059fdc9579a9fbd0e_45374491d3",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x4320e6f8c05b27ab4707cd1f6d5ce6f3e4b3a5a1.sol",
+    "contract": "ACCURAL_DEPOSIT",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ACCURAL_DEPOSIT_reentrancy_40c59f420a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x4e73b32ed6c35f570686b89848e5f39f20ecc106.sol",
+    "contract": "PRIVATE_ETH_CELL",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PRIVATE_ETH_CELL_reentrancy_486e591cbc",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x561eac93c92360949ab1f1403323e6db345cbf31.sol",
+    "contract": "BANK_SAFE",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\BANK_SAFE_reentrancy_8c382c6e21",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol",
+    "contract": "TokenBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenBank_reentrancy_0x627fa62ccbb1c1b04ffaec_4c3265ef8e",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x7541b76cb60f4c60af330c208b0623b7f54bf615.sol",
+    "contract": "U_BANK",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\U_BANK_reentrancy_9177334bb7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x7a8721a9d64c74da899424c1b52acbf58ddc9782.sol",
+    "contract": "PrivateDeposit",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PrivateDeposit_reentrancy_acb9b462c1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x7b368c4e805c3870b6c49a3f1f49f69af8662cf3.sol",
+    "contract": "W_WALLET",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\W_WALLET_reentrancy_7362d36f32",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x8c7777c45481dba411450c228cb692ac3d550344.sol",
+    "contract": "ETH_VAULT",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ETH_VAULT_reentrancy_0x8c7777c45481dba411450c_af4c74b0ee",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x93c32845fae42c83a70e5f06214c8433665c2ab5.sol",
+    "contract": "X_WALLET",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\X_WALLET_reentrancy_65559f38c0",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x941d225236464a25eb18076df7da6a91d0f95e9e.sol",
+    "contract": "ETH_FUND",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ETH_FUND_reentrancy_c75a3f9c1c",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0x96edbe868531bd23a6c05e9d0c424ea64fb1b78b.sol",
+    "contract": "PENNY_BY_PENNY",
+    "status": "tool_failed",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PENNY_BY_PENNY_reentrancy_df994ce2ad",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xaae1f51cf3339f18b6d3f3bdc75a5facd744b0b8.sol",
+    "contract": "DEP_BANK",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DEP_BANK_reentrancy_ae1788ab1c",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xb5e1b1ee15c6fa0e48fce100125569d430f1bd12.sol",
+    "contract": "Private_Bank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Private_Bank_reentrancy_630bdc5ab0",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xb93430ce38ac4a6bb47fb1fc085ea669353fd89e.sol",
+    "contract": "PrivateBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PrivateBank_reentrancy_0xb93430ce38ac4a6bb47fb1_ff7a3b6faf",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xbaf51e761510c1a11bf48dd87c0307ac8a8c8a4f.sol",
+    "contract": "ETH_VAULT",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ETH_VAULT_reentrancy_0xbaf51e761510c1a11bf48d_ca41b4c81e",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xbe4041d55db380c5ae9d4a9b9703f1ed4e7e3888.sol",
+    "contract": "MONEY_BOX",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MONEY_BOX_reentrancy_063e399a00",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xcead721ef5b11f1a7b530171aab69b16c5e66b6e.sol",
+    "contract": "WALLET",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WALLET_reentrancy_2f829ad482",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/0xf015c35649c82f5467c9c74b7f28ee67665aad68.sol",
+    "contract": "MY_BANK",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MY_BANK_reentrancy_a4e8bd29bc",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/etherbank.sol",
+    "contract": "EtherBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EtherBank_reentrancy_6921eb15e6",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/etherstore.sol",
+    "contract": "EtherStore",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EtherStore_reentrancy_d8e0cf3e5b",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/modifier_reentrancy.sol",
+    "contract": "ModifierEntrancy",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ModifierEntrancy_reentrancy_44271a90dc",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrance.sol",
+    "contract": "Reentrance",
+    "status": "tool_failed",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Reentrance_reentrancy_reentrance_2aff2f1fe7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrancy_bonus.sol",
+    "contract": "Reentrancy_bonus",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Reentrancy_bonus_reentrancy_553c1a4ca4",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrancy_cross_function.sol",
+    "contract": "Reentrancy_cross_function",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Reentrancy_cross_function_reentrancy_678e408f40",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrancy_dao.sol",
+    "contract": "ReentrancyDAO",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ReentrancyDAO_reentrancy_c828b2792a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrancy_insecure.sol",
+    "contract": "Reentrancy_insecure",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Reentrancy_insecure_reentrancy_5c9e069f58",
+    "solc": "v0.5.17",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/reentrancy_simple.sol",
+    "contract": "Reentrance",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Reentrance_reentrancy_reentrancy_simple_9867a4a4d0",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/simple_dao.sol",
+    "contract": "SimpleDAO",
+    "status": "tool_failed",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SimpleDAO_reentrancy_4a9b9442bf",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/reentrancy/spank_chain_payment.sol",
+    "contract": "LedgerChannel",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\LedgerChannel_reentrancy_535c98cd12",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/time_manipulation/ether_lotto.sol",
+    "contract": "EtherLotto",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EtherLotto_time_manipulation_d2834e37c1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/time_manipulation/governmental_survey.sol",
+    "contract": "Governmental",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Governmental_time_manipulation_d03bde35e5",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/time_manipulation/lottopollo.sol",
+    "contract": "lottopollo",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\lottopollo_time_manipulation_5a80235601",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/time_manipulation/roulette.sol",
+    "contract": "Roulette",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Roulette_time_manipulation_34b79e81cd",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/time_manipulation/timed_crowdsale.sol",
+    "contract": "TimedCrowdsale",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TimedCrowdsale_time_manipulation_243c6de2b7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x07f7ecb66d788ab01dc93b9b71a88401de7d0f2e.sol",
+    "contract": "PoCGame",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PoCGame_unchecked_low_level_calls_0x07f7ecb66d788ab01dc93b_4cd3090d58",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x0cbe050f75bc8f8c2d6c0d249fea125fd6e1acc9.sol",
+    "contract": "Caller",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Caller_unchecked_low_level_calls_0e63953e24",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x19cf8481ea15427a98ba3cdd6d9e14690011ab10.sol",
+    "contract": "daoPOLSKAtokens",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\daoPOLSKAtokens_unchecked_low_level_calls_f36286e3e1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x2972d548497286d18e92b5fa1f8f9139e5653fd2.sol",
+    "contract": "demo",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\demo_unchecked_low_level_calls_0x2972d548497286d18e92b5_ee4fbe02fb",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x39cfd754c85023648bf003bea2dd498c5612abfa.sol",
+    "contract": "TokenBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenBank_unchecked_low_level_calls_0x39cfd754c85023648bf003_4331f3214a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x3a0e9acd953ffc0dd18d63603488846a6b8b2b01.sol",
+    "contract": "TokenBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenBank_unchecked_low_level_calls_0x3a0e9acd953ffc0dd18d63_acd9da61d1",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x3e013fc32a54c4c5b6991ba539dcd0ec4355c859.sol",
+    "contract": "MultiplicatorX4",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MultiplicatorX4_unchecked_low_level_calls_688abd220e",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x3f2ef511aa6e75231e4deafc7a3d2ecab3741de2.sol",
+    "contract": "WhaleGiveaway2",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WhaleGiveaway2_unchecked_low_level_calls_0x3f2ef511aa6e75231e4dea_0ed3ebadae",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x4051334adc52057aca763453820cb0e045076ef3.sol",
+    "contract": "airdrop",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\airdrop_unchecked_low_level_calls_ba7677f6c7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x4a66ad0bca2d700f11e1f2fc2c106f7d3264504c.sol",
+    "contract": "EBU",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EBU_unchecked_low_level_calls_0x4a66ad0bca2d700f11e1f2_b56592dcb6",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x4b71ad9c1a84b9b643aa54fdd66e2dec96e8b152.sol",
+    "contract": "airPort",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\airPort_unchecked_low_level_calls_9f3123454c",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x524960d55174d912768678d8c606b4d50b79d7b1.sol",
+    "contract": "Centra4",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Centra4_unchecked_low_level_calls_8751f49c5e",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x52d2e0f9b01101a59b38a3d05c80b7618aeed984.sol",
+    "contract": "EtherGet",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EtherGet_unchecked_low_level_calls_ce933474fe",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x5aa88d2901c68fda244f1d0584400368d2c8e739.sol",
+    "contract": "MultiplicatorX3",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\MultiplicatorX3_unchecked_low_level_calls_c611328daf",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x610495793564aed0f9c7fc48dc4c7c9151d34fd6.sol",
+    "contract": "SimpleWallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SimpleWallet_unchecked_low_level_calls_0x610495793564aed0f9c7fc_d06bd28f18",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x627fa62ccbb1c1b04ffaecd72a53e37fc0e17839.sol",
+    "contract": "TokenBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenBank_unchecked_low_level_calls_0x627fa62ccbb1c1b04ffaec_aa350487ec",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x663e4229142a27f00bafb5d087e1e730648314c3.sol",
+    "contract": "PandaBreeding",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PandaBreeding_unchecked_low_level_calls_18c32cd5fe",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x70f9eddb3931491aab1aeafbc1e7f1ca2a012db4.sol",
+    "contract": "HomeyJar",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\HomeyJar_unchecked_low_level_calls_8601750d53",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x78c2a1e91b52bca4130b6ed9edd9fbcfd4671c37.sol",
+    "contract": "WhaleGiveaway1",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WhaleGiveaway1_unchecked_low_level_calls_0x78c2a1e91b52bca4130b6e_87822666f8",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x7a4349a749e59a5736efb7826ee3496a2dfd5489.sol",
+    "contract": "WhaleGiveaway1",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WhaleGiveaway1_unchecked_low_level_calls_0x7a4349a749e59a5736efb7_dfbae2906f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x7d09edb07d23acb532a82be3da5c17d9d85806b4.sol",
+    "contract": "PoCGame",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\PoCGame_unchecked_low_level_calls_0x7d09edb07d23acb532a82b_c9e0528536",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x806a6bd219f162442d992bdc4ee6eba1f2c5a707.sol",
+    "contract": "Pie",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Pie_unchecked_low_level_calls_0x806a6bd219f162442d992b_b0ce3c6fca",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x84d9ec85c9c568eb332b7226a8f826d897e0a4a8.sol",
+    "contract": "WedIndex",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WedIndex_unchecked_low_level_calls_222daf7836",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x89c1b3807d4c67df034fffb62f3509561218d30b.sol",
+    "contract": "TownCrier",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TownCrier_unchecked_low_level_calls_f408242ffd",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x8fd1e427396ddb511533cf9abdbebd0a7e08da35.sol",
+    "contract": "TokenBank",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenBank_unchecked_low_level_calls_0x8fd1e427396ddb511533cf_31774d0b3f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x958a8f594101d2c0485a52319f29b2647f2ebc06.sol",
+    "contract": "Marriage",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Marriage_unchecked_low_level_calls_057877c1f5",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0x9d06cbafa865037a01d322d3f4222fa3e04e5488.sol",
+    "contract": "Delta",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Delta_unchecked_low_level_calls_2c75327572",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xa1fceeff3acc57d257b917e30c4df661401d6431.sol",
+    "contract": "AirDropContract",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\AirDropContract_unchecked_low_level_calls_ab8178ca1f",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xa46edd6a9a93feec36576ee5048146870ea2c3ae.sol",
+    "contract": "EBU",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\EBU_unchecked_low_level_calls_0xa46edd6a9a93feec36576e_afe2e04494",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xb0510d68f210b7db66e8c7c814f22680f2b8d1d6.sol",
+    "contract": "Splitter",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Splitter_unchecked_low_level_calls_5fd68448b4",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xb11b2fed6c9354f7aa2f658d3b4d7b31d8a13b77.sol",
+    "contract": "DepositProxy",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DepositProxy_unchecked_low_level_calls_8a022111db",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xb37f18af15bafb869a065b61fc83cfc44ed9cc27.sol",
+    "contract": "SimpleWallet",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SimpleWallet_unchecked_low_level_calls_0xb37f18af15bafb869a065b_82d6d1c9d7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xb620cee6b52f96f3c6b253e6eea556aa2d214a99.sol",
+    "contract": "DrainMe",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\DrainMe_unchecked_low_level_calls_f7986ea4de",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xb7c5c5aa4d42967efe906e1b66cb8df9cebf04f7.sol",
+    "contract": "keepMyEther",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\keepMyEther_unchecked_low_level_calls_ce3aebb369",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xbaa3de6504690efb064420d89e871c27065cdd52.sol",
+    "contract": "VaultProxy",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\VaultProxy_unchecked_low_level_calls_0xbaa3de6504690efb064420_26e82dca1a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xbebbfe5b549f5db6e6c78ca97cac19d1fb03082c.sol",
+    "contract": "VaultProxy",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\VaultProxy_unchecked_low_level_calls_0xbebbfe5b549f5db6e6c78c_25aa2de661",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xd2018bfaa266a9ec0a1a84b061640faa009def76.sol",
+    "contract": "Pie",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Pie_unchecked_low_level_calls_0xd2018bfaa266a9ec0a1a84_21fe460fc6",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xd5967fed03e85d1cce44cab284695b41bc675b5c.sol",
+    "contract": "demo",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\demo_unchecked_low_level_calls_0xd5967fed03e85d1cce44ca_6816d0220c",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xdb1c55f6926e7d847ddf8678905ad871a68199d2.sol",
+    "contract": "FreeEth",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\FreeEth_unchecked_low_level_calls_9c5aa49026",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xe09b1ab8111c2729a76f16de96bc86a7af837928.sol",
+    "contract": "FiftyFlip",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\FiftyFlip_unchecked_low_level_calls_a74796e791",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xe4eabdca81e31d9acbc4af76b30f532b6ed7f3bf.sol",
+    "contract": "Honey",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Honey_unchecked_low_level_calls_aac1aa8e62",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xe82f0742a71a02b9e9ffc142fdcb6eb1ed06fb87.sol",
+    "contract": "Freebie",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Freebie_unchecked_low_level_calls_733f120868",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xe894d54dca59cb53fe9cbc5155093605c7068220.sol",
+    "contract": "airDrop",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_600s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\airDrop_unchecked_low_level_calls_0b36c3e1d9",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xec329ffc97d75fe03428ae155fc7793431487f63.sol",
+    "contract": "TokenSender",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\TokenSender_unchecked_low_level_calls_040959d367",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xf2570186500a46986f3139f65afedc2afe4f445d.sol",
+    "contract": "RealOldFuckMaker",
+    "status": "timeout",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\RealOldFuckMaker_unchecked_low_level_calls_bdbc02bcf7",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xf29ebe930a539a60279ace72c707cba851a57707.sol",
+    "contract": "B",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\B_unchecked_low_level_calls_d205d43c51",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/0xf70d589d76eebdd7c12cc5eec99f8f6fa4233b9e.sol",
+    "contract": "WhaleGiveaway2",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\WhaleGiveaway2_unchecked_low_level_calls_0xf70d589d76eebdd7c12cc5_13d274e62a",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/etherpot_lotto.sol",
+    "contract": "Lotto",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Lotto_unchecked_low_level_calls_etherpot_lotto_a89212b187",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/king_of_the_ether_throne.sol",
+    "contract": "KingOfTheEtherThrone",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_1200s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\KingOfTheEtherThrone_unchecked_low_level_calls_391c95bf39",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/lotto.sol",
+    "contract": "Lotto",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\Lotto_unchecked_low_level_calls_lotto_056127e353",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/mishandled.sol",
+    "contract": "SendBack",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\SendBack_unchecked_low_level_calls_547527c8c9",
+    "solc": "v0.4.26",
+    "evm": "byzantium"
+  },
+  {
+    "source": "comp_dataset/unchecked_low_level_calls/unchecked_return_value.sol",
+    "contract": "ReturnValue",
+    "status": "success",
+    "run_dir": "\\\\?\\<seminv-workspace>\\outputs\\seminv_evidence_safe_staged_sequential_20261009\\round_300s\\chunk_00\\raw\\full_system_researchtarget_with_hints\\ReturnValue_unchecked_low_level_calls_c59d796902",
+    "solc": "v0.4.25",
+    "evm": "byzantium"
+  }
+]

@@ -1,0 +1,1620 @@
+{
+  "scope": {
+    "selected_runs": 139,
+    "events": 880,
+    "dynamic": 735,
+    "source_pattern": 145,
+    "selected_run_stages": {
+      "600s": 33,
+      "300s": 62,
+      "1200s": 44
+    },
+    "selected_run_statuses": {
+      "success": 112,
+      "timeout": 21,
+      "tool_failed": 5,
+      "untestable": 1
+    },
+    "contracts_with_T_events": 137,
+    "contracts_with_dynamic": 132,
+    "unique_source_pc_type_dynamic": 735,
+    "contracts_with_processed_observation": 129
+  },
+  "processed_status": {
+    "same_pc_type_observed": 514,
+    "same_pc_type_not_observed": 219,
+    "not_applicable_no_sequence": 145,
+    "timeout": 2
+  },
+  "processed_3of3": 514,
+  "raw_artifact_status": {
+    "raw_file_missing": 121,
+    "exact_id_time_length": 614
+  },
+  "original_status": {
+    "not_run": 121,
+    "same_pc_type_not_observed": 192,
+    "same_pc_type_observed": 420,
+    "not_applicable_no_sequence": 145,
+    "timeout": 2
+  },
+  "paired_raw_available": {
+    "n": 614,
+    "contingency": {
+      "neither_observed": 194,
+      "both_observed": 408,
+      "lost_after_processing": 12
+    },
+    "completed_both_n": 612,
+    "completed_both_contingency": {
+      "neither_observed": 192,
+      "both_observed": 408,
+      "lost_after_processing": 12
+    }
+  },
+  "original_oracle_status": {
+    "error": 726,
+    "passed": 9
+  },
+  "original_oracle_reason": {
+    "detector_replay_process_error": 726,
+    "null": 9
+  },
+  "historical_minimization_strategies": {
+    "structural_minimized": 726,
+    "oracle_validated_minimized": 9
+  },
+  "historical_passed_diagnostic_check": {
+    "n": 9,
+    "processed_observed": 3,
+    "original_observed": 5,
+    "returncodes": {
+      "1": 9
+    }
+  },
+  "contract_observation_fractions": {
+    "n": 132,
+    "sum": 98.04064399652636,
+    "mean": 0.742732151488836,
+    "min": 0.0,
+    "q1": 0.5870098039215687,
+    "median": 0.775,
+    "q3": 1.0,
+    "p95": 1.0,
+    "max": 1.0
+  },
+  "detectors": [
+    {
+      "kind": "access_noninterference",
+      "events": 19,
+      "dynamic": 19,
+      "source_pattern": 0,
+      "observed": 13,
+      "not_observed": 6,
+      "timeout": 0,
+      "observed_fraction": 0.6842105263157895
+    },
+    {
+      "kind": "accounting_delta",
+      "events": 5,
+      "dynamic": 5,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 5,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "approve_race",
+      "events": 6,
+      "dynamic": 0,
+      "source_pattern": 6,
+      "observed": 0,
+      "not_observed": 0,
+      "timeout": 0,
+      "observed_fraction": null
+    },
+    {
+      "kind": "arbitrary_memory_access",
+      "events": 11,
+      "dynamic": 11,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 11,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "assertion_failure",
+      "events": 39,
+      "dynamic": 39,
+      "source_pattern": 0,
+      "observed": 38,
+      "not_observed": 1,
+      "timeout": 0,
+      "observed_fraction": 0.9743589743589743
+    },
+    {
+      "kind": "bad_randomness_dependency",
+      "events": 42,
+      "dynamic": 0,
+      "source_pattern": 42,
+      "observed": 0,
+      "not_observed": 0,
+      "timeout": 0,
+      "observed_fraction": null
+    },
+    {
+      "kind": "block_dependency",
+      "events": 28,
+      "dynamic": 28,
+      "source_pattern": 0,
+      "observed": 13,
+      "not_observed": 15,
+      "timeout": 0,
+      "observed_fraction": 0.4642857142857143
+    },
+    {
+      "kind": "dos_with_block_gas_limit",
+      "events": 156,
+      "dynamic": 156,
+      "source_pattern": 0,
+      "observed": 154,
+      "not_observed": 0,
+      "timeout": 2,
+      "observed_fraction": 0.9871794871794872
+    },
+    {
+      "kind": "failed_refund_dos",
+      "events": 2,
+      "dynamic": 0,
+      "source_pattern": 2,
+      "observed": 0,
+      "not_observed": 0,
+      "timeout": 0,
+      "observed_fraction": null
+    },
+    {
+      "kind": "hash_collision",
+      "events": 39,
+      "dynamic": 39,
+      "source_pattern": 0,
+      "observed": 7,
+      "not_observed": 32,
+      "timeout": 0,
+      "observed_fraction": 0.1794871794871795
+    },
+    {
+      "kind": "integer_overflow",
+      "events": 15,
+      "dynamic": 15,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 15,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "integer_underflow",
+      "events": 8,
+      "dynamic": 8,
+      "source_pattern": 0,
+      "observed": 8,
+      "not_observed": 0,
+      "timeout": 0,
+      "observed_fraction": 1.0
+    },
+    {
+      "kind": "leaking_ether",
+      "events": 6,
+      "dynamic": 6,
+      "source_pattern": 0,
+      "observed": 5,
+      "not_observed": 1,
+      "timeout": 0,
+      "observed_fraction": 0.8333333333333334
+    },
+    {
+      "kind": "numeric_integrity",
+      "events": 251,
+      "dynamic": 251,
+      "source_pattern": 0,
+      "observed": 195,
+      "not_observed": 56,
+      "timeout": 0,
+      "observed_fraction": 0.7768924302788844
+    },
+    {
+      "kind": "order_independence",
+      "events": 1,
+      "dynamic": 1,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 1,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "reentrancy",
+      "events": 40,
+      "dynamic": 40,
+      "source_pattern": 0,
+      "observed": 19,
+      "not_observed": 21,
+      "timeout": 0,
+      "observed_fraction": 0.475
+    },
+    {
+      "kind": "short_calldata_integrity",
+      "events": 21,
+      "dynamic": 21,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 21,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "transaction_order_dependency",
+      "events": 23,
+      "dynamic": 23,
+      "source_pattern": 0,
+      "observed": 3,
+      "not_observed": 20,
+      "timeout": 0,
+      "observed_fraction": 0.13043478260869565
+    },
+    {
+      "kind": "tx_origin_boundary",
+      "events": 3,
+      "dynamic": 3,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 3,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "kind": "unchecked_return_value",
+      "events": 157,
+      "dynamic": 62,
+      "source_pattern": 95,
+      "observed": 57,
+      "not_observed": 5,
+      "timeout": 0,
+      "observed_fraction": 0.9193548387096774
+    },
+    {
+      "kind": "unexpected_ether_balance",
+      "events": 3,
+      "dynamic": 3,
+      "source_pattern": 0,
+      "observed": 1,
+      "not_observed": 2,
+      "timeout": 0,
+      "observed_fraction": 0.3333333333333333
+    },
+    {
+      "kind": "unprotected_selfdestruct",
+      "events": 1,
+      "dynamic": 1,
+      "source_pattern": 0,
+      "observed": 1,
+      "not_observed": 0,
+      "timeout": 0,
+      "observed_fraction": 1.0
+    },
+    {
+      "kind": "unsafe_delegatecall",
+      "events": 4,
+      "dynamic": 4,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 4,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    }
+  ],
+  "families": [
+    {
+      "invariant_category": "I1_FINANCIAL_ACCOUNTING",
+      "events": 5,
+      "dynamic": 5,
+      "source_pattern": 0,
+      "observed": 0,
+      "not_observed": 5,
+      "timeout": 0,
+      "observed_fraction": 0.0
+    },
+    {
+      "invariant_category": "I2_AUTHORIZATION_ACCESS",
+      "events": 27,
+      "dynamic": 27,
+      "source_pattern": 0,
+      "observed": 14,
+      "not_observed": 13,
+      "timeout": 0,
+      "observed_fraction": 0.5185185185185185
+    },
+    {
+      "invariant_category": "I4_TRANSACTIONAL_CONSISTENCY",
+      "events": 24,
+      "dynamic": 24,
+      "source_pattern": 0,
+      "observed": 3,
+      "not_observed": 21,
+      "timeout": 0,
+      "observed_fraction": 0.125
+    },
+    {
+      "invariant_category": "I5_RESOURCE_EXECUTION",
+      "events": 480,
+      "dynamic": 480,
+      "source_pattern": 0,
+      "observed": 395,
+      "not_observed": 83,
+      "timeout": 2,
+      "observed_fraction": 0.8229166666666666
+    },
+    {
+      "invariant_category": "I6_EXTERNAL_ENVIRONMENT",
+      "events": 250,
+      "dynamic": 190,
+      "source_pattern": 60,
+      "observed": 96,
+      "not_observed": 94,
+      "timeout": 0,
+      "observed_fraction": 0.5052631578947369
+    },
+    {
+      "invariant_category": "unknown",
+      "events": 94,
+      "dynamic": 9,
+      "source_pattern": 85,
+      "observed": 6,
+      "not_observed": 3,
+      "timeout": 0,
+      "observed_fraction": 0.6666666666666666
+    }
+  ],
+  "failure_diagnostics": {
+    "events": 221,
+    "kinds": {
+      "access_noninterference": 6,
+      "numeric_integrity": 56,
+      "arbitrary_memory_access": 11,
+      "unsafe_delegatecall": 4,
+      "transaction_order_dependency": 20,
+      "integer_overflow": 15,
+      "short_calldata_integrity": 21,
+      "tx_origin_boundary": 3,
+      "hash_collision": 32,
+      "accounting_delta": 5,
+      "unchecked_return_value": 5,
+      "order_independence": 1,
+      "reentrancy": 21,
+      "block_dependency": 15,
+      "unexpected_ether_balance": 2,
+      "dos_with_block_gas_limit": 2,
+      "leaking_ether": 1,
+      "assertion_failure": 1
+    },
+    "completed_attempts_with_evm_errors": 239,
+    "observed_with_evm_errors": 163,
+    "not_observed_with_evm_errors": 76,
+    "diagnostic_loss_ids": [
+      "T0019",
+      "T0128",
+      "T0136",
+      "T0254",
+      "T0334",
+      "T0354",
+      "T0382",
+      "T0391",
+      "T0423",
+      "T0437",
+      "T0451",
+      "T0652"
+    ]
+  },
+  "invariant_family_counts": {
+    "I2_AUTHORIZATION_ACCESS": 27,
+    "I5_RESOURCE_EXECUTION": 480,
+    "I4_TRANSACTIONAL_CONSISTENCY": 24,
+    "unknown": 94,
+    "I6_EXTERNAL_ENVIRONMENT": 250,
+    "I1_FINANCIAL_ACCOUNTING": 5
+  },
+  "detector_kind_counts": {
+    "access_noninterference": 19,
+    "numeric_integrity": 251,
+    "dos_with_block_gas_limit": 156,
+    "arbitrary_memory_access": 11,
+    "unsafe_delegatecall": 4,
+    "transaction_order_dependency": 23,
+    "leaking_ether": 6,
+    "integer_overflow": 15,
+    "assertion_failure": 39,
+    "short_calldata_integrity": 21,
+    "tx_origin_boundary": 3,
+    "unchecked_return_value": 157,
+    "bad_randomness_dependency": 42,
+    "hash_collision": 39,
+    "unprotected_selfdestruct": 1,
+    "integer_underflow": 8,
+    "approve_race": 6,
+    "block_dependency": 28,
+    "accounting_delta": 5,
+    "failed_refund_dos": 2,
+    "order_independence": 1,
+    "reentrancy": 40,
+    "unexpected_ether_balance": 3
+  },
+  "event_stages": {
+    "600s": 222,
+    "300s": 210,
+    "1200s": 448
+  },
+  "trace_availability": {
+    "dynamic_with_nonempty_trace_fields": 0,
+    "dynamic_with_setup": 0
+  },
+  "sequence_lengths": {
+    "original_metadata": {
+      "n": 735,
+      "sum": 1473,
+      "mean": 2.0040816326530613,
+      "min": 1,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 3.0,
+      "p95": 5.0,
+      "max": 5
+    },
+    "processed": {
+      "n": 735,
+      "sum": 1387,
+      "mean": 1.8870748299319728,
+      "min": 1,
+      "q1": 1.0,
+      "median": 1.0,
+      "q3": 2.0,
+      "p95": 5.0,
+      "max": 5
+    },
+    "bins": {
+      "1": {
+        "events": 501,
+        "shortened": 0,
+        "raw_transactions": 501,
+        "processed_transactions": 501,
+        "processed_observed": 327
+      },
+      "2-3": {
+        "events": 71,
+        "shortened": 37,
+        "raw_transactions": 168,
+        "processed_transactions": 126,
+        "processed_observed": 41
+      },
+      ">=4": {
+        "events": 163,
+        "shortened": 27,
+        "raw_transactions": 804,
+        "processed_transactions": 760,
+        "processed_observed": 146
+      }
+    }
+  },
+  "minimization": {
+    "shortened": 64,
+    "exact_raw": 52,
+    "all_shortened_reduction": {
+      "n": 64,
+      "sum": 27.38333333333333,
+      "mean": 0.4278645833333333,
+      "min": 0.2,
+      "q1": 0.3333333333333333,
+      "median": 0.5,
+      "q3": 0.5,
+      "p95": 0.6666666666666666,
+      "max": 0.8
+    },
+    "exact_raw_reduction": {
+      "n": 52,
+      "sum": 22.66666666666666,
+      "mean": 0.4358974358974359,
+      "min": 0.2,
+      "q1": 0.3333333333333333,
+      "median": 0.5,
+      "q3": 0.5,
+      "p95": 0.6666666666666666,
+      "max": 0.8
+    },
+    "exact_raw_contingency": {
+      "lost_after_processing": 12,
+      "both_observed": 20,
+      "neither_observed": 20
+    },
+    "raw_observed": 32,
+    "both_observed": 20,
+    "both_observed_reduction": {
+      "n": 20,
+      "sum": 7.516666666666667,
+      "mean": 0.37583333333333335,
+      "min": 0.2,
+      "q1": 0.25,
+      "median": 0.3333333333333333,
+      "q3": 0.5,
+      "p95": 0.5083333333333334,
+      "max": 0.6666666666666666
+    },
+    "both_observed_raw_transactions": 65,
+    "both_observed_processed_transactions": 43,
+    "exact_raw_calldata_paired": 52,
+    "exact_raw_calldata_original": 9289,
+    "exact_raw_calldata_processed": 5744,
+    "both_observed_calldata_original": 6195,
+    "both_observed_calldata_processed": 4036,
+    "deletion_records": 12,
+    "deletion_attempts": 35,
+    "deletion_still_observed": 7,
+    "all_deletions_lose_diagnostic": 6,
+    "single_tx_among_both_good": 8
+  },
+  "validation_cost": {
+    "phases": {
+      "deletion": {
+        "attempts": 35,
+        "status_counts": {
+          "same_pc_type_observed": 7,
+          "same_pc_type_not_observed": 28
+        },
+        "wall_seconds": {
+          "n": 35,
+          "sum": 266.12100000074133,
+          "mean": 7.603457142878324,
+          "min": 6.125,
+          "q1": 7.296500000171363,
+          "median": 7.563000000081956,
+          "q3": 7.944999999832362,
+          "p95": 8.410799999907614,
+          "max": 9.234000000171363
+        },
+        "worker_seconds": {
+          "n": 35,
+          "sum": 14.046999999321997,
+          "mean": 0.4013428571234856,
+          "min": 0.20299999974668026,
+          "q1": 0.26549999974668026,
+          "median": 0.29699999978765845,
+          "q3": 0.42949999985285103,
+          "p95": 0.7857999999076127,
+          "max": 1.891000000294298
+        },
+        "attempts_with_evm_errors": 19
+      },
+      "original_first": {
+        "attempts": 614,
+        "status_counts": {
+          "same_pc_type_not_observed": 192,
+          "same_pc_type_observed": 420,
+          "timeout": 2
+        },
+        "wall_seconds": {
+          "n": 614,
+          "sum": 5310.098000001628,
+          "mean": 8.648368078178548,
+          "min": 4.79700000025332,
+          "q1": 6.015250000054948,
+          "median": 9.054999999934807,
+          "q3": 10.121250000083819,
+          "p95": 12.193700000061655,
+          "max": 90.03200000012293
+        },
+        "worker_seconds": {
+          "n": 612,
+          "sum": 305.00000000651926,
+          "mean": 0.4983660130825478,
+          "min": 0.1869999999180436,
+          "q1": 0.26500000013038516,
+          "median": 0.3359999998938292,
+          "q3": 0.4690000000409782,
+          "p95": 0.927699999953617,
+          "max": 7.421000000089407
+        },
+        "attempts_with_evm_errors": 195
+      },
+      "original_repeat": {
+        "attempts": 64,
+        "status_counts": {
+          "same_pc_type_observed": 64
+        },
+        "wall_seconds": {
+          "n": 64,
+          "sum": 472.17199999885634,
+          "mean": 7.37768749998213,
+          "min": 6.125,
+          "q1": 7.074249999830499,
+          "median": 7.3125,
+          "q3": 7.457000000169501,
+          "p95": 8.488299999968149,
+          "max": 9.359000000171363
+        },
+        "worker_seconds": {
+          "n": 64,
+          "sum": 29.631000000983477,
+          "mean": 0.4629843750153668,
+          "min": 0.2190000000409782,
+          "q1": 0.2932499998714775,
+          "median": 0.37499999976716936,
+          "q3": 0.48874999990221113,
+          "p95": 1.0904499999713129,
+          "max": 1.8909999998286366
+        },
+        "attempts_with_evm_errors": 42
+      },
+      "processed_first": {
+        "attempts": 735,
+        "status_counts": {
+          "same_pc_type_observed": 514,
+          "same_pc_type_not_observed": 219,
+          "timeout": 2
+        },
+        "wall_seconds": {
+          "n": 735,
+          "sum": 7509.900999994017,
+          "mean": 10.217552380944241,
+          "min": 5.561999999918044,
+          "q1": 9.29700000025332,
+          "median": 9.844000000040978,
+          "q3": 10.461499999975786,
+          "p95": 12.681299999915062,
+          "max": 90.04700000025332
+        },
+        "worker_seconds": {
+          "n": 733,
+          "sum": 383.54299999121577,
+          "mean": 0.5232510231803762,
+          "min": 0.20299999974668026,
+          "q1": 0.29699999978765845,
+          "median": 0.35899999970570207,
+          "q3": 0.48400000017136335,
+          "p95": 1.06900000013411,
+          "max": 9.734000000171363
+        },
+        "attempts_with_evm_errors": 239
+      },
+      "processed_repeat": {
+        "attempts": 1028,
+        "status_counts": {
+          "same_pc_type_observed": 1028
+        },
+        "wall_seconds": {
+          "n": 1028,
+          "sum": 8288.492000005208,
+          "mean": 8.062735408565377,
+          "min": 5.875,
+          "q1": 7.405999999959022,
+          "median": 7.907000000122935,
+          "q3": 8.581750000128523,
+          "p95": 9.50974999978207,
+          "max": 13.860000000335276
+        },
+        "worker_seconds": {
+          "n": 1028,
+          "sum": 485.3090000003576,
+          "mean": 0.47209046692641793,
+          "min": 0.1869999999180436,
+          "q1": 0.26600000029429793,
+          "median": 0.32800000021234155,
+          "q3": 0.45299999974668026,
+          "p95": 1.0156500002369284,
+          "max": 6.563000000081956
+        },
+        "attempts_with_evm_errors": 326
+      }
+    },
+    "all_wall_seconds": {
+      "n": 2476,
+      "sum": 21846.78400000045,
+      "mean": 8.823418416801475,
+      "min": 4.79700000025332,
+      "q1": 7.4530000002123415,
+      "median": 8.578000000212342,
+      "q3": 9.811999999918044,
+      "p95": 11.734250000095926,
+      "max": 90.04700000025332
+    }
+  },
+  "explanations": {
+    "journal_rows": 823,
+    "unique_requests": 823,
+    "statuses": {
+      "ok": 823
+    },
+    "input_types": {
+      "violation_event": 721,
+      "individual_finding": 100,
+      "aggregate_report": 2
+    },
+    "requested_models": {
+      "deepseek-chat": 823
+    },
+    "served_models": {
+      "deepseek-flash": 823
+    },
+    "matching_T_requests": 735,
+    "distinct_T_events_with_explanations": 735,
+    "T_dynamic_matched": 735,
+    "T_source_pattern_matched": 0,
+    "contexts_by_run": {
+      "different_source": 13,
+      "same_source": 92,
+      "no_analysis": 34
+    },
+    "contexts_by_request": {
+      "different_source": 68,
+      "same_source": 548,
+      "no_analysis": 207
+    },
+    "context_content_by_run": {
+      "different_source_content": 10,
+      "byte_identical_source": 95,
+      "no_analysis": 34
+    },
+    "context_content_by_request": {
+      "different_source_content": 57,
+      "byte_identical_source": 559,
+      "no_analysis": 207
+    },
+    "matched_T_context_content": {
+      "different_source_content": 57,
+      "byte_identical_source": 513,
+      "no_analysis": 165
+    },
+    "matched_T_input_types": {
+      "violation_event": 649,
+      "individual_finding": 86
+    },
+    "unmatched_input_types": {
+      "violation_event": 72,
+      "individual_finding": 14,
+      "aggregate_report": 2
+    },
+    "matched_T_tokens": {
+      "prompt_tokens": {
+        "n": 735,
+        "sum": 6691598,
+        "mean": 9104.214965986395,
+        "min": 4716,
+        "q1": 5857.0,
+        "median": 6627.0,
+        "q3": 8247.5,
+        "p95": 20052.999999999953,
+        "max": 119331
+      },
+      "completion_tokens": {
+        "n": 735,
+        "sum": 652603,
+        "mean": 887.8952380952381,
+        "min": 508,
+        "q1": 771.0,
+        "median": 864.0,
+        "q3": 988.5,
+        "p95": 1191.8999999999999,
+        "max": 1986
+      },
+      "total_tokens": {
+        "n": 735,
+        "sum": 7344201,
+        "mean": 9992.110204081633,
+        "min": 5419,
+        "q1": 6689.0,
+        "median": 7507.0,
+        "q3": 9165.0,
+        "p95": 21012.799999999937,
+        "max": 120525
+      }
+    },
+    "matching_T_requests_with_source_path_mismatch": 68,
+    "schema_all_keys_present": 823,
+    "empty_root_cause": 0,
+    "confidence_counts": {
+      "medium": 473,
+      "high": 207,
+      "low": 143
+    },
+    "with_uncertainties": 823,
+    "uncertainty_items": {
+      "n": 823,
+      "sum": 2622,
+      "mean": 3.1859052247873634,
+      "min": 1,
+      "q1": 3.0,
+      "median": 3.0,
+      "q3": 4.0,
+      "p95": 5.0,
+      "max": 6
+    },
+    "evidence_chain_kinds": {
+      "dynamic": 1066,
+      "source": 1105,
+      "static": 1045,
+      "oracle": 612,
+      "detector": 1
+    },
+    "tokens": {
+      "prompt_tokens": {
+        "n": 823,
+        "sum": 7293971,
+        "mean": 8862.662211421628,
+        "min": 1331,
+        "q1": 5788.0,
+        "median": 6558.0,
+        "q3": 8163.5,
+        "p95": 19078.49999999999,
+        "max": 119331
+      },
+      "completion_tokens": {
+        "n": 823,
+        "sum": 719114,
+        "mean": 873.771567436209,
+        "min": 441,
+        "q1": 756.0,
+        "median": 854.0,
+        "q3": 976.0,
+        "p95": 1177.6,
+        "max": 1986
+      },
+      "total_tokens": {
+        "n": 823,
+        "sum": 8013085,
+        "mean": 9736.433778857838,
+        "min": 2030,
+        "q1": 6619.0,
+        "median": 7473.0,
+        "q3": 9085.5,
+        "p95": 20015.699999999993,
+        "max": 120525
+      },
+      "cached_prompt_tokens": {
+        "n": 823,
+        "sum": 337920,
+        "mean": 410.59538274605103,
+        "min": 0,
+        "q1": 384.0,
+        "median": 384.0,
+        "q3": 384.0,
+        "p95": 384.0,
+        "max": 1408
+      }
+    },
+    "completed_timestamp_span_s": 1187,
+    "run_specific_matching_static_artifacts": 136,
+    "sources_with_abi_in_replay_logs": 129,
+    "sample": {
+      "n": 100,
+      "backends": {
+        "source_pattern": 45,
+        "dynamic": 55
+      },
+      "categories": {
+        "access_control": 13,
+        "arithmetic": 13,
+        "bad_randomness": 13,
+        "denial_of_service": 13,
+        "front_running": 12,
+        "reentrancy": 12,
+        "time_manipulation": 12,
+        "unchecked_low_level_calls": 12
+      },
+      "sources": 60,
+      "matched_to_recovery": 55,
+      "replay_statuses": {
+        "not_available": 45,
+        "same_pc_type_observed": 37,
+        "same_pc_type_not_observed": 18
+      },
+      "invariant_families": {
+        "I6_EXTERNAL_ENVIRONMENT": 24,
+        "unknown": 30,
+        "I5_RESOURCE_EXECUTION": 37,
+        "I2_AUTHORIZATION_ACCESS": 5,
+        "I4_TRANSACTIONAL_CONSISTENCY": 3,
+        "I1_FINANCIAL_ACCOUNTING": 1
+      },
+      "raw_length_bins": {
+        "no_sequence": 45,
+        "1": 48,
+        ">=4": 6,
+        "2-3": 1
+      },
+      "matched_context_content": {
+        "different_source_content": 6,
+        "byte_identical_source": 43,
+        "no_analysis": 6
+      },
+      "independent_root_causes": 0,
+      "annotation_slots": 300,
+      "slots_with_any_label": 0
+    }
+  },
+  "categories": [
+    {
+      "category": "access_control",
+      "selected_contracts": 18,
+      "T_events": 95,
+      "dynamic": 86,
+      "source_pattern": 9,
+      "observed": 62,
+      "not_observed": 24,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.7209302325581395,
+      "three_of_three": 62,
+      "shortened": 10,
+      "explanations_matched_T": 86
+    },
+    {
+      "category": "arithmetic",
+      "selected_contracts": 15,
+      "T_events": 76,
+      "dynamic": 75,
+      "source_pattern": 1,
+      "observed": 48,
+      "not_observed": 27,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.64,
+      "three_of_three": 48,
+      "shortened": 3,
+      "explanations_matched_T": 75
+    },
+    {
+      "category": "bad_randomness",
+      "selected_contracts": 8,
+      "T_events": 51,
+      "dynamic": 25,
+      "source_pattern": 26,
+      "observed": 17,
+      "not_observed": 8,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.68,
+      "three_of_three": 17,
+      "shortened": 2,
+      "explanations_matched_T": 25
+    },
+    {
+      "category": "denial_of_service",
+      "selected_contracts": 6,
+      "T_events": 43,
+      "dynamic": 34,
+      "source_pattern": 9,
+      "observed": 27,
+      "not_observed": 7,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.7941176470588235,
+      "three_of_three": 27,
+      "shortened": 1,
+      "explanations_matched_T": 34
+    },
+    {
+      "category": "front_running",
+      "selected_contracts": 4,
+      "T_events": 15,
+      "dynamic": 11,
+      "source_pattern": 4,
+      "observed": 8,
+      "not_observed": 3,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.7272727272727273,
+      "three_of_three": 8,
+      "shortened": 1,
+      "explanations_matched_T": 11
+    },
+    {
+      "category": "reentrancy",
+      "selected_contracts": 31,
+      "T_events": 219,
+      "dynamic": 210,
+      "source_pattern": 9,
+      "observed": 98,
+      "not_observed": 112,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.4666666666666667,
+      "three_of_three": 98,
+      "shortened": 25,
+      "explanations_matched_T": 210
+    },
+    {
+      "category": "time_manipulation",
+      "selected_contracts": 5,
+      "T_events": 17,
+      "dynamic": 12,
+      "source_pattern": 5,
+      "observed": 7,
+      "not_observed": 5,
+      "timeout": 0,
+      "observed_fraction_dynamic": 0.5833333333333334,
+      "three_of_three": 7,
+      "shortened": 3,
+      "explanations_matched_T": 12
+    },
+    {
+      "category": "unchecked_low_level_calls",
+      "selected_contracts": 52,
+      "T_events": 364,
+      "dynamic": 282,
+      "source_pattern": 82,
+      "observed": 247,
+      "not_observed": 33,
+      "timeout": 2,
+      "observed_fraction_dynamic": 0.875886524822695,
+      "three_of_three": 247,
+      "shortened": 19,
+      "explanations_matched_T": 282
+    }
+  ],
+  "previous_full_inventory": {
+    "campaign": "<seminv-workspace>\\outputs\\rq3_fresh_sb143_20261011_101706",
+    "search_seconds": 600,
+    "watchdog_seconds": 1200,
+    "replay": false,
+    "minimization": false,
+    "cohorts": {
+      "full_seed11_all_sources": {
+        "planned_runs": 143,
+        "planned_cases": 143,
+        "statuses": {
+          "budget_completed": 131,
+          "tool_failed": 9,
+          "prepare_failed": 2,
+          "untestable": 1
+        },
+        "wall_max_s": 934.798,
+        "saved_findings": {
+          "findings": 1288,
+          "cases": 140,
+          "runs": 140,
+          "single_step": 679,
+          "multi_step": 609,
+          "lengths": {
+            "1": 679,
+            "2": 102,
+            "3": 68,
+            "4": 55,
+            "5": 339,
+            "6": 10,
+            "7": 25,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.5822981366459627,
+          "median_length": 1.0,
+          "families": {
+            "I5_RESOURCE_EXECUTION": 819,
+            "I2_AUTHORIZATION_ACCESS": 66,
+            "unknown": 23,
+            "I4_TRANSACTIONAL_CONSISTENCY": 46,
+            "I6_EXTERNAL_ENVIRONMENT": 322,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1288
+          },
+          "oracle_status": {
+            "skipped": 1288
+          },
+          "confidence": {
+            "structural_only": 1288
+          },
+          "fields": {
+            "raw_paired": 1288,
+            "nonempty_steps": 1288,
+            "command_present": 1288,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1106,
+            "function_present": 569,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1288,
+          "reported_event_timing_unmatched": 45,
+          "suppressed": 45,
+          "suppression_rules": {
+            "R3.generic_sensitive_execution_only": 21,
+            "R4.checked_low_level_return": 24
+          },
+          "raw_timing_unmatched": 0
+        },
+        "observed_by_600_search_seconds": {
+          "findings": 1242,
+          "cases": 140,
+          "runs": 140,
+          "single_step": 639,
+          "multi_step": 603,
+          "lengths": {
+            "1": 639,
+            "2": 102,
+            "3": 66,
+            "4": 53,
+            "5": 338,
+            "6": 9,
+            "7": 25,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.6256038647342996,
+          "median_length": 1.0,
+          "families": {
+            "I5_RESOURCE_EXECUTION": 818,
+            "I2_AUTHORIZATION_ACCESS": 45,
+            "unknown": 23,
+            "I4_TRANSACTIONAL_CONSISTENCY": 46,
+            "I6_EXTERNAL_ENVIRONMENT": 298,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1242
+          },
+          "oracle_status": {
+            "skipped": 1242
+          },
+          "confidence": {
+            "structural_only": 1242
+          },
+          "fields": {
+            "raw_paired": 1242,
+            "nonempty_steps": 1242,
+            "command_present": 1242,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1081,
+            "function_present": 526,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1242,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        },
+        "reported_at_process_exit": {
+          "findings": 1243,
+          "cases": 140,
+          "runs": 140,
+          "single_step": 639,
+          "multi_step": 604,
+          "lengths": {
+            "1": 639,
+            "2": 102,
+            "3": 66,
+            "4": 53,
+            "5": 339,
+            "6": 9,
+            "7": 25,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.6275140788415126,
+          "median_length": 1,
+          "families": {
+            "I5_RESOURCE_EXECUTION": 819,
+            "I2_AUTHORIZATION_ACCESS": 45,
+            "unknown": 23,
+            "I4_TRANSACTIONAL_CONSISTENCY": 46,
+            "I6_EXTERNAL_ENVIRONMENT": 298,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1243
+          },
+          "oracle_status": {
+            "skipped": 1243
+          },
+          "confidence": {
+            "structural_only": 1243
+          },
+          "fields": {
+            "raw_paired": 1243,
+            "nonempty_steps": 1243,
+            "command_present": 1243,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1082,
+            "function_present": 526,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1243,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        }
+      },
+      "full_repeat24_five_seeds": {
+        "planned_runs": 120,
+        "planned_cases": 24,
+        "statuses": {
+          "budget_completed": 115,
+          "tool_failed": 5
+        },
+        "wall_max_s": 630.881,
+        "saved_findings": {
+          "findings": 748,
+          "cases": 24,
+          "runs": 120,
+          "single_step": 305,
+          "multi_step": 443,
+          "lengths": {
+            "1": 305,
+            "2": 55,
+            "3": 62,
+            "4": 25,
+            "5": 261,
+            "6": 25,
+            "7": 15
+          },
+          "mean_length": 3.022727272727273,
+          "median_length": 3.0,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 55,
+            "I5_RESOURCE_EXECUTION": 475,
+            "I6_EXTERNAL_ENVIRONMENT": 172,
+            "I4_TRANSACTIONAL_CONSISTENCY": 36,
+            "unknown": 10
+          },
+          "origins": {
+            "fuzzer_detector": 748
+          },
+          "oracle_status": {
+            "skipped": 748
+          },
+          "confidence": {
+            "structural_only": 748
+          },
+          "fields": {
+            "raw_paired": 748,
+            "nonempty_steps": 748,
+            "command_present": 748,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 623,
+            "function_present": 285,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 748,
+          "reported_event_timing_unmatched": 40,
+          "suppressed": 40,
+          "suppression_rules": {
+            "R3.generic_sensitive_execution_only": 25,
+            "R4.checked_low_level_return": 15
+          },
+          "raw_timing_unmatched": 0
+        },
+        "observed_by_600_search_seconds": {
+          "findings": 707,
+          "cases": 24,
+          "runs": 120,
+          "single_step": 270,
+          "multi_step": 437,
+          "lengths": {
+            "1": 270,
+            "2": 55,
+            "3": 62,
+            "4": 25,
+            "5": 260,
+            "6": 20,
+            "7": 15
+          },
+          "mean_length": 3.099009900990099,
+          "median_length": 3,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 30,
+            "I5_RESOURCE_EXECUTION": 474,
+            "I6_EXTERNAL_ENVIRONMENT": 157,
+            "I4_TRANSACTIONAL_CONSISTENCY": 36,
+            "unknown": 10
+          },
+          "origins": {
+            "fuzzer_detector": 707
+          },
+          "oracle_status": {
+            "skipped": 707
+          },
+          "confidence": {
+            "structural_only": 707
+          },
+          "fields": {
+            "raw_paired": 707,
+            "nonempty_steps": 707,
+            "command_present": 707,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 607,
+            "function_present": 252,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 707,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        },
+        "reported_at_process_exit": {
+          "findings": 708,
+          "cases": 24,
+          "runs": 120,
+          "single_step": 270,
+          "multi_step": 438,
+          "lengths": {
+            "1": 270,
+            "2": 55,
+            "3": 62,
+            "4": 25,
+            "5": 261,
+            "6": 20,
+            "7": 15
+          },
+          "mean_length": 3.1016949152542375,
+          "median_length": 3.0,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 30,
+            "I5_RESOURCE_EXECUTION": 475,
+            "I6_EXTERNAL_ENVIRONMENT": 157,
+            "I4_TRANSACTIONAL_CONSISTENCY": 36,
+            "unknown": 10
+          },
+          "origins": {
+            "fuzzer_detector": 708
+          },
+          "oracle_status": {
+            "skipped": 708
+          },
+          "confidence": {
+            "structural_only": 708
+          },
+          "fields": {
+            "raw_paired": 708,
+            "nonempty_steps": 708,
+            "command_present": 708,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 608,
+            "function_present": 252,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 708,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        }
+      },
+      "full_all_runs": {
+        "planned_runs": 239,
+        "planned_cases": 143,
+        "statuses": {
+          "budget_completed": 223,
+          "tool_failed": 13,
+          "prepare_failed": 2,
+          "untestable": 1
+        },
+        "wall_max_s": 934.798,
+        "saved_findings": {
+          "findings": 1887,
+          "cases": 140,
+          "runs": 236,
+          "single_step": 925,
+          "multi_step": 962,
+          "lengths": {
+            "1": 925,
+            "2": 147,
+            "3": 118,
+            "4": 73,
+            "5": 547,
+            "6": 30,
+            "7": 37,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.717541070482247,
+          "median_length": 2,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 110,
+            "I5_RESOURCE_EXECUTION": 1199,
+            "unknown": 31,
+            "I4_TRANSACTIONAL_CONSISTENCY": 75,
+            "I6_EXTERNAL_ENVIRONMENT": 460,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1887
+          },
+          "oracle_status": {
+            "skipped": 1887
+          },
+          "confidence": {
+            "structural_only": 1887
+          },
+          "fields": {
+            "raw_paired": 1887,
+            "nonempty_steps": 1887,
+            "command_present": 1887,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1605,
+            "function_present": 796,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1887,
+          "reported_event_timing_unmatched": 77,
+          "suppressed": 77,
+          "suppression_rules": {
+            "R3.generic_sensitive_execution_only": 41,
+            "R4.checked_low_level_return": 36
+          },
+          "raw_timing_unmatched": 0
+        },
+        "observed_by_600_search_seconds": {
+          "findings": 1808,
+          "cases": 140,
+          "runs": 236,
+          "single_step": 857,
+          "multi_step": 951,
+          "lengths": {
+            "1": 857,
+            "2": 147,
+            "3": 116,
+            "4": 71,
+            "5": 545,
+            "6": 25,
+            "7": 37,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.768805309734513,
+          "median_length": 2.0,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 69,
+            "I5_RESOURCE_EXECUTION": 1197,
+            "unknown": 31,
+            "I4_TRANSACTIONAL_CONSISTENCY": 75,
+            "I6_EXTERNAL_ENVIRONMENT": 424,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1808
+          },
+          "oracle_status": {
+            "skipped": 1808
+          },
+          "confidence": {
+            "structural_only": 1808
+          },
+          "fields": {
+            "raw_paired": 1808,
+            "nonempty_steps": 1808,
+            "command_present": 1808,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1567,
+            "function_present": 727,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1808,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        },
+        "reported_at_process_exit": {
+          "findings": 1810,
+          "cases": 140,
+          "runs": 236,
+          "single_step": 857,
+          "multi_step": 953,
+          "lengths": {
+            "1": 857,
+            "2": 147,
+            "3": 116,
+            "4": 71,
+            "5": 547,
+            "6": 25,
+            "7": 37,
+            "8": 4,
+            "9": 4,
+            "10": 1,
+            "11": 1
+          },
+          "mean_length": 2.7712707182320444,
+          "median_length": 2.0,
+          "families": {
+            "I2_AUTHORIZATION_ACCESS": 69,
+            "I5_RESOURCE_EXECUTION": 1199,
+            "unknown": 31,
+            "I4_TRANSACTIONAL_CONSISTENCY": 75,
+            "I6_EXTERNAL_ENVIRONMENT": 424,
+            "I1_FINANCIAL_ACCOUNTING": 12
+          },
+          "origins": {
+            "fuzzer_detector": 1810
+          },
+          "oracle_status": {
+            "skipped": 1810
+          },
+          "confidence": {
+            "structural_only": 1810
+          },
+          "fields": {
+            "raw_paired": 1810,
+            "nonempty_steps": 1810,
+            "command_present": 1810,
+            "trace_payload_present": 0,
+            "raw_trace_file_exists": 0,
+            "setup_present": 0,
+            "source_line_present": 1569,
+            "function_present": 727,
+            "root_cause_present": 0,
+            "reproduction_validated": 0,
+            "minimization_validated": 0,
+            "shortened": 0
+          },
+          "case_fingerprint_keys": 1810,
+          "reported_event_timing_unmatched": 0,
+          "suppressed": 0,
+          "suppression_rules": {},
+          "raw_timing_unmatched": 0
+        }
+      }
+    }
+  },
+  "strict_metrics": {
+    "same_security_consequence_rate": null,
+    "valid_minimization_rate": null,
+    "explanation_correctness": null,
+    "root_cause_accuracy": null,
+    "inter_rater_agreement": null
+  }
+}

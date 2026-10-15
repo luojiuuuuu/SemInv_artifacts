@@ -1,0 +1,40 @@
+{
+    "sol_file": "benchmark/baseline/CMBToken.sol",
+    "contract": {
+        "CMBToken": [
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "CMBToken",
+                "fn_interface": "function transfer(address _to, uint256 _value) public returns (bool success)",
+                "rid": 7,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "throw",
+                "rule": "not throw if Transfers of 0 values",
+                "contract": "CMBToken",
+                "fn_interface": "function transferFrom(address _from, address _to, uint256 _value) public returns (bool success)",
+                "rid": 12,
+                "tags": [
+                    "function"
+                ]
+            },
+            {
+                "erc": "ERC20",
+                "type": "emit",
+                "rule": "emit 'Transfer'",
+                "contract": "CMBToken",
+                "fn_interface": "constructor() returns()",
+                "rid": 20,
+                "tags": [
+                    "function"
+                ]
+            }
+        ]
+    }
+}

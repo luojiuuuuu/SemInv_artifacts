@@ -1,0 +1,359 @@
+// SPDX-License-Identifier: MIT
+pragma solidity 0.4.26;
+import "../src/wallet_03_wrong_constructor.sol";
+
+// Foundry cheatcodes binding for Solidity 0.4.x
+// 0.4 没有 interface，用抽象合约声明
+contract Vm {
+    function prank(address) public;
+    function startPrank(address) public;
+    function stopPrank() public;
+    function deal(address, uint256) public;
+    function expectRevert() public;
+    function expectRevert(bytes) public;
+    function store(address, bytes32, bytes32) public;
+    function load(address, bytes32) public returns (bytes32);
+}
+
+contract Wallet_FunctionalTest {
+    Vm constant vm = Vm(0x7109709ECfa91a80626fF3989D68f67F5b1DD12D);
+
+    address owner;
+    address alice;
+    address bob;
+    address carol;
+
+    function Wallet_FunctionalTest() public {
+        owner = address(0x0A0A);
+        alice = address(0xA11CE);
+        bob   = address(0xB0B);
+        carol = address(0xCA1CE);
+    }
+
+    function() public payable { }
+
+
+    // ---------- Helpers (0.4) ----------
+    function _assertEqU(uint256 a, uint256 b) internal {
+        require(a == b);
+    }
+    function _assertTrue(bool ok, string why) internal { require(ok); }
+    function _assertRelU(uint256 a, uint8 op, uint256 b, string why) internal {
+        // op: 0==,1!=,2>=,3<=,4>,5<
+        if (op == 0) require(a == b);
+        else if (op == 1) require(a != b);
+        else if (op == 2) require(a >= b);
+        else if (op == 3) require(a <= b);
+        else if (op == 4) require(a >  b);
+        else if (op == 5) require(a <  b);
+    }
+    function _assertApproxEqU(uint256 a, uint256 b, uint256 tol, string why) internal {
+        if (a >= b) require(a - b <= tol); else require(b - a <= tol);
+    }
+    function _assertEqA(address a, address b) internal { require(a == b); }
+    function _assertEqB32(bytes32 a, bytes32 b) internal { require(a == b); }
+    function _assertEqS(string a, string b) internal { if (sha3(a) != sha3(b)) { require(false); } }
+
+
+    // @cover-intent Financial & Accounting: Verify that a user can deposit and withdraw their own balance correctly.
+    function test_Positive_deposit_and_withdraw_0() public {
+// cover: deposit :: assert(balances[msg.sender] + msg.value > balances[msg.sender]) true
+// cover: withdraw :: require(amount <= balances[msg.sender]) true
+        vm.startPrank(alice);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.startPrank(alice);
+        // skip ABI-mismatched call: deposit()
+        {
+        target.withdraw(30);
+        }
+        vm.stopPrank();
+        // TODO assert: alice.balance == 120
+    }
+
+    // @cover-intent Financial & Accounting: Verify that withdrawing more than the user's balance reverts.
+    function test_Withdraw_more_than_balance_reverts_1() public {
+// cover: withdraw :: require(amount <= balances[msg.sender]) false
+        vm.startPrank(alice);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.startPrank(alice);
+        // skip ABI-mismatched call: deposit()
+        vm.expectRevert();
+        {
+        target.withdraw(20);
+        }
+        vm.stopPrank();
+    }
+
+    // @cover-intent Authorization & Access Control: Verify that initWallet sets the caller as creator.
+    function test_initWallet_sets_creator_2() public {
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: initWallet()
+    }
+
+    // @cover-intent Authorization & Access Control: Verify that only the creator can call migrateTo.
+    function test_Non_creator_cannot_migrate_3() public {
+// cover: migrateTo :: require(creator == msg.sender) false
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: initWallet()
+        vm.expectRevert();
+        vm.prank(bob);
+        {
+        target.migrateTo(bob);
+        }
+    }
+
+    // @cover-intent Authorization & Access Control: Verify that the creator can migrate funds to another address.
+    function test_Creator_can_migrate_4() public {
+// cover: migrateTo :: require(creator == msg.sender) true
+        vm.startPrank(alice);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.startPrank(alice);
+        // skip ABI-mismatched call: initWallet()
+        // skip ABI-mismatched call: deposit()
+        {
+        target.migrateTo(bob);
+        }
+        vm.stopPrank();
+        // TODO assert: bob.balance == 50
+    }
+
+    // @cover-intent Financial & Accounting: Verify that multiple deposits and withdraws maintain correct balances.
+    function test_Multiple_deposits_and_withdraws_5() public {
+// cover: deposit :: assert(balances[msg.sender] + msg.value > balances[msg.sender]) true
+// cover: withdraw :: require(amount <= balances[msg.sender]) true
+        vm.startPrank(alice);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: deposit()
+        vm.prank(bob);
+        // skip ABI-mismatched call: deposit()
+        vm.prank(alice);
+        {
+        target.withdraw(10);
+        }
+        vm.prank(bob);
+        {
+        target.withdraw(30);
+        }
+        // TODO assert: alice.balance == 110
+        // TODO assert: bob.balance == 100
+    }
+
+    // @cover-intent Financial & Accounting: Verify that withdrawing zero amount is allowed if balance is zero.
+    function test_Withdraw_zero_amount_6() public {
+// cover: withdraw :: require(amount <= balances[msg.sender]) true
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        {
+        target.withdraw(0);
+        }
+    }
+
+    // @cover-intent Financial & Accounting: Verify that depositing zero ether is allowed.
+    function test_Deposit_with_zero_value_7() public {
+// cover: deposit :: assert(balances[msg.sender] + msg.value > balances[msg.sender]) true
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: deposit()
+    }
+
+    // @cover-intent Authorization & Access Control: Verify that migrateTo works even when contract balance is zero.
+    function test_Migrate_with_zero_balance_8() public {
+// cover: migrateTo :: require(creator == msg.sender) true
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.startPrank(alice);
+        // skip ABI-mismatched call: initWallet()
+        {
+        target.migrateTo(bob);
+        }
+        vm.stopPrank();
+    }
+
+    // @cover-intent Authorization & Access Control: Verify that initWallet can be called by anyone to overwrite creator.
+    function test_initWallet_can_be_called_multiple_times_9() public {
+// cover: migrateTo :: require(creator == msg.sender) true
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: initWallet()
+        vm.startPrank(bob);
+        // skip ABI-mismatched call: initWallet()
+        {
+        target.migrateTo(bob);
+        }
+        vm.stopPrank();
+    }
+
+    // @cover-intent Financial & Accounting
+    function test_deposit_sequence_10() public {
+        vm.startPrank(alice);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: deposit()
+    }
+
+    // @cover-intent Authorization & Access Control
+    function test_initWallet_sequence_11() public {
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        // skip ABI-mismatched call: initWallet()
+    }
+
+    // @cover-intent Authorization & Access Control
+    function test_migrateTo_sequence_12() public {
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.startPrank(alice);
+        // skip ABI-mismatched call: initWallet()
+        {
+        target.migrateTo(bob);
+        }
+        vm.stopPrank();
+        // TODO assert: bob.balance == 0
+    }
+
+    // @cover-intent minimal test for withdraw
+    function test_perfn_withdraw_13() public {
+        vm.startPrank(owner);
+        Wallet target = new Wallet();
+        vm.stopPrank();
+        vm.deal(owner, 100 ether);
+        vm.deal(alice, 100 ether);
+        vm.deal(bob,   100 ether);
+        vm.deal(carol, 100 ether);
+        uint256 ethA0 = alice.balance;
+        uint256 ethB0 = bob.balance;
+        uint256 ethC0 = carol.balance;
+        uint256 ethO0 = owner.balance;
+        vm.prank(alice);
+        {
+        target.withdraw(100);
+        }
+    }
+
+}
